@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/yingyu/favicon.png" />
+    
+
+    <title>
+        
+          wsl - 英语
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/yingyu/css/book.css">
+
+    
+<script src="/yingyu/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/yingyu/">
+    <img src="/yingyu/favicon.png">
+    <span>英语</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h2 id="英语1">英语1</h2>
+<ul>
+<li><a href="/yingyu/1-2001">2001</a></li>
+<li><a href="/yingyu/1-2002">2002</a></li>
+<li><a href="/yingyu/1-2003">2003</a></li>
+<li><a href="/yingyu/1-2004">2004</a></li>
+<li><a href="/yingyu/1-2005">2005</a></li>
+<li><a href="/yingyu/1-2006">2006</a></li>
+<li><a href="/yingyu/1-2007">2007</a></li>
+<li><a href="/yingyu/1-2008">2008</a></li>
+<li><a href="/yingyu/1-2009">2009</a></li>
+<li><a href="/yingyu/1-2010">2010</a></li>
+<li><a href="/yingyu/1-2011">2011</a></li>
+<li><a href="/yingyu/1-2012">2012</a></li>
+<li><a href="/yingyu/1-2013">2013</a></li>
+<li><a href="/yingyu/1-2014">2014</a></li>
+<li><a href="/yingyu/1-2015">2015</a></li>
+<li><a href="/yingyu/1-2016">2016</a></li>
+<li><a href="/yingyu/1-2017">2017</a></li>
+<li><a href="/yingyu/1-2018">2018</a></li>
+<li><a href="/yingyu/1-2019">2019</a></li>
+<li><a href="/yingyu/1-2020">2020</a></li>
+<li><a href="/yingyu/1-2021">2021</a></li>
+</ul>
+<h2 id="英语2">英语2</h2>
+
+</div>
+
+
+<script src="/yingyu/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="Developing-in-WSL">Developing in WSL</h1>
+<p>The <strong>Visual Studio Code Remote - WSL</strong> extension lets you use the <a target="_blank" rel="noopener" href="https://docs.microsoft.com/windows/wsl">Windows Subsystem for Linux (WSL)</a> as your full-time development environment right from VS Code. You can develop in a Linux-based environment, use Linux-specific toolchains and utilities, and run and debug your Linux-based applications all from the comfort of Windows.</p>
+<p>The extension runs commands and other extensions directly in WSL so you can edit files located in WSL or the mounted Windows filesystem (for example <code>/mnt/c</code>) without worrying about pathing issues, binary compatibility, or other cross-OS challenges.</p>
+<p><img src="images/wsl/architecture-wsl.png" alt="WSL Architecture"></p>
+<p>This lets VS Code provide a <strong>local-quality development experience</strong> — including full IntelliSense (completions), code navigation, and debugging — <strong>regardless of where your code is hosted</strong>.</p>
+<h2 id="Getting-started">Getting started</h2>
+<p><strong>Note</strong>: After reviewing this topic, you can get started with the introductory <a href="/docs/remote/wsl-tutorial.md">WSL tutorial</a>.</p>
+<h3 id="Installation">Installation</h3>
+<p>To get started, you need to:</p>
+<ol>
+<li>
+<p>Install the <a target="_blank" rel="noopener" href="https://docs.microsoft.com/windows/wsl/install-win10">Windows Subsystem for Linux</a> along with your preferred Linux distribution.</p>
+<blockquote>
+<p><strong>Note:</strong> WSL 1 does have some <a href="#known-limitations">known limitations</a> for certain types of development. Also, extensions installed in Alpine Linux may not work due to <code>glibc</code> dependencies in native source code inside the extension. See the <a target="_blank" rel="noopener" href="https://aka.ms/vscode-remote/linux">Remote Development and Linux</a> article for details.</p>
+</blockquote>
+</li>
+<li>
+<p>Install <a target="_blank" rel="noopener" href="https://code.visualstudio.com/">Visual Studio Code</a> on the <strong>Windows</strong> side (not in WSL).</p>
+<blockquote>
+<p><strong>Note:</strong> When prompted to <strong>Select Additional Tasks</strong> during installation, be sure to check the <strong>Add to PATH</strong> option so you can easily open a folder in WSL using the <code>code</code> command.</p>
+</blockquote>
+</li>
+<li>
+<p>Install the <a target="_blank" rel="noopener" href="https://aka.ms/vscode-remote/download/extension">Remote Development extension pack</a>.</p>
+</li>
+</ol>
+<h3 id="Open-a-remote-folder-or-workspace">Open a remote folder or workspace</h3>
+<h4 id="From-the-WSL-terminal">From the WSL terminal</h4>
+<p>Opening a folder inside the Windows Subsystem for Linux in VS Code is very similar to opening up a Windows folder from the command prompt or PowerShell.</p>
+<ol>
+<li>
+<p>Open a <strong>WSL terminal window</strong> (using the start menu item or by typing <code>wsl</code> from a command prompt / PowerShell).</p>
+</li>
+<li>
+<p>Navigate to a folder you’d like to open in VS Code (including, but not limited to, Windows filesystem mounts like <code>/mnt/c</code>)</p>
+</li>
+<li>
+<p>Type <strong><code>code .</code></strong> in the terminal. When doing this for the first time, you should see VS Code fetching components needed to run in WSL. This should only take a short while, and is only needed once.</p>
+<blockquote>
+<p><strong>Note:</strong> If this command does not work, you may need to restart your terminal or you may not have added VS Code to your path when it was installed.</p>
+</blockquote>
+</li>
+<li>
+<p>After a moment, a new VS Code window will appear, and you’ll see a notification that VS Code is opening the folder in WSL.</p>
+<p><img src="images/wsl//wsl-starting-notification.png" alt="WSL Starting notification"></p>
+<p>VS Code will now continue to configure itself in WSL and keep you up to date as it makes progress.</p>
+</li>
+<li>
+<p>Once finished, you now see a WSL indicator in the bottom left corner, and you’ll be able to use VS Code as you would normally!</p>
+<p><img src="images/wsl/wsl-statusbar-indicator.png" alt="WSL Status Bar Item"></p>
+</li>
+</ol>
+<p>That’s it! Any VS Code operations you perform in this window will be executed in the WSL environment, everything from editing and file operations, to debugging, using terminals, and more.</p>
+<h4 id="From-VS-Code">From VS Code</h4>
+<p>Alternatively, you can open a Remote WSL window directly from VS Code:</p>
+<ol>
+<li>Start VS Code.</li>
+<li>Press <code>kbstyle(F1)</code>, select <strong>Remote-WSL: New Window</strong> for the default distro or <strong>Remote-WSL: New Window using Distro</strong> for a specific distro.</li>
+<li>Use the File menu to open your folder.</li>
+</ol>
+<p>If you already have a folder open, you can also use the <strong>Remote-WSL: Reopen in WSL</strong> command. You will be prompted which distro to use.</p>
+<p>If you are in a WSL window and want to open the current input in a local window, use <strong>Remote-WSL: Reopen in Windows</strong>.</p>
+<h4 id="From-the-Windows-command-prompt">From the Windows command prompt</h4>
+<p>To open a WSL window directly from a Windows prompt use the <code>--remote</code> command line parameter:</p>
+<p><code>code --remote wsl+&lt;distro name&gt; &lt;path in WSL&gt;</code></p>
+<p>for example: <code>code --remote wsl+Ubuntu /home/jim/projects/c</code></p>
+<p>We need to do some guessing on whether the input path is a file or a folder. If it has a file extension, it is considered a file.</p>
+<p>To force that a folder is opened, add slash to the path or use:</p>
+<p><code>code --folder-uri vscode-remote://wsl+Ubuntu/home/ubuntu/folder.with.dot</code></p>
+<p>To force that a file is opened add <code>--goto</code> or use:</p>
+<p><code>code --file-uri vscode-remote://wsl+Ubuntu/home/ubuntu/fileWithoutExtension</code></p>
+<h2 id="Working-with-Git">Working with Git</h2>
+<p>If you are working with the same repository in WSL and Windows, be sure to set up consistent line endings. See <a href="/docs/remote/troubleshooting.md#resolving-git-line-ending-issues-in-containers-resulting-in-many-modified-files">tips and tricks</a> for details.</p>
+<p>You can also avoid passwords by configuring WSL to use the Windows Git credential manager. See <a href="/docs/remote/troubleshooting.md#sharing-git-credentials-between-windows-and-wsl">tips and tricks</a> for details.</p>
+<h2 id="Managing-extensions">Managing extensions</h2>
+<p>VS Code runs extensions in one of two places: locally on the UI / client side, or in WSL. While extensions that affect the VS Code UI, like themes and snippets, are installed locally, most extensions will reside inside WSL.</p>
+<p>If you install an extension from the Extensions view, it will automatically be installed in the correct location. Once installed, you can tell where an extension is installed based on the category grouping. There will be <strong>Local - Installed</strong> category and one for WSL.</p>
+<p><img src="images/wsl/wsl-installed-remote-indicator.png" alt="Workspace Extension Category"></p>
+<p><img src="images/wsl/wsl-local-installed-extensions.png" alt="Local Extension Category"></p>
+<blockquote>
+<p><strong>Note:</strong> If you are an extension author and your extension is not working properly or installs in the wrong place, see <a href="/api/advanced-topics/remote-extensions.md">Supporting Remote Development</a> for details.</p>
+</blockquote>
+<p>Local extensions that actually need to run remotely will appear dimmed and disabled in the <strong>Local - Installed</strong> category. Select <strong>Install</strong> to install an extension on your remote host.</p>
+<p><img src="images/wsl/wsl-disabled-extensions.png" alt="Disabled Extensions w/Install Button"></p>
+<p>You can also install all locally installed extensions inside WSL by going to the Extensions view and selecting <strong>Install Local Extensions in WSL: [Name]</strong> using the cloud button at the right of the <strong>Local - Installed</strong> title bar. This will display a dropdown where you can select which locally installed extensions to install in your WSL instance.</p>
+<p><img src="images/wsl/install-all-extn-wsl.png" alt="Install all extensions"></p>
+<h2 id="Opening-a-terminal-in-WSL">Opening a terminal in WSL</h2>
+<p>Opening a terminal in WSL from VS Code is simple. Once folder is opened in WSL, <strong>any terminal window</strong> you open in VS Code (<strong>Terminal &gt; New Terminal</strong>) will automatically run in WSL rather than locally.</p>
+<p>You can also use the <code>code</code> command line from this same terminal window to perform a number of operations such as opening a new file or folder in WSL. Type <code>code --help</code> to see what options are available from the command line.</p>
+<p><img src="images/wsl/code-command-in-terminal.png" alt="Using the code CLI"></p>
+<h2 id="Debugging-in-WSL">Debugging in WSL</h2>
+<p>Once you’ve opened a folder in WSL, you can use VS Code’s debugger in the same way you would when running the application locally. For example, if you select a launch configuration in <code>launch.json</code> and start debugging (<code>kb(workbench.action.debug.start)</code>), the application will start on remote host and attach the debugger to it.</p>
+<p>See the <a href="/docs/editor/debugging.md">debugging</a> documentation for details on configuring VS Code’s debugging features in <code>.vscode/launch.json</code>.</p>
+<h2 id="WSL-specific-settings">WSL specific settings</h2>
+<p>VS Code’s local user settings are also reused when you have opened a folder in WSL. While this keeps your user experience consistent, you may want to vary some of these settings between your local machine and WSL. Fortunately, once you have connected to WSL, you can also set WSL specific settings by running the <strong>Preferences: Open Remote Settings</strong> command from the Command Palette (<code>kbstyle(F1)</code>) or by selecting the <strong>Remote</strong> tab in the Settings editor. These will override any local settings you have in place whenever you open a folder in WSL.</p>
+<h2 id="Advanced-Environment-setup-script">Advanced: Environment setup script</h2>
+<p>When VS Code Remote is started in WSL, no shell startup scripts are run. This was done to avoid issues with startup scripts that are tuned for shells. If you want to run additional commands or modify the environment this can be done in a setup script <code>~/.vscode-server/server-env-setup</code> (Insiders: <code>~/.vscode-server-insiders/server-env-setup</code>). If present, the script is processed before the server is started.</p>
+<p>The script needs to be a valid Bourne shell script. Be aware that an invalid script will prevent the server from starting up. If you end up with a script that prevents the server from starting, you will have to use a regular WSL shell and delete or rename the setup script.</p>
+<p>Check the WSL log (Remote WSL: Open WSL Log) for output and errors.</p>
+<h2 id="Advanced-Opening-a-WSL-2-folder-in-a-container">Advanced: Opening a WSL 2 folder in a container</h2>
+<p>If you are using WSL 2 and <a target="_blank" rel="noopener" href="https://docs.docker.com/docker-for-windows/wsl-tech-preview/">Docker Desktop’s WSL 2 back-end</a>, you can use the <a href="/docs/remote/containers.md">Remote - Containers</a> extension to work with source code stored inside WSL! Just follow these steps:</p>
+<ol>
+<li>
+<p>If you have not already, <a target="_blank" rel="noopener" href="https://docs.docker.com/docker-for-windows/wsl-tech-preview/">install and setup</a> Docker Desktop’s WSL 2 support.</p>
+<blockquote>
+<p><strong>Tip:</strong>  Go to <strong>Settings &gt; Resources &gt; WSL Integration</strong> and enable Docker integration with the WSL distribution you will be using.</p>
+</blockquote>
+</li>
+<li>
+<p>If you have not already, install the <a target="_blank" rel="noopener" href="https://aka.ms/vscode-remote/download/containers">Remote - Containers</a> extension along with the WSL extension.</p>
+</li>
+<li>
+<p>Next, <a href="#open-a-remote-folder-or-workspace">open your source code folder in WSL</a> as you would normally.</p>
+</li>
+<li>
+<p>Once your folder is open in WSL, select <strong>Remote-Containers: Reopen Folder in Container</strong> from the Command Palette (<code>kbstyle(F1)</code>).</p>
+</li>
+<li>
+<p>If the folder does not have a <code>.devcontainer/devcontainer.json</code> file in it, you’ll be asked to pick a starting point from a filterable list or an existing <a target="_blank" rel="noopener" href="https://docs.docker.com/engine/reference/builder/">Dockerfile</a> or <a target="_blank" rel="noopener" href="https://docs.docker.com/compose/compose-file/#compose-file-structure-and-examples">Docker Compose file</a> (if one exists).</p>
+<p><img src="images/containers/select-dev-container-def.png" alt="Select a node dev container definition"></p>
+</li>
+<li>
+<p>The VS Code window (instance) will reload and start building the dev container. A progress notification provides status updates.</p>
+<p><img src="images/containers/dev-container-progress.png" alt="Dev Container Progress Notification"></p>
+</li>
+<li>
+<p>After the build completes, VS Code will automatically connect to the container. You can now work with the your source code from inside the container.</p>
+</li>
+</ol>
+<p>See the <a href="/docs/remote/containers.md">Remote - Containers documentation</a> for more information.</p>
+<h2 id="Known-limitations">Known limitations</h2>
+<p>This section contains a list of common know issues with WSL. The intent is not to provide a complete list of issues but to highlight some of the common problems seen with WSL.</p>
+<p>See <a target="_blank" rel="noopener" href="https://aka.ms/vscode-remote/wsl/issues">here for a list of active issues</a> related to WSL.</p>
+<h3 id="I-see-EACCESS-permission-denied-error-trying-to-rename-a-folder-in-the-open-workspace-in-WSL-1">I see EACCESS: permission denied error trying to rename a folder in the open workspace in WSL 1</h3>
+<p>That’s a known problem with the WSL file system implementation (<a href="https://github.com/microsoft/WSL/issues/3395">Microsoft/WSL#3395</a>, <a href="https://github.com/microsoft/WSL/issues/1956">Microsoft/WSL#1956</a>) caused by the file watcher active by VSCode. The issue will only be fixed in WSL 2.</p>
+<p>To avoid the issue, set <code>remote.WSL.fileWatcher.polling</code> to true. However, polling based file watching has a performance impact for large workspaces.</p>
+<p>For large workspace you want to increase the polling interval: <code>remote.WSL.fileWatcher.pollingInterval</code> and control the folders that are watched: <code>files.watcherExclude</code>.</p>
+<p><a target="_blank" rel="noopener" href="https://docs.microsoft.com/windows/wsl/wsl2-index">WSL 2</a> does not have that file watcher problem is also not affected by the new setting.</p>
+<h3 id="Golang-in-WSL-1">Golang in WSL 1</h3>
+<table>
+<thead>
+<tr>
+<th>Issue</th>
+<th>Existing issues</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Delve debugger doesn’t work under WSL</td>
+<td><a href="https://github.com/go-delve/delve/issues/810">go-delve/delve#810</a>,  <a href="https://github.com/microsoft/vscode-go/issues/926">Microsoft/vscode-go#926</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Node-js-in-WSL-1">Node.js in WSL 1</h3>
+<table>
+<thead>
+<tr>
+<th>Issue</th>
+<th>Existing issues</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NodeJS Error: spawn EACCES (different variants of this error)</td>
+<td><a href="https://github.com/microsoft/WSL/issues/3886">Microsoft/WSL#3886</a></td>
+</tr>
+<tr>
+<td>Webpack HMR not working</td>
+<td><a href="https://github.com/microsoft/WSL/issues/2709">Microsoft/WSL#2709</a></td>
+</tr>
+<tr>
+<td>Firebase via node unusably slow only on WSL</td>
+<td><a href="https://github.com/microsoft/WSL/issues/2657">Microsoft/WSL#2657</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Git-limitations">Git limitations</h3>
+<p>If you clone a Git repository using SSH and your SSH key has a passphrase, VS Code’s pull and sync features may hang when running remotely. Either use an SSH key without a passphrase, clone using HTTPS, or run <code>git push</code> from the command line to work around the issue.</p>
+<h3 id="Docker-Extension-limitations">Docker Extension limitations</h3>
+<p>While the Docker extension can run both remotely and locally, if it is already installed locally, you will be unable to install on a remote SSH host without first uninstalling it locally. We will address this problem in a future VS Code release.</p>
+<h3 id="Extension-limitations">Extension limitations</h3>
+<p>Many extensions will work in WSL without modification. However, in some cases, certain features may require changes. If you run into an extension issue, see <a href="/docs/remote/troubleshooting.md#extension-tips">here for a summary of common problems and solutions</a> that you can mention to the extension author when reporting the issue.</p>
+<p>In addition, some extensions installed in an WSL when using an Alpine Linux-based distribution may not work due to <code>glibc</code> dependencies in native code inside the extension. See the <a href="/docs/remote/linux.md">Remote Development with Linux</a> article for details.</p>
+<h2 id="Common-questions">Common questions</h2>
+<h3 id="Why-am-I-asked-to-change-the-default-distro">Why am I asked to change the default distro?</h3>
+<p>When using <strong>Remote-WSL: New Window using Distro</strong> and running on WSL older than Windows 10, May 2019 Update (version 1903) you will be asked to switch the <strong>default distribution</strong> as the WSL command can only work on the default distro as it does not support the <code>-d</code> option yet.</p>
+<p>You can always manually switch the default distro by using <a target="_blank" rel="noopener" href="https://docs.microsoft.com/windows/wsl/wsl-config">wslconfig.exe</a>.</p>
+<p>For example:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wslconfig /setdefault Ubuntu</span><br></pre></td></tr></table></figure>
+<p>You can see which distributions you have installed using:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wslconfig /l</span><br></pre></td></tr></table></figure>
+<h3 id="I’m-seeing-an-error-about-a-missing-library-or-dependency">I’m seeing an error about a missing library or dependency</h3>
+<p>Some extensions rely on libraries not found in the vanilla install of certain WSL Linux distributions. You can add additional libraries into your Linux distribution by using its package manager.  For Ubuntu and Debian based distributions, run <code>sudo apt-get install &lt;package&gt;</code> to install the needed libraries. Check the documentation for your extension or the runtime that is mentioned for additional installation details.</p>
+<h3 id="What-are-the-connectivity-requirements-for-the-Remote-WSL-extension">What are the connectivity requirements for the Remote - WSL extension?</h3>
+<p>The Remote - WSL extension and VS Code Server require outbound HTTPS (port 443) connectivity to:</p>
+<ul>
+<li><code>update.code.visualstudio.com</code></li>
+<li><code>marketplace.visualstudio.com</code></li>
+<li><code>vscode.blob.core.windows.net</code></li>
+<li><code>*.vo.msecnd.net</code> (Azure CDN)</li>
+<li><code>*.gallerycdn.vsassets.io</code> (Azure CDN)</li>
+</ul>
+<p>Some extensions (like C#) download secondary dependencies from <code>download.microsoft.com</code> or <code>download.visualstudio.microsoft.com</code>. Others (like <a target="_blank" rel="noopener" href="https://docs.microsoft.com/visualstudio/liveshare/reference/connectivity#requirements-for-connection-modes">Visual Studio Live Share</a>) may have additional connectivity requirements. Consult the extension’s documentation for details if you run into trouble.</p>
+<p>All other communication between the server and the VS Code client is accomplished through an random local TCP port. You can find a list of locations VS Code itself needs access to in the <a href="/docs/setup/network.md#common-hostnames">network connections article</a>.</p>
+<h3 id="I’m-behind-a-proxy-and-have-connectivity-issues">I’m behind a proxy and have connectivity issues</h3>
+<p>Proxy settings might be missing on either the Windows or the WSL side.</p>
+<p>When a remote window is opened out of VSCode, the Remote - WSL extension tries to download the VSCode server on the Windows side. It therefore uses the Window side proxy configuration:</p>
+<ul>
+<li>inherited from the OS settings</li>
+<li>as described in <a href="/docs/setup/network">Network Connections in Visual Studio Code</a></li>
+</ul>
+<p>When the remote VSCode is started from a WSL terminal, the download is done using <code>wget</code> in the WSL distro. Proxy settings can be configured in:</p>
+<ul>
+<li>wget proxy settings: <a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/11211705/how-to-set-proxy-for-wget">https://stackoverflow.com/questions/11211705/how-to-set-proxy-for-wget</a></li>
+<li>manually in the <a href="/docs/remote/wsl.md#advanced-environment-setup-script">server setup script</a></li>
+</ul>
+<p>Once the server is up and running the proxy settings on the <em>Remote</em> tab are used.</p>
+<h3 id="Can-I-force-an-extension-to-run-locally-remotely">Can I force an extension to run locally / remotely ?</h3>
+<p>Extensions are typically designed and tested to either run locally or remotely, not both. However, if an extension supports it, you can force it to run in a particular location in your <code>settings.json</code> file.</p>
+<p>For example, the setting below will force the Docker extension to run locally and Debugger for Chrome extension to run remotely instead of their defaults:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;remote.extensionKind&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;ms-azuretools.vscode-docker&quot;</span>: [ <span class="string">&quot;ui&quot;</span> ],</span><br><span class="line">    <span class="attr">&quot;msjsdiag.debugger-for-chrome&quot;</span>: [ <span class="string">&quot;workspace&quot;</span> ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>A value of <code>&quot;ui&quot;</code> instead of <code>&quot;workspace&quot;</code> will force the extension to run on the local UI/client side instead. Typically, this should only be used for testing unless otherwise noted in the extension’s documentation since it <strong>can break extensions</strong>. See the article on <a href="/api/advanced-topics/remote-extensions.md">Supporting Remote Development</a> for details.</p>
+<h3 id="As-an-extension-author-what-do-I-need-to-do">As an extension author, what do I need to do?</h3>
+<p>The VS Code extension API abstracts away local/remote details so most extensions will work without modification. However, given extensions can use any node module or runtime they want, there are situations where adjustments may need to be made. We recommend you test your extension to be sure that no updates are required. See <a href="/api/advanced-topics/remote-extensions.md">Supporting Remote Development</a> for details.</p>
+<h2 id="Questions-or-feedback">Questions or feedback</h2>
+<ul>
+<li>See <a href="/docs/remote/troubleshooting.md#wsl-tips">Tips and Tricks</a> or the <a href="/docs/remote/faq.md">FAQ</a>.</li>
+<li>Search on <a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/tagged/vscode-remote">Stack Overflow</a>.</li>
+<li>Add a <a target="_blank" rel="noopener" href="https://aka.ms/vscode-remote/feature-requests">feature requests</a> or <a target="_blank" rel="noopener" href="https://aka.ms/vscode-remote/issues/new">report a problem</a>.</li>
+<li>Contribute to <a href="https://github.com/microsoft/vscode-docs">our documentation</a> or <a href="https://github.com/microsoft/vscode">VS Code itself</a>.</li>
+<li>See our <a target="_blank" rel="noopener" href="https://aka.ms/vscode-remote/contributing">CONTRIBUTING</a> guide for details.</li>
+</ul>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="daxia000/https://github.com/daxia000/daxia000"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/yingyu/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/yingyu/author.jpeg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>daxia</div>
+      <div>2021-12-08</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/yingyu/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/yingyu/js/book.js"></script>
