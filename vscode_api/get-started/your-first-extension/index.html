@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/vscode_api/favicon.png" />
+    
+
+    <title>
+        
+          your-first-extension - vscode-api
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/vscode_api/css/book.css">
+
+    
+<script src="/vscode_api/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/vscode_api/">
+    <img src="/vscode_api/favicon.png">
+    <span>VSCODE-API</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <ul>
+<li><a href="/vscode_api/overview">OVERVIEW 总览</a></li>
+</ul>
+<h2 id="GET-STARTED-安装">GET STARTED 安装</h2>
+<ul>
+<li><a href="/vscode_api/get-started/your-first-extension">Your First Extension</a></li>
+<li><a href="/vscode_api/get-started/extension-anatomy">Extension Anatomy</a></li>
+<li><a href="/vscode_api/get-started/wrapping-up">Wrapping Up</a></li>
+</ul>
+
+</div>
+
+
+<script src="/vscode_api/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="Your-First-Extension">Your First Extension</h1>
+<p>In this topic, we’ll teach you the fundamental concepts for building extensions. Make sure you have <a target="_blank" rel="noopener" href="https://nodejs.org/en/">Node.js</a> and <a target="_blank" rel="noopener" href="https://git-scm.com/">Git</a> installed, then install <a target="_blank" rel="noopener" href="https://yeoman.io/">Yeoman</a> and <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/generator-code">VS Code Extension Generator</a> with:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g yo generator-code</span><br></pre></td></tr></table></figure>
+<p>The generator scaffolds a TypeScript or JavaScript project ready for development. Run the generator and fill out a few fields for a TypeScript project:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">yo code</span><br><span class="line"></span><br><span class="line"><span class="comment"># ? What type of extension do you want to create? New Extension (TypeScript)</span></span><br><span class="line"><span class="comment"># ? What&#x27;s the name of your extension? HelloWorld</span></span><br><span class="line"><span class="comment">### Press &lt;Enter&gt; to choose default for all options below ###</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># ? What&#x27;s the identifier of your extension? helloworld</span></span><br><span class="line"><span class="comment"># ? What&#x27;s the description of your extension? LEAVE BLANK</span></span><br><span class="line"><span class="comment"># ? Initialize a git repository? Yes</span></span><br><span class="line"><span class="comment"># ? Bundle the source code with webpack? No</span></span><br><span class="line"><span class="comment"># ? Which package manager to use? npm</span></span><br><span class="line"></span><br><span class="line">code ./helloworld</span><br></pre></td></tr></table></figure>
+<p>Then, inside the editor, press <code>kb(workbench.action.debug.start)</code>. This will compile and run the extension in a new <strong>Extension Development Host</strong> window.</p>
+<p>Run the <strong>Hello World</strong> command from the Command Palette (<code>kb(workbench.action.showCommands)</code>) in the new window:</p>
+<video autoplay loop muted playsinline controls title="Launch your first VS Code extension video">
+  <source src="/api/get-started/your-first-extension/launch.mp4" type="video/mp4">
+</video>
+<p>You should see the <code>Hello World from HelloWorld!</code> notification showing up. Success!</p>
+<h2 id="Developing-the-extension">Developing the extension</h2>
+<p>Let’s make a change to the message:</p>
+<ol>
+<li>Change the message from “Hello World from HelloWorld!” to “Hello VS Code” in <code>extension.ts</code>.</li>
+<li>Run <strong>Developer: Reload Window</strong> in the new window.</li>
+<li>Run the command <strong>Hello World</strong> again.</li>
+</ol>
+<p>You should see the updated message showing up.</p>
+<video autoplay loop muted playsinline controls title="Reload VS Code extension video">
+  <source src="/api/get-started/your-first-extension/reload.mp4" type="video/mp4">
+</video>
+<p>Here are some ideas for things for you to try:</p>
+<ul>
+<li>Give the <strong>Hello World</strong> command a new name in the Command Palette.</li>
+<li><a href="/api/references/contribution-points">Contribute</a> another command that displays current time in an information message. Contribution points are static declarations you make in the <code>package.json</code> <a href="/api/references/extension-manifest">Extension Manifest</a> to extend VS Code, such as adding commands, menus, or keybindings to your extension.</li>
+<li>Replace the <code>vscode.window.showInformationMessage</code> with another <a href="/api/references/vscode-api">VS Code API</a> call to show a warning message.</li>
+</ul>
+<h2 id="Debugging-the-extension">Debugging the extension</h2>
+<p>VS Code’s built-in debugging functionality makes it easy to debug extensions. Set a breakpoint by clicking the gutter next to a line, and VS Code will hit the breakpoint. You can hover over variables in the editor or use the Run view in the left to check a variable’s value. The Debug Console allows you to evaluate expressions.</p>
+<video autoplay loop muted playsinline controls title="Debug VS Code extension video">
+  <source src="/api/get-started/your-first-extension/debug.mp4" type="video/mp4">
+</video>
+<p>You can learn more about debugging Node.js apps in VS Code in the <a href="/docs/nodejs/nodejs-debugging">Node.js Debugging Topic</a>.</p>
+<h2 id="Next-steps">Next steps</h2>
+<p>In the next topic, <a href="/api/get-started/extension-anatomy">Extension Anatomy</a>, we’ll take a closer look at the source code of the <code>Hello World</code> sample and explain key concepts.</p>
+<p>You can find the source code of this tutorial at: <a href="https://github.com/microsoft/vscode-extension-samples/tree/main/helloworld-sample">https://github.com/microsoft/vscode-extension-samples/tree/main/helloworld-sample</a>. The <a href="/api/extension-guides/overview">Extension Guides</a> topic contains other samples, each illustrating a different VS Code API or Contribution Point, and following the recommendations in our <a href="/api/references/extension-guidelines">Extension Guidelines</a>.</p>
+<h3 id="Using-JavaScript">Using JavaScript</h3>
+<p>In this guide, we mainly describe how to develop VS Code extension with TypeScript because we believe TypeScript offers the best experience for developing VS Code extensions. However, if you prefer JavaScript, you can still follow along using <a href="https://github.com/microsoft/vscode-extension-samples/tree/main/helloworld-minimal-sample">helloworld-minimal-sample</a>.</p>
+<h3 id="Extension-Guidelines">Extension Guidelines</h3>
+<p>This is also a good time to review our <a href="/api/references/extension-guidelines">Extension Guidelines</a> so you can start designing your extension to follow the VS Code best practices.</p>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/vscode_api/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/vscode_api/author.jpeg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>daxia</div>
+      <div>2021-12-08</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/vscode_api/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/vscode_api/js/book.js"></script>

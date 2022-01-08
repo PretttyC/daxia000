@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/vscode_docs/favicon.png" />
+    
+
+    <title>
+        
+          network - vscode-docs
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/vscode_docs/css/book.css">
+
+    
+<script src="/vscode_docs/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/vscode_docs/">
+    <img src="/vscode_docs/favicon.png">
+    <span>VSCODE-DOCS</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <ul>
+<li><a href="/vscode_docs/overview">OVERVIEW 总览</a></li>
+</ul>
+<h2 id="SETUP-安装">SETUP 安装</h2>
+<ul>
+<li><a href="/vscode_docs/setup/setup-overview">Overview 总览</a></li>
+<li><a href="/vscode_docs/setup/linux">Linux</a></li>
+<li><a href="/vscode_docs/setup/mac">macOS</a></li>
+<li><a href="/vscode_docs/setup/windows">Windows</a></li>
+<li><a href="/vscode_docs/setup/raspberry-pi">Raspberry Pi 树莓派</a></li>
+<li><a href="/vscode_docs/setup/network">Network 网络</a></li>
+<li><a href="/vscode_docs/setup/additional-components">Additional Components 附加组件</a></li>
+</ul>
+<h2 id="GET-STARTED-开始">GET STARTED 开始</h2>
+<ul>
+<li><a href="/vscode_docs/getstarted/userinterface">User Interface 用户界面</a></li>
+<li><a href="/vscode_docs/getstarted/themes">Themes 主题</a></li>
+<li><a href="/vscode_docs/getstarted/settings">Settings 设置</a></li>
+<li><a href="/vscode_docs/getstarted/keybindings">Key Bindings 键绑定</a></li>
+</ul>
+<h2 id="USER-GUIDE-用户指南">USER GUIDE 用户指南</h2>
+<ul>
+<li><a href="/vscode_docs/user-guide/extension-marketplace">Extension Marketplace 扩展市场</a></li>
+</ul>
+<h2 id="LANGUAGES-语言">LANGUAGES 语言</h2>
+<ul>
+<li><a href="/vscode_docs/languages/">Overview 总览</a></li>
+<li><a href="/vscode_docs/languages/">JavaScript</a></li>
+<li><a href="/vscode_docs/languages/">JSON</a></li>
+<li><a href="/vscode_docs/languages/">HTML</a></li>
+<li><a href="/vscode_docs/languages/">CSS, SCSS and Less</a></li>
+<li><a href="/vscode_docs/languages/">Typescript</a></li>
+<li><a href="/vscode_docs/languages/">Markdown</a></li>
+<li><a href="/vscode_docs/languages/">PowerShell</a></li>
+<li><a href="/vscode_docs/languages/cpp">C++</a></li>
+<li><a href="/vscode_docs/languages/java">Java</a></li>
+<li><a href="/vscode_docs/languages/">PHP</a></li>
+<li><a href="/vscode_docs/languages/python">Python</a></li>
+<li><a href="/vscode_docs/languages/">Julia</a></li>
+<li><a href="/vscode_docs/languages/go">Go</a></li>
+<li><a href="/vscode_docs/languages/">T-SQL</a></li>
+<li><a href="/vscode_docs/languages/csharp">C#</a></li>
+<li><a href="/vscode_docs/languages/">.NET Core</a></li>
+</ul>
+<h2 id="NODEJS-JAVASCRIPT">NODEJS / JAVASCRIPT</h2>
+<ul>
+<li><a href="/vscode_docs/nodejs/nodejs-tutorial">Node.js Tutorial</a></li>
+</ul>
+<h2 id="TYPESCRIPT">TYPESCRIPT</h2>
+<h2 id="PYTHON">PYTHON</h2>
+<h2 id="JAVA">JAVA</h2>
+<h2 id="C">C++</h2>
+<h2 id="CONTAINERS-容器">CONTAINERS 容器</h2>
+<h2 id="DATA-SCIENCE-数据科学">DATA SCIENCE 数据科学</h2>
+<h2 id="AZURE">AZURE</h2>
+<h2 id="REMOTE-远程">REMOTE 远程</h2>
+<ul>
+<li><a href="/vscode_docs/remote/wsl">Windows Subsystem for Linux</a></li>
+<li><a href="/vscode_docs/remote/wsl-tutorial">WSL Tutoral</a></li>
+</ul>
+
+</div>
+
+
+<script src="/vscode_docs/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="Network-Connections-in-Visual-Studio-Code——VSCode网络连接">Network Connections in Visual Studio Code——VSCode网络连接</h1>
+<p>Visual Studio Code is built on top of <a target="_blank" rel="noopener" href="https://electron.atom.io/">Electron</a> and benefits from all the networking stack capabilities of <a target="_blank" rel="noopener" href="https://www.chromium.org/">Chromium</a>. This also means that VS Code users get much of the networking support available in <a target="_blank" rel="noopener" href="https://www.google.com/chrome/index.html">Google Chrome</a>.</p>
+<p>VSCode构建于<a target="_blank" rel="noopener" href="https://electron.atom.io/">Electron</a>之上且得益于<a target="_blank" rel="noopener" href="https://www.chromium.org/">Chromium</a>的所有网络栈能力。这也意味着VSCode用户可获得<a target="_blank" rel="noopener" href="https://www.google.com/chrome/index.html">Google Chrome</a>的很多可用的网络支持。</p>
+<h2 id="Common-hostnames——一般主机名">Common hostnames——一般主机名</h2>
+<p>A handful of features within VS Code require network communication to work, such as the auto-update mechanism, querying and installing extensions, and telemetry. For these features to work properly in a proxy environment, you must have the product correctly configured.</p>
+<p>VSCode的少数功能要求网络通信来运行，比如自动更新机制，查询和安装扩展和遥测。这些功能要正确的工作在代理环境你必须正确的配置这些产品。</p>
+<p>If you are behind a firewall that needs to allow specific domains used by VS Code, here’s the list of hostnames you should allow communication to go through:</p>
+<p>如果你处于一个防火墙之后，这个防火墙需要允许VSCode使用的特定域名，这有一个你应该允许通过来通信的主机名列表：</p>
+<ul>
+<li>
+<p><code>update.code.visualstudio.com</code> - Visual Studio Code download and update server<br>
+<code>update.code.visualstudio.com</code> - VSCode下载和更新服务</p>
+</li>
+<li>
+<p><code>code.visualstudio.com</code> - Visual Studio Code documentation<br>
+<code>code.visualstudio.com</code> - VSCode文档</p>
+</li>
+<li>
+<p><code>go.microsoft.com</code> - Microsoft link forwarding service<br>
+<code>go.microsoft.com</code> - 微软链接转发服务</p>
+</li>
+<li>
+<p><code>vscode.blob.core.windows.net</code> - Visual Studio Code blob storage, used for remote server<br>
+<code>vscode.blob.core.windows.net</code> - 用于远程服务的VSCode blob（binary large object）存储</p>
+</li>
+<li>
+<p><code>marketplace.visualstudio.com</code> - Visual Studio Marketplace<br>
+<code>marketplace.visualstudio.com</code> - VS市场</p>
+</li>
+<li>
+<p><code>*.gallery.vsassets.io</code> - Visual Studio Marketplace<br>
+<code>*.gallery.vsassets.io</code> - VS市场</p>
+</li>
+<li>
+<p><code>*.gallerycdn.vsassets.io</code> - Visual Studio Marketplace<br>
+<code>*.gallerycdn.vsassets.io</code> - VS市场</p>
+</li>
+<li>
+<p><code>rink.hockeyapp.net</code> - Crash reporting service<br>
+<code>rink.hockeyapp.net</code> - 崩溃报告服务</p>
+</li>
+<li>
+<p><code>bingsettingssearch.trafficmanager.net</code> - In-product settings search<br>
+<code>bingsettingssearch.trafficmanager.net</code> - 内置设置搜索</p>
+</li>
+<li>
+<p><code>vscode.search.windows.net</code> - In-product settings search<br>
+<code>vscode.search.windows.net</code> - 内置设置搜索</p>
+</li>
+<li>
+<p><code>raw.githubusercontent.com</code> - GitHub repository raw file access<br>
+<code>raw.githubusercontent.com</code> - GitHub仓库原始文件访问</p>
+</li>
+<li>
+<p><code>vsmarketplacebadge.apphb.com</code> - Visual Studio Marketplace badge service<br>
+<code>vsmarketplacebadge.apphb.com</code> - VS市场徽章服务</p>
+</li>
+<li>
+<p><code>az764295.vo.msecnd.net</code> - Visual Studio Code download CDN<br>
+<code>az764295.vo.msecnd.net</code> - VSCode下载CDN</p>
+</li>
+<li>
+<p><code>download.visualstudio.microsoft.com</code> - Visual Studio download server, provides dependencies for some VS Code extensions (C++, C#)<br>
+<code>download.visualstudio.microsoft.com</code> - VS下载服务，给某些VSCode扩展(C++, C#)提供依赖</p>
+</li>
+<li>
+<p><code>vscode-sync.trafficmanager.net</code> - Visual Studio Code Settings Sync service<br>
+<code>vscode-sync.trafficmanager.net</code> - VSCode设置同步服务</p>
+</li>
+<li>
+<p><code>vscode-sync-insiders.trafficmanager.net</code> - Visual Studio Code Settings Sync service (Insiders)<br>
+<code>vscode-sync-insiders.trafficmanager.net</code> - VSCode设置同步服务(内部人士)</p>
+</li>
+</ul>
+<h2 id="Proxy-server-support——代理服务支持">Proxy server support——代理服务支持</h2>
+<p>VS Code has exactly the same proxy server support as Google Chromium. Here’s a snippet from <a target="_blank" rel="noopener" href="https://www.chromium.org/developers/design-documents/network-settings">Chromium’s documentation</a>:</p>
+<p>VSCode的确有和Google Chromium一样的代理服务支持。这是来自<a target="_blank" rel="noopener" href="https://www.chromium.org/developers/design-documents/network-settings">Chromium 文档</a>的一个片段。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&quot;The Chromium network stack uses the system network settings so that users and administrators can control the network settings of all applications easily. The network settings include:</span><br><span class="line"></span><br><span class="line">Chromium网络栈使用系统网络设置以至于用户和管理员能够轻松控制所有应用的网络设置。这些网络设置包括：</span><br><span class="line"></span><br><span class="line"> - proxy settings</span><br><span class="line">   代理设置</span><br><span class="line"> - SSL/TLS settings</span><br><span class="line">   SSL/TLS设置</span><br><span class="line"> - certificate revocation check settings</span><br><span class="line">   证书吊销检查设置</span><br><span class="line"> - certificate and private key stores&quot;</span><br><span class="line">   证书和私钥存储</span><br></pre></td></tr></table></figure>
+<p>This means that your proxy settings should be picked up automatically.</p>
+<p>这意味着你的代理设置应该被自动获取。</p>
+<p>Otherwise, you can use the following command-line arguments to control your proxy settings:</p>
+<p>否则，你可以使用下面的命令行参数来控制你的代理设置：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Disable proxy——禁止代理</span></span><br><span class="line">--no-proxy-server</span><br><span class="line"></span><br><span class="line"><span class="comment"># Manual proxy address——手动代理地址</span></span><br><span class="line">--proxy-server=&lt;scheme&gt;=&lt;uri&gt;[:&lt;port&gt;][;...] | &lt;uri&gt;[:&lt;port&gt;] | <span class="string">&quot;direct://&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Manual PAC address——手动PAC地址</span></span><br><span class="line">--proxy-pac-url=&lt;pac-file-url&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Disable proxy per host——禁止每个主机的代理</span></span><br><span class="line">--proxy-bypass-list=(&lt;trailing_domain&gt;|&lt;ip-address&gt;)[:&lt;port&gt;][;...]</span><br></pre></td></tr></table></figure>
+<p>To learn more about these command-line arguments, see <a target="_blank" rel="noopener" href="https://www.chromium.org/developers/design-documents/network-settings">Chromium Network Settings</a>.</p>
+<p>要了解更多命令行参数，查看<a target="_blank" rel="noopener" href="https://www.chromium.org/developers/design-documents/network-settings">Chromium网络设置</a>。</p>
+<h3 id="Authenticated-proxies——认证代理">Authenticated proxies——认证代理</h3>
+<p>Authenticated proxies should work seamlessly within VS Code with the addition of <a href="https://github.com/microsoft/vscode/pull/22369">PR #22369</a>.</p>
+<p>随着<a href="https://github.com/microsoft/vscode/pull/22369">PR #22369</a>的添加，认证过的代理应该在VSCode中无缝工作。</p>
+<p>The authentication methods supported are:</p>
+<p>验证方法支持：</p>
+<ul>
+<li>Basic</li>
+<li>Digest</li>
+<li>NTLM</li>
+<li>Negotiate</li>
+</ul>
+<p>When using VS Code behind an authenticated HTTP proxy, the following authentication popup should appear:</p>
+<p>在经过身份验证的 HTTP 代理后面使用 VS Code 时，应显示以下身份验证弹出窗口：</p>
+<p><img src="proxy.png" alt="proxy"></p>
+<p>Note that SOCKS5 proxy authentication support isn’t implemented yet; you can follow the <a target="_blank" rel="noopener" href="https://bugs.chromium.org/p/chromium/issues/detail?id=256785">issue in Chromium’s issue tracker</a>.</p>
+<p>注意对SOCKS5代理验证支持还没有实现；你可以跟踪一下<a target="_blank" rel="noopener" href="https://bugs.chromium.org/p/chromium/issues/detail?id=256785">Chromium问题追踪</a>。</p>
+<p>See <a target="_blank" rel="noopener" href="https://www.chromium.org/developers/design-documents/http-authentication">Chromium HTTP authentication</a> to read more about HTTP proxy authentication within VS Code.</p>
+<p>查看<a target="_blank" rel="noopener" href="https://www.chromium.org/developers/design-documents/http-authentication">Chromium HTTP验证</a>了解更多关于VSCode中HTTP代理验证的信息。</p>
+<h3 id="SSL-certificates——SSL验证">SSL certificates——SSL验证</h3>
+<p>Often HTTPS proxies rewrite SSL certificates of the incoming requests. Chromium was designed to reject responses which are signed by certificates which it doesn’t trust. If you hit any SSL trust issues, there are a few options available for you:</p>
+<p>通常，HTTPS 代理会重写传入请求的 SSL 证书。Chromium被设计为会拒绝它不信任的证书所签名的响应。如果你遇到任何SSL信任问题，这有一些可用的选项：</p>
+<ul>
+<li>
+<p>Since Chromium uses the OS’s certificate trust infrastructure, the preferred option is to add your proxy’s certificate to your OS’s trust chain. See the <a target="_blank" rel="noopener" href="https://www.chromium.org/Home/chromium-security/root-ca-policy">Chromium Root Certificate Policy</a> documentation to learn more.<br>
+因为Chromium使用了操作系统的证书信任设施，所有首要选项是将你的代理证书增加到操作系统的信任链中。查看<a target="_blank" rel="noopener" href="https://www.chromium.org/Home/chromium-security/root-ca-policy">Chromium根证书策略</a>文档来了解更多。</p>
+</li>
+<li>
+<p>If your proxy runs in <code>localhost</code>, you can always try the <a target="_blank" rel="noopener" href="https://peter.sh/experiments/chromium-command-line-switches/#allow-insecure-localhost">–allow-insecure-localhost</a> command-line flag.<br>
+如果你的代理运行在<code>localhost</code>，你始终可以试试<a target="_blank" rel="noopener" href="https://peter.sh/experiments/chromium-command-line-switches/#allow-insecure-localhost">–allow-insecure-localhost</a>命令行标志。</p>
+</li>
+<li>
+<p>If all else fails, you can tell VS Code to ignore all certificate errors using the <a target="_blank" rel="noopener" href="https://peter.sh/experiments/chromium-command-line-switches/#ignore-certificate-errors">–ignore-certificate-errors</a> command-line flag. <strong>Warning:</strong> This is <strong>dangerous</strong> and <strong>not recommended</strong>, since it opens the door to security issues.<br>
+如果是任何其他的错误，你可以用<a target="_blank" rel="noopener" href="https://peter.sh/experiments/chromium-command-line-switches/#ignore-certificate-errors">–ignore-certificate-errors</a>命令行标志告诉VSCode忽略所有的证书错误。<strong>警告</strong>这是<strong>危险</strong>和<strong>不建议的</strong>，因为它打开了安全问题之门。</p>
+</li>
+</ul>
+<h2 id="Legacy-proxy-server-support——传统代理服务支持">Legacy proxy server support——传统代理服务支持</h2>
+<p>Extensions don’t benefit yet from the same proxy support that VS Code supports. You can follow this issue’s development in <a href="https://github.com/microsoft/vscode/issues/12588">GitHub</a>.</p>
+<p>扩展还没有从VSCode支持的相同的代理支持中获益。你可以在<a href="https://github.com/microsoft/vscode/issues/12588">GitHub</a>中跟踪问题的发展。</p>
+<p>Similarly to extensions, a few other VS Code features don’t yet fully support proxy networking, namely the CLI interface. The CLI interface is what you get when running <code>code --install-extension vscodevim.vim</code> from a command prompt or terminal. You can follow this issue’s development in <a href="https://github.com/microsoft/vscode/issues/29910">GitHub</a>.</p>
+<p>和扩展类似，一些其他的VSCode功能还不能完全支持代理网络，即是CLI接口。CLI接口是在运行<code>code --install-extension vscodevim.vim</code>时从命令行提示符或终端中获得的。你可以在<a href="https://github.com/microsoft/vscode/issues/29910">GitHub</a>中跟踪这个问题的发展。</p>
+<p>Due to both of these constraints, the <code>http.proxy</code>, <code>http.proxyStrictSSL</code> and <code>http.proxyAuthorization</code> variables are still part of VS Code’s settings, yet they are only respected in these two scenarios.</p>
+<p>由于所有的这些约束，<code>http.proxy</code>, <code>http.proxyStrictSSL</code> 和 <code>http.proxyAuthorization</code>变量仍然是VSCode设置中的一部分，但是他们只在这两个场景下被遵从。</p>
+<h2 id="Troubleshooting——故障排除">Troubleshooting——故障排除</h2>
+<p>Here are some helpful links that might help you troubleshoot networking issues in VS Code:</p>
+<p>这是一些有帮助的链接，可以帮助你在VSCode中排除网络问题：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.chromium.org/developers/design-documents/network-settings">Network Settings</a><br>
+<a target="_blank" rel="noopener" href="https://www.chromium.org/developers/design-documents/network-settings">网络设置</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.chromium.org/developers/design-documents/network-stack/debugging-net-proxy">Debugging problems with the network proxy</a><br>
+<a target="_blank" rel="noopener" href="https://www.chromium.org/developers/design-documents/network-stack/debugging-net-proxy">用网络代理调试问题</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.chromium.org/developers/design-documents/network-stack/socks-proxy">Configuring a SOCKS proxy server in Chrome</a><br>
+<a target="_blank" rel="noopener" href="https://www.chromium.org/developers/design-documents/network-stack/socks-proxy">在Chrome中配置SOCKS代理服务</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.chromium.org/developers/design-documents/network-stack/proxy-settings-fallback">Proxy settings and fallback (Windows)</a><br>
+<a target="_blank" rel="noopener" href="https://www.chromium.org/developers/design-documents/network-stack/proxy-settings-fallback">代理设置和回退（Windows）</a></li>
+</ul>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/vscode_docs/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/vscode_docs/author.jpeg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>daxia</div>
+      <div>2021-11-29</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/vscode_docs/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/vscode_docs/js/book.js"></script>

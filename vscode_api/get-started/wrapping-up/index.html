@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/vscode_api/favicon.png" />
+    
+
+    <title>
+        
+          wrapping-up - vscode-api
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/vscode_api/css/book.css">
+
+    
+<script src="/vscode_api/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/vscode_api/">
+    <img src="/vscode_api/favicon.png">
+    <span>VSCODE-API</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <ul>
+<li><a href="/vscode_api/overview">OVERVIEW 总览</a></li>
+</ul>
+<h2 id="GET-STARTED-安装">GET STARTED 安装</h2>
+<ul>
+<li><a href="/vscode_api/get-started/your-first-extension">Your First Extension</a></li>
+<li><a href="/vscode_api/get-started/extension-anatomy">Extension Anatomy</a></li>
+<li><a href="/vscode_api/get-started/wrapping-up">Wrapping Up</a></li>
+</ul>
+
+</div>
+
+
+<script src="/vscode_api/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="Wrapping-Up">Wrapping Up</h1>
+<p>In the <a href="/api/get-started/your-first-extension">Your First Extension</a> topic, you learned how to create, run, and debug an extension. In the <a href="/api/get-started/extension-anatomy">Extension Anatomy</a> topic, you learned fundamental concepts to Visual Studio Code extension development. However, we have only seen the tip of the iceberg, and here are some suggested routes for furthering your VS Code extension development skills.</p>
+<h2 id="Extension-Capabilities">Extension Capabilities</h2>
+<p>In this section, we split the <a href="/api/references/vscode-api">VS Code API</a> and <a href="/api/references/contribution-points">Contribution Points</a> into a few categories, each with short descriptions as to what your extension could achieve. Validate that your extension idea is achievable by reviewing the <a href="/api/references/vscode-api">VS Code API</a> or reading the <a href="/api/extension-capabilities/overview">Extension Capabilities</a> section for new extension ideas.</p>
+<h2 id="Guides-Samples">Guides &amp; Samples</h2>
+<p>We have a great collection of sample extensions that you can adapt from, and some of them include a detailed guide that explains the source code. You can find all Samples &amp; Guides in the <a href="/api/extension-guides/overview">Extension Guide Listing</a> or the <a href="https://github.com/microsoft/vscode-extension-samples">vscode-extension-samples</a> repository.</p>
+<h2 id="Extension-Guidelines">Extension Guidelines</h2>
+<p>To help make your extension fit seemlessly into the VS Code user interface, refer to the <a href="/api/references/extension-guidelines">Extension Guidelines</a>, where you’ll learn the best practices for creating extension UI and conventions for following the preferred VS Code workflows.</p>
+<h2 id="Testing-and-Publishing">Testing and Publishing</h2>
+<p>This section includes topics that help you develop high-quality VS Code extensions. For example, you can learn</p>
+<ul>
+<li>How to add <a href="/api/working-with-extensions/testing-extension">integration tests</a> for your extension</li>
+<li>How to <a href="/api/working-with-extensions/publishing-extension">publish your extension</a> to the VS Code <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/">Marketplace</a></li>
+<li>How to set up <a href="/api/working-with-extensions/continuous-integration">Continuous Integration</a> for your extension</li>
+</ul>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/vscode_api/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/vscode_api/author.jpeg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>daxia</div>
+      <div>2021-12-08</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/vscode_api/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/vscode_api/js/book.js"></script>

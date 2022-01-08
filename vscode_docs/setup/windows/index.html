@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/vscode_docs/favicon.png" />
+    
+
+    <title>
+        
+          windows - vscode-docs
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/vscode_docs/css/book.css">
+
+    
+<script src="/vscode_docs/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/vscode_docs/">
+    <img src="/vscode_docs/favicon.png">
+    <span>VSCODE-DOCS</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <ul>
+<li><a href="/vscode_docs/overview">OVERVIEW 总览</a></li>
+</ul>
+<h2 id="SETUP-安装">SETUP 安装</h2>
+<ul>
+<li><a href="/vscode_docs/setup/setup-overview">Overview 总览</a></li>
+<li><a href="/vscode_docs/setup/linux">Linux</a></li>
+<li><a href="/vscode_docs/setup/mac">macOS</a></li>
+<li><a href="/vscode_docs/setup/windows">Windows</a></li>
+<li><a href="/vscode_docs/setup/raspberry-pi">Raspberry Pi 树莓派</a></li>
+<li><a href="/vscode_docs/setup/network">Network 网络</a></li>
+<li><a href="/vscode_docs/setup/additional-components">Additional Components 附加组件</a></li>
+</ul>
+<h2 id="GET-STARTED-开始">GET STARTED 开始</h2>
+<ul>
+<li><a href="/vscode_docs/getstarted/userinterface">User Interface 用户界面</a></li>
+<li><a href="/vscode_docs/getstarted/themes">Themes 主题</a></li>
+<li><a href="/vscode_docs/getstarted/settings">Settings 设置</a></li>
+<li><a href="/vscode_docs/getstarted/keybindings">Key Bindings 键绑定</a></li>
+</ul>
+<h2 id="USER-GUIDE-用户指南">USER GUIDE 用户指南</h2>
+<ul>
+<li><a href="/vscode_docs/user-guide/extension-marketplace">Extension Marketplace 扩展市场</a></li>
+</ul>
+<h2 id="LANGUAGES-语言">LANGUAGES 语言</h2>
+<ul>
+<li><a href="/vscode_docs/languages/">Overview 总览</a></li>
+<li><a href="/vscode_docs/languages/">JavaScript</a></li>
+<li><a href="/vscode_docs/languages/">JSON</a></li>
+<li><a href="/vscode_docs/languages/">HTML</a></li>
+<li><a href="/vscode_docs/languages/">CSS, SCSS and Less</a></li>
+<li><a href="/vscode_docs/languages/">Typescript</a></li>
+<li><a href="/vscode_docs/languages/">Markdown</a></li>
+<li><a href="/vscode_docs/languages/">PowerShell</a></li>
+<li><a href="/vscode_docs/languages/cpp">C++</a></li>
+<li><a href="/vscode_docs/languages/java">Java</a></li>
+<li><a href="/vscode_docs/languages/">PHP</a></li>
+<li><a href="/vscode_docs/languages/python">Python</a></li>
+<li><a href="/vscode_docs/languages/">Julia</a></li>
+<li><a href="/vscode_docs/languages/go">Go</a></li>
+<li><a href="/vscode_docs/languages/">T-SQL</a></li>
+<li><a href="/vscode_docs/languages/csharp">C#</a></li>
+<li><a href="/vscode_docs/languages/">.NET Core</a></li>
+</ul>
+<h2 id="NODEJS-JAVASCRIPT">NODEJS / JAVASCRIPT</h2>
+<ul>
+<li><a href="/vscode_docs/nodejs/nodejs-tutorial">Node.js Tutorial</a></li>
+</ul>
+<h2 id="TYPESCRIPT">TYPESCRIPT</h2>
+<h2 id="PYTHON">PYTHON</h2>
+<h2 id="JAVA">JAVA</h2>
+<h2 id="C">C++</h2>
+<h2 id="CONTAINERS-容器">CONTAINERS 容器</h2>
+<h2 id="DATA-SCIENCE-数据科学">DATA SCIENCE 数据科学</h2>
+<h2 id="AZURE">AZURE</h2>
+<h2 id="REMOTE-远程">REMOTE 远程</h2>
+<ul>
+<li><a href="/vscode_docs/remote/wsl">Windows Subsystem for Linux</a></li>
+<li><a href="/vscode_docs/remote/wsl-tutorial">WSL Tutoral</a></li>
+</ul>
+
+</div>
+
+
+<script src="/vscode_docs/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="Visual-Studio-Code-on-Windows——Windows上的VSCode">Visual Studio Code on Windows——Windows上的VSCode</h1>
+<h2 id="Installation——安装">Installation——安装</h2>
+<ol>
+<li>Download the <a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?LinkID=534107">Visual Studio Code installer</a> for Windows.<br>
+为Windows下载<a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?LinkID=534107">VSCode</a>。</li>
+<li>Once it is downloaded, run the installer (VSCodeUserSetup-{version}.exe). This will only take a minute.<br>
+一旦下载，运行安装包（VSCodeUserSetup-{版本}.exe）。这将只花1分钟。</li>
+<li>By default, VS Code is installed under <code>C:\users\&#123;username&#125;\AppData\Local\Programs\Microsoft VS Code</code>.<br>
+VSCode默认被安装在<code>C:\users\&#123;username&#125;\AppData\Local\Programs\Microsoft VS Code</code>。</li>
+</ol>
+<p>Alternatively, you can also download a <a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/?dv=winzip">Zip archive</a>, extract it and run Code from there.</p>
+<p>或者，你也能下载<a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/?dv=winzip">Zip压缩包</a>，解压并运行Code。</p>
+<blockquote>
+<p><strong>Note:</strong> .NET Framework 4.5.2 or higher is required for VS Code. If you are using Windows 7, make sure you have at least <a target="_blank" rel="noopener" href="https://www.microsoft.com/download/details.aspx?id=42643">.NET Framework 4.5.2</a> installed. You can check your version of .NET Framework using this command, <code>reg query &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\full&quot; /v version</code> from a command prompt.</p>
+</blockquote>
+<p><strong>注意：</strong> <a target="_blank" rel="noopener" href="http://xn--VSCode-nw1nx58p.NET">VSCode要求.NET</a> Framework 4.5.2或更高版本。如果你在使用Windows 7，确保你安装了<a target="_blank" rel="noopener" href="https://www.microsoft.com/download/details.aspx?id=42643">.NET Framework 4.5.2</a>以上。你能在命令提示符用<code>reg query &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\full&quot; /v version</code><a target="_blank" rel="noopener" href="http://xn--ciqpru2l2pxj5az67m.NET">这个命令检查.NET</a> Framework版本。</p>
+<blockquote>
+<p><strong>Tip:</strong> Setup will add Visual Studio Code to your <code>%PATH%</code>, so from the console you can type ‘code .’ to open VS Code on that folder. You will need to restart your console after the installation for the change to the <code>%PATH%</code> environmental variable to take effect.</p>
+</blockquote>
+<blockquote>
+<p><strong>提示：</strong> 安装把VSCode添加到<code>%PATH%</code>，所以你可以从控制台中输入’code .'来在那个文件夹打开VSCode。在安装后你需要重启控制台来是改变<code>%PATH%</code>环境变量生效。</p>
+</blockquote>
+<h2 id="User-setup-versus-system-setup——用户安装-VS-系统安装">User setup versus system setup——用户安装 VS 系统安装</h2>
+<p>VS Code provides both Windows user and system level setups. Installing the <a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?LinkID=534107">user setup</a> does not require Administrator privileges as the location will be under your user Local AppData (LOCALAPPDATA) folder. User setup also provides a smoother background update experience.</p>
+<p>VSCode提供Windows用户设置和系统级别设置。安装<a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?LinkID=534107">用户级别安装</a>不要求管理员权限，因为位置是在你的用户本地应用数据(LOCALAPPDATA)文件夹。用户安装还提供一个流畅的后台更新体验。</p>
+<p>The <a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?linkid=852157">system setup</a> requires elevation to Administrator privileges and will place the installation under Program Files. This also means that VS Code will be available to all users in the system.</p>
+<p><a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?linkid=852157">系统安装</a>要求提升至管理员权限，并将安装置于Program Files之下。这也意味着VSCode在系统中对所有用户都可用。</p>
+<p>See the <a target="_blank" rel="noopener" href="https://code.visualstudio.com/download">Download Visual Studio Code</a> page for a complete list of available installation options.</p>
+<p>查看<a target="_blank" rel="noopener" href="https://code.visualstudio.com/download">下载VSCode</a>页，有一个可用安装选项的完整列表。</p>
+<h2 id="32-bit-versions——32位版本">32-bit versions——32位版本</h2>
+<p>If you need to run a 32-bit version of VS Code, both a 32-bit <a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?LinkId=723965">Installer</a> and <a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?LinkID=733265">Zip archive</a> are available.</p>
+<p>如果你需要运行32位版本的VSCode，32位<a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?LinkId=723965">安装包</a>和<a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?LinkID=733265">Zip包</a>都可用。</p>
+<h2 id="Updates——更新">Updates——更新</h2>
+<p>VS Code ships monthly <a target="_blank" rel="noopener" href="https://code.visualstudio.com/updates">releases</a> and supports auto-update when a new release is available. If you’re prompted by VS Code, accept the newest update and it will be installed (you won’t need to do anything else to get the latest bits).</p>
+<p>VSCode每月发布一次<a target="_blank" rel="noopener" href="https://code.visualstudio.com/updates">release</a>，且支持当新的release版可用时自动更新。如果你被VSCode提示，接受新版更新，然后它将被安装（你不需要做任何事来获得最新数据）。</p>
+<blockquote>
+<p>Note: You can <a href="/vscode_docs/setup/faq#How-do-I-opt-out-of-VS-Code-auto-updates?">disable auto-update</a> if you prefer to update VS Code on your own schedule.</p>
+</blockquote>
+<blockquote>
+<p>注意： 如果你偏爱按自己的计划更新VSCode，你可以<a href="/vscode_docs/setup/faq#How-do-I-opt-out-of-VS-Code-auto-updates?">禁止自动更新</a>。</p>
+</blockquote>
+<h2 id="Windows-Subsystem-for-Linux——Windows-Linux子系统">Windows Subsystem for Linux——Windows Linux子系统</h2>
+<p>Windows is a popular operating system and it can be a great cross-platform development environment. This section describes cross-platform features such as the <a target="_blank" rel="noopener" href="https://docs.microsoft.com/windows/wsl/install-win10">Windows Subsystem for Linux</a> (WSL) and the new Windows Terminal.</p>
+<h3 id="Recent-Windows-build——最近的Windows版本">Recent Windows build——最近的Windows版本</h3>
+<p>Make sure you are on a recent Windows 10 build. Check <strong>Settings</strong> &gt; <strong>Windows Update</strong> to see if you are up-to-date.</p>
+<p>确保你在最近的一个Win10版本。检查<strong>Settings</strong> &gt; <strong>Windows Update</strong>来查看你是否是最新。</p>
+<h3 id="Windows-as-a-developer-machine——Windows作为开发机">Windows as a developer machine——Windows作为开发机</h3>
+<p>With WSL, you can install and run Linux distributions on Windows. This enables you to develop and test your source code on Linux while still working locally on your Windows machine.</p>
+<p>使用WSL，你可以在Windows上安装并运行Linux发行版。这使你能够在Linux上开发和测试你的源代码，而你仍然工作在本地的Windows机器。</p>
+<p>When coupled with the <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl">Remote - WSL</a> extension, you get full VS Code editing and debugging support while running in the context of WSL.</p>
+<p>当结合了<a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl">Remote - WSL</a>扩展时，运行在WSL环境下时，你将获得完整的VSCode编辑和调试支持。</p>
+<p>See the <a href="/vscode_docs/remote/wsl">Developing in WSL</a> documentation to learn more or try the <a href="/vscode_docs/remote/wsl-tutorial">Working in WSL</a> introductory tutorial.</p>
+<p>查看<a href="/vscode_docs/remote/wsl">在WSL中开发</a>文档来了解更多或尝试<a href="/vscode_docs/remote/wsl-tutorial">在WSL中工作</a>介绍指南。</p>
+<h3 id="New-Windows-Terminal——新的Windows终端">New Windows Terminal——新的Windows终端</h3>
+<p>Available from the Microsoft Store, the <a target="_blank" rel="noopener" href="https://www.microsoft.com/p/windows-terminal-preview/9n0dx20hk701?SilentAuth=1&amp;wa=wsignin1.0&amp;activetab=pivot%3Aoverviewtab">Windows Terminal (Preview)</a> lets you easily open PowerShell, Command Prompt, and WSL terminals in a multiple tab shell.</p>
+<p>可以从Microsoft Store中获得<a target="_blank" rel="noopener" href="https://www.microsoft.com/p/windows-terminal-preview/9n0dx20hk701?SilentAuth=1&amp;wa=wsignin1.0&amp;activetab=pivot%3Aoverviewtab">Windows终端预览版</a>，可以使你轻松在一个多标签的shell中打开PowerShell、命令提示符和WSL终端。</p>
+<h2 id="Next-steps——下一步">Next steps——下一步</h2>
+<p>Once you have installed VS Code, these topics will help you learn more about VS Code:</p>
+<p>一旦你安装了VSCode，这些主题帮助你了解更多VSCode：</p>
+<ul>
+<li><a href="/vscode_docs/setup/additional-components">Additional Components</a> - Learn how to install Git, Node.js, TypeScript, and tools like Yeoman.<br>
+<a href="/vscode_docs/setup/additional-components">附加组件</a> - 了解如何安装Git、Node.js、TypeScript和一些工具，比如Yeoman。</li>
+<li><a href="/vscode_docs/getstarted/userinterface">User Interface</a> - A quick orientation to VS Code.<br>
+<a href="/vscode_docs/getstarted/userinterface">用户界面</a> - VSCode快速导向。</li>
+<li><a href="/vscode_docs/getstarted/settings">User/Workspace Settings</a> - Learn how to configure VS Code to your preferences through settings.<br>
+<a href="/vscode_docs/getstarted/settings">用户/工作空间 设置</a> - 了解如何通过设置配置你的VSCode偏好。</li>
+<li><a href="/vscode_docs/getstarted/tips-and-tricks">Tips and Tricks</a> - Lets you jump right in and learn how to be productive with VS Code.<br>
+<a href="/vscode_docs/getstarted/tips-and-tricks">建议和窍门</a> - 直接进入并了解如何高效使用VSCode。</li>
+</ul>
+<h2 id="Common-questions——一般问题">Common questions——一般问题</h2>
+<h3 id="What-command-line-arguments-are-supported-by-the-Windows-Setup-——Windows安装包支持什么样的命令行参数？">What command-line arguments are supported by the Windows Setup?——Windows安装包支持什么样的命令行参数？</h3>
+<p>VS Code uses <a target="_blank" rel="noopener" href="https://www.jrsoftware.org/isinfo.php">Inno Setup</a> to create its setup package<br>
+for Windows. Thus, all the <a target="_blank" rel="noopener" href="https://www.jrsoftware.org/ishelp/index.php?topic=setupcmdline">Inno Setup command-line switches</a> are available for use.</p>
+<p>VSCode使用<a target="_blank" rel="noopener" href="https://www.jrsoftware.org/isinfo.php">Inno Setup</a>来创建Windows安装包。因此，所有的<a target="_blank" rel="noopener" href="https://www.jrsoftware.org/ishelp/index.php?topic=setupcmdline">Inno Setup命令行开关</a>可以获得使用。</p>
+<p>Additionally, you can prevent the Setup from launching VS Code after completion with <code>/mergetasks=!runcode</code>.</p>
+<p>另外，你可以防止在完成<code>/mergetasks=!runcode</code>后，安装包启动VSCode。</p>
+<h3 id="Scrolling-is-laggy-and-not-smooth——滚动是迟滞的，不流畅的。">Scrolling is laggy and not smooth——滚动是迟滞的，不流畅的。</h3>
+<p>On certain devices, editor scrolling is not smooth but laggy for an unpleasant experience. If you notice this issue, make sure you install the Windows 10 October 2018 update where this issue is fixed.</p>
+<p>在某些设备上，编辑器滚动不流畅，滞后，带来了不愉快的体验。如果你注意到这个问题，确定你安装了Windows 10 October 2018更新，这个更新修复了这个问题。</p>
+<h3 id="I’m-having-trouble-with-the-installer——使用安装包有问题">I’m having trouble with the installer——使用安装包有问题</h3>
+<p>Try using the <a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/?dv=winzip">zip file</a> instead of the installer.  To use this, unzip VS Code in your <code>AppData\Local\Programs</code> folder.</p>
+<p>尝试使用<a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/?dv=winzip">zip文件</a>代替安装包。解压VSCode到<code>AppData\Local\Programs</code>文件夹来使用。</p>
+<blockquote>
+<p><strong>Note:</strong> When VS Code is installed via a Zip file, you will need to manually update it for each <a target="_blank" rel="noopener" href="https://code.visualstudio.com/updates">release</a>.<br>
+<strong>注意：</strong> 当VSCode通过Zip文件安装后，你需要手动更新每次的<a target="_blank" rel="noopener" href="https://code.visualstudio.com/updates">release</a>。</p>
+</blockquote>
+<h3 id="Icons-are-missing——图标消失了">Icons are missing——图标消失了</h3>
+<p>I installed Visual Studio Code on my Windows 7 or 8 machine. Why are some icons not appearing in the workbench and editor?</p>
+<p>我在我的Windows 7或者Windwos 8上安装了VSCode。为什么一些工作台和编辑器上的图标不出现了？</p>
+<p>VS Code uses <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">SVG</a> icons and we have found instances where the .SVG file extension is associated with something other than <code>image/svg+xml</code>. We’re considering options to fix it, but for now here’s a workaround:</p>
+<p>VSCode使用<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">SVG</a>图标，并且我们已经发现了一些场景，.SVG文件扩展和除了<code>image/svg+xml</code>之外的一些东西有关。我们正在考虑一些方法修复它，但是现在有一个变通方案：</p>
+<p>Using the Command Prompt:</p>
+<p>使用命令提示符：</p>
+<ol>
+<li>Open an Administrator Command Prompt.<br>
+打开一个管理员命令提示符。</li>
+<li>Type <code>REG ADD HKCR\.svg /f /v &quot;Content Type&quot; /t REG_SZ /d image/svg+xml</code>.<br>
+输入<code>REG ADD HKCR\.svg /f /v &quot;Content Type&quot; /t REG_SZ /d image/svg+xml</code>。</li>
+</ol>
+<p>Using the Registry Editor (regedit):</p>
+<p>使用注册编辑器(regedit)：</p>
+<ol>
+<li>Start <code>regedit</code>.<br>
+启动<code>regedit</code>。</li>
+<li>Open the <code>HKEY_CLASSES_ROOT</code> key.<br>
+打开<code>HKEY_CLASSES_ROOT</code>key。</li>
+<li>Find the <code>.svg</code> key.<br>
+找到<code>.svg</code> key。</li>
+<li>Set its <code>Content Type</code> Data value to <code>image/svg+xml</code>.<br>
+设置它的<code>Content Type</code>数据值为<code>image/svg+xml</code>。</li>
+<li>Exit <code>regedit</code>.<br>
+退出<code>regedit</code>。</li>
+</ol>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/vscode_docs/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/vscode_docs/author.jpeg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>daxia</div>
+      <div>2021-11-16</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/vscode_docs/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/vscode_docs/js/book.js"></script>
