@@ -73,6 +73,8 @@ document.addEventListener('DOMContentLoaded', function () {
 </ul>
 <h2 id="GET-STARTED-开始">GET STARTED 开始</h2>
 <ul>
+<li><a href="/vscode_docs/getstarted/introvideos">Intro Videos 介绍视频</a></li>
+<li><a href="/vscode_docs/getstarted/tips-and-tricks">Tips and Tricks 技巧</a></li>
 <li><a href="/vscode_docs/getstarted/userinterface">User Interface 用户界面</a></li>
 <li><a href="/vscode_docs/getstarted/themes">Themes 主题</a></li>
 <li><a href="/vscode_docs/getstarted/settings">Settings 设置</a></li>
@@ -80,13 +82,14 @@ document.addEventListener('DOMContentLoaded', function () {
 </ul>
 <h2 id="USER-GUIDE-用户指南">USER GUIDE 用户指南</h2>
 <ul>
+<li><a href="/vscode_docs/user-guide/codebasics">Basic Editing 基础编辑</a></li>
 <li><a href="/vscode_docs/user-guide/extension-marketplace">Extension Marketplace 扩展市场</a></li>
 </ul>
 <h2 id="LANGUAGES-语言">LANGUAGES 语言</h2>
 <ul>
 <li><a href="/vscode_docs/languages/">Overview 总览</a></li>
 <li><a href="/vscode_docs/languages/">JavaScript</a></li>
-<li><a href="/vscode_docs/languages/">JSON</a></li>
+<li><a href="/vscode_docs/languages/json">JSON</a></li>
 <li><a href="/vscode_docs/languages/">HTML</a></li>
 <li><a href="/vscode_docs/languages/">CSS, SCSS and Less</a></li>
 <li><a href="/vscode_docs/languages/">Typescript</a></li>
@@ -175,81 +178,123 @@ function sidebar_toggle() {
         </div>
         <div class="book-content">
           <div class="book-post">
-  <h1 id="Visual-Studio-Code-Tips-and-Tricks">Visual Studio Code Tips and Tricks</h1>
-<p>“Tips and Tricks” lets you jump right in and learn how to be productive with Visual Studio Code. You’ll become familiar with its powerful editing, code intelligence, and source code control features and learn useful keyboard shortcuts. This topic goes pretty fast and provides a broad overview, so be sure to look at the other in-depth topics in <a href="/docs/getstarted/userinterface.md">Getting Started</a> and the <a href="/docs/editor/codebasics.md">User Guide</a> to learn more.</p>
+  <h1 id="Visual-Studio-Code-Tips-and-Tricks——VSCode技巧">Visual Studio Code Tips and Tricks——VSCode技巧</h1>
+<p>“Tips and Tricks” lets you jump right in and learn how to be productive with Visual Studio Code. You’ll become familiar with its powerful editing, code intelligence, and source code control features and learn useful keyboard shortcuts. This topic goes pretty fast and provides a broad overview, so be sure to look at the other in-depth topics in <a href="/vscode_docs/getstarted/userinterface">Getting Started</a> and the <a href="/vscode_docs/user-guide/codebasics">User Guide</a> to learn more.</p>
+<p>&quot;技巧&quot;使你直接进入并了解如何高效使用VSCode。你将熟悉它的强大编辑能力、代码智能提示和源代码控制功能，并且了解有用的键盘快捷键。这个主题快速的提供了一个宽泛的概述，所以一定要在<a href="/vscode_docs/getstarted/userinterface">开始</a>和<a href="/vscode_docs/user-guide/codebasics">用户指南</a>查看其它深入的主题来了解更多。</p>
 <blockquote>
-<p>If you don’t have Visual Studio Code installed, go to the <a href="/download">Download</a> page. You can find platform specific setup instructions at <a href="/docs/setup/linux.md">Running VS Code on Linux</a>, <a href="/docs/setup/mac.md">macOS</a>, and <a href="/docs/setup/windows.md">Windows</a>.</p>
+<p>If you don’t have Visual Studio Code installed, go to the <a target="_blank" rel="noopener" href="https://code.visualstudio.com/download">Download</a> page. You can find platform specific setup instructions at <a href="/vscode_docs/setup/linux">Running VS Code on Linux</a>, <a href="/vscode_docs/setup/mac">macOS</a>, and <a href="/vscode_docs/setup/windows">Windows</a>.</p>
+</blockquote>
+<blockquote>
+<p>如果你没有安装VSCode，去<a target="_blank" rel="noopener" href="https://code.visualstudio.com/download">下载</a>页。你可以在<a href="/vscode_docs/setup/linux">在Linux上运行VSCode</a>、<a href="/vscode_docs/setup/mac">macOS</a>和<a href="/vscode_docs/setup/windows">Windows</a>找到平台特定的安装说明。</p>
 </blockquote>
 <p>Prefer a video? You can watch a recent Microsoft Build talk <a target="_blank" rel="noopener" href="https://aka.ms/Build2020AppDev-VSCodeTips">Visual Studio Code tips and tricks</a>, which describes 20 tips and tricks for working productively with VS Code.</p>
-<h2 id="Basics">Basics</h2>
-<h3 id="Getting-started">Getting started</h3>
+<p>更喜欢视频？你可以观看一个最近的微软构建谈话<a target="_blank" rel="noopener" href="https://aka.ms/Build2020AppDev-VSCodeTips">VSCode技巧</a>，描述了20个技巧来使用VSCode高效的工作。</p>
+<h2 id="Basics——基本">Basics——基本</h2>
+<h3 id="Getting-started——开始">Getting started——开始</h3>
 <p>Open the <strong>Welcome</strong> page to get started with the basics of VS Code. <strong>Help</strong> &gt; <strong>Welcome</strong>.</p>
-<p><img src="images/tips-and-tricks/welcome_page.png" alt="welcome page"></p>
+<p>打开<strong>欢迎</strong>页，从VSCode基础开始。<strong>帮助</strong> &gt; <strong>欢迎</strong>。</p>
+<p><img src="welcome_page.png" alt="welcome page"></p>
 <p>In the bottom right of the <strong>Welcome</strong> page, there is a link to the <strong>Interactive playground</strong> where you can interactively try out VS Code’s features. <strong>Help</strong> &gt; <strong>Interactive Playground</strong>.</p>
-<p><img src="images/tips-and-tricks/interactive_playground.png" alt="interactive playground"></p>
-<h3 id="Command-Palette">Command Palette</h3>
-<p>Access all available commands based on your current context.</p>
-<p>Keyboard Shortcut: <code>kb(workbench.action.showCommands)</code></p>
-<p><img src="images/tips-and-tricks/OpenCommandPalatte.gif" alt="Command Palette"></p>
-<h3 id="Default-keyboard-shortcuts">Default keyboard shortcuts</h3>
+<p>在<strong>欢迎</strong>页的右下角，有一个到<strong>交互广场</strong>的链接，在这你可以交互式的尝试VSCode功能。<strong>帮助</strong> &gt; <strong>交互广场</strong>。</p>
+<p><img src="interactive_playground.png" alt="interactive playground"></p>
+<h3 id="Command-Palette——命令面板">Command Palette——命令面板</h3>
+<p>Access all available commands based on your current context.<br>
+根据当前上下文访问所有可用命令。</p>
+<p>Keyboard Shortcut: <code>⇧⌘P</code><br>
+键盘快捷键：<code>⇧⌘P</code></p>
+<p><img src="OpenCommandPalatte.gif" alt="命令面板"></p>
+<h3 id="Default-keyboard-shortcuts——默认键盘快捷键">Default keyboard shortcuts——默认键盘快捷键</h3>
 <p>All of the commands are in the <strong>Command Palette</strong> with the associated key binding (if it exists). If you forget a keyboard shortcut, use the <strong>Command Palette</strong> to help you out.</p>
-<p><img src="images/tips-and-tricks/keyboard-references.png" alt="keyboard references"></p>
-<h3 id="Keyboard-reference-sheets">Keyboard reference sheets</h3>
+<p>所有的命令在<strong>命令面板</strong>中，且和键绑定关联（如果存在的话）。如果你忘记了键盘快捷键，使用<strong>命令面板</strong>来帮助你。</p>
+<p><img src="keyboard-references.png" alt="键盘引用"></p>
+<h3 id="Keyboard-reference-sheets——键盘快捷键表单">Keyboard reference sheets——键盘快捷键表单</h3>
 <p>Download the keyboard shortcut reference sheet for your platform (<a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?linkid=832143">macOS</a>, <a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?linkid=832145">Windows</a>, <a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?linkid=832144">Linux</a>).</p>
-<p><img src="images/tips-and-tricks/KeyboardReferenceSheet.png" alt="Keyboard Reference Sheet"></p>
-<h3 id="Quick-Open">Quick Open</h3>
-<p>Quickly open files.</p>
-<p>Keyboard Shortcut: <code>kb(workbench.action.quickOpen)</code></p>
-<p><img src="images/tips-and-tricks/QuickOpen.gif" alt="Quick Open"></p>
-<p><strong>Tip:</strong> Type <code>kbstyle(?)</code> to view commands suggestions.</p>
-<p><img src="images/tips-and-tricks/quick-open-command-dropdown.png" alt="Quick Open command list"></p>
+<p>下载各平台快捷键引用单(<a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?linkid=832143">macOS</a>、<a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?linkid=832145">Windows</a>、<a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?linkid=832144">Linux</a>)。</p>
+<p><img src="KeyboardReferenceSheet.png" alt="键盘引用单"></p>
+<h3 id="Quick-Open——快速打开">Quick Open——快速打开</h3>
+<p>Quickly open files.<br>
+快速打开文件。</p>
+<p>Keyboard Shortcut: <code>⌘P</code><br>
+键盘快捷键: <code>⌘P</code></p>
+<p><img src="QuickOpen.gif" alt="快速打开"></p>
+<p><strong>Tip:</strong> Type <code>?</code> to view commands suggestions.<br>
+<strong>提示：</strong> 输入<code>?</code>来查看命令建议。</p>
+<p><img src="quick-open-command-dropdown.png" alt="快速打开命令列表"></p>
 <p>Typing commands such as <code>edt</code> and <code>term</code> followed by a space will bring up dropdown lists.</p>
-<p><img src="images/tips-and-tricks/term-quick-open.png" alt="term command in Quick Open"></p>
-<h3 id="Navigate-between-recently-opened-files">Navigate between recently opened files</h3>
+<p>输入命令，比如<code>edt</code>和<code>term</code>后跟一个空格，将调出下拉列表。</p>
+<p><img src="term-quick-open.png" alt="term快速打开命令"></p>
+<h3 id="Navigate-between-recently-opened-files——在最近打开的文件之间跳转">Navigate between recently opened files——在最近打开的文件之间跳转</h3>
 <p>Repeat the <strong>Quick Open</strong> keyboard shortcut to cycle quickly between recently opened files.</p>
-<h3 id="Open-multiple-files-from-Quick-Open">Open multiple files from Quick Open</h3>
+<p>重复<strong>快速打开</strong>快捷键可以快速的在最近打开的文件之间循环。</p>
+<h3 id="Open-multiple-files-from-Quick-Open——在快速打开中打开多个文件">Open multiple files from Quick Open——在快速打开中打开多个文件</h3>
 <p>You can open multiple files from <strong>Quick Open</strong> by pressing the Right arrow key. This will open the currently selected file in the background and you can continue selecting files from <strong>Quick Open</strong>.</p>
-<h3 id="Navigate-between-recently-opened-folders-and-workspaces">Navigate between recently opened folders and workspaces</h3>
-<p>Open Recent</p>
-<p>Keyboard Shortcut: <code>kb(workbench.action.openRecent)</code></p>
-<p>Displays a Quick Pick dropdown with the list from <strong>File</strong> &gt; <strong>Open Recent</strong> with recently opened folders and workspaces followed by files.</p>
-<h2 id="Command-line">Command line</h2>
+<p>你可以从<strong>快速打开</strong>中打开多个文件，方法是按右箭头键。这将在后台打开当前选中的文件且你能继续在<strong>快速打开</strong>中选文件。</p>
+<h3 id="Navigate-between-recently-opened-folders-and-workspaces——在最近打开的文件夹和工作空间之间跳转">Navigate between recently opened folders and workspaces——在最近打开的文件夹和工作空间之间跳转</h3>
+<p>Open Recent<br>
+打开最近</p>
+<p>Keyboard Shortcut: <code>⌃R</code><br>
+键盘快捷键：<code>⌃R</code></p>
+<p>Displays a Quick Pick dropdown with the list from <strong>File</strong> &gt; <strong>Open Recent</strong> with recently opened folders and workspaces followed by files.<br>
+显示一个来自于<strong>文件</strong> &gt; <strong>打开最近</strong> 的快速获取下拉列表,包含最近打开的文件夹和工作空间，其后跟有文件。</p>
+<h2 id="Command-line——命令行">Command line——命令行</h2>
 <p>VS Code has a powerful command line interface (CLI) which allows you to customize how the editor is launched to support various scenarios.</p>
+<p>VSCode有一个强大的命令行接口(CLI)，它使你能自定义如何启动编辑器来支持不同的场景。</p>
 <blockquote>
-<p>Make sure the VS Code binary is on your path so you can simply type ‘code’ to launch VS Code. See the platform specific setup topics if VS Code is added to your environment path during installation (<a href="/docs/setup/linux.md">Running VS Code on Linux</a>, <a href="/docs/setup/mac.md">macOS</a>, <a href="/docs/setup/windows.md">Windows</a>).</p>
+<p>Make sure the VS Code binary is on your path so you can simply type ‘code’ to launch VS Code. See the platform specific setup topics if VS Code is added to your environment path during installation (<a href="/vscode_docs/setup/linux">Running VS Code on Linux</a>, <a href="/vscode_docs/setup/mac">macOS</a>, <a href="/vscode_docs/setup/windows">Windows</a>).</p>
 </blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># open code with current directory</span></span><br><span class="line">code .</span><br><span class="line"></span><br><span class="line"><span class="comment"># open the current directory in the most recently used code window</span></span><br><span class="line">code -r .</span><br><span class="line"></span><br><span class="line"><span class="comment"># create a new window</span></span><br><span class="line">code -n</span><br><span class="line"></span><br><span class="line"><span class="comment"># change the language</span></span><br><span class="line">code --locale=es</span><br><span class="line"></span><br><span class="line"><span class="comment"># open diff editor</span></span><br><span class="line">code --diff &lt;file1&gt; &lt;file2&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># open file at specific line and column &lt;file:line[:character]&gt;</span></span><br><span class="line">code --goto package.json:10:5</span><br><span class="line"></span><br><span class="line"><span class="comment"># see help options</span></span><br><span class="line">code --<span class="built_in">help</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># disable all extensions</span></span><br><span class="line">code --disable-extensions .</span><br></pre></td></tr></table></figure>
-<h3 id="vscode-folder">.vscode folder</h3>
+<blockquote>
+<p>确保VSCode二进制文件在你的path中，这样你可以轻松的输入<code>code</code>来启动VSCode。如果在安装期间VSCode被添加到path环境变量中，查看平台特定的安装主题来在<a href="/vscode_docs/setup/linux">Linux</a>、<a href="/vscode_docs/setup/mac">macOS</a>、<a href="/vscode_docs/setup/windows">Windows</a>运行VSCode。</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># open code with current directory</span></span><br><span class="line"><span class="comment"># 在当前目录打开code</span></span><br><span class="line">code .</span><br><span class="line"></span><br><span class="line"><span class="comment"># open the current directory in the most recently used code window</span></span><br><span class="line"><span class="comment"># 在最近使用的code窗口中打开当前目录</span></span><br><span class="line">code -r .</span><br><span class="line"></span><br><span class="line"><span class="comment"># create a new window</span></span><br><span class="line"><span class="comment"># 创建一个新窗口</span></span><br><span class="line">code -n</span><br><span class="line"></span><br><span class="line"><span class="comment"># change the language</span></span><br><span class="line"><span class="comment"># 改变语言</span></span><br><span class="line">code --locale=es</span><br><span class="line"></span><br><span class="line"><span class="comment"># open diff editor</span></span><br><span class="line"><span class="comment"># 打开diff编辑器</span></span><br><span class="line">code --diff &lt;file1&gt; &lt;file2&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># open file at specific line and column &lt;file:line[:character]&gt;</span></span><br><span class="line"><span class="comment"># 在特定行和列&lt;文件:行号[:字符]&gt;打开文件</span></span><br><span class="line">code --goto package.json:10:5</span><br><span class="line"></span><br><span class="line"><span class="comment"># see help options</span></span><br><span class="line"><span class="comment"># 查看帮助选项</span></span><br><span class="line">code --<span class="built_in">help</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># disable all extensions</span></span><br><span class="line"><span class="comment"># 禁止所有扩展</span></span><br><span class="line">code --disable-extensions .</span><br></pre></td></tr></table></figure>
+<h3 id="vscode-folder——-vscode文件夹">.vscode folder——.vscode文件夹</h3>
 <p>Workspace specific files are in a <code>.vscode</code> folder at the root. For example, <code>tasks.json</code> for the Task Runner and <code>launch.json</code> for the debugger.</p>
-<h2 id="Status-Bar">Status Bar</h2>
-<h3 id="Errors-and-warnings">Errors and warnings</h3>
-<p>Keyboard Shortcut: <code>kb(workbench.actions.view.problems)</code></p>
-<p>Quickly jump to errors and warnings in the project.</p>
-<p>Cycle through errors with <code>kb(editor.action.marker.nextInFiles)</code> or <code>kb(editor.action.marker.prevInFiles)</code></p>
-<p><img src="images/tips-and-tricks/Errors_Warnings.gif" alt="errors and warnings"></p>
-<p>You can filter problems either by type (‘errors’, ‘warnings’) or text matching.</p>
-<h3 id="Change-language-mode">Change language mode</h3>
-<p>Keyboard Shortcut: <code>kb(workbench.action.editor.changeLanguageMode)</code></p>
-<p><img src="images/tips-and-tricks/change_syntax.gif" alt="change syntax"></p>
+<p>特定的工作空间文件在跟下的<code>.vscode</code>文件下。比如，用于Task Runner的<code>tasks.json</code>和用于调试的<code>launch.json</code>。</p>
+<h2 id="Status-Bar——状态栏">Status Bar——状态栏</h2>
+<h3 id="Errors-and-warnings——错误和警告">Errors and warnings——错误和警告</h3>
+<p>Keyboard Shortcut: <code>⇧⌘M</code><br>
+键盘快捷键：<code>⇧⌘M</code></p>
+<p>Quickly jump to errors and warnings in the project.<br>
+在工程中快速跳转到错误和警告。</p>
+<p>Cycle through errors with <code>F8</code> or <code>⇧F8</code><br>
+使用<code>F8</code>或<code>⇧F8</code>循环浏览错误。</p>
+<p><img src="Errors_Warnings.gif" alt="错误和警告"></p>
+<p>You can filter problems either by type (‘errors’, ‘warnings’) or text matching.<br>
+你可以通过输入(‘errors’, ‘warnings’)或文本匹配来过滤问题。</p>
+<h3 id="Change-language-mode——切换语言模式">Change language mode——切换语言模式</h3>
+<p>Keyboard Shortcut: <code>⌘K M</code><br>
+键盘快捷键：<code>⌘K M</code></p>
+<p><img src="change_syntax.gif" alt="切换语法"></p>
 <p>If you want to persist the new language mode for that file type, you can use the <strong>Configure File Association for</strong> command to associate the current file extension with an installed language.</p>
-<h2 id="Customization">Customization</h2>
-<p>There are many things you can do to customize VS Code.</p>
+<p>如果你想为那种文件类型持续使用新语言模式，你可以使用命令的<strong>配置文件关联</strong>来使用安装的语言关联当前的文件扩展。</p>
+<h2 id="Customization——自定义">Customization——自定义</h2>
+<p>There are many things you can do to customize VS Code.<br>
+可以做许多事来自定义VSCode。</p>
 <ul>
-<li>Change your theme</li>
-<li>Change your keyboard shortcuts</li>
-<li>Tune your settings</li>
-<li>Add JSON validation</li>
-<li>Create snippets</li>
-<li>Install extensions</li>
+<li>Change your theme<br>
+切换主题</li>
+<li>Change your keyboard shortcuts<br>
+切换键盘快捷键</li>
+<li>Tune your settings<br>
+调整设置</li>
+<li>Add JSON validation<br>
+添加JSON验证</li>
+<li>Create snippets<br>
+创建代码片段</li>
+<li>Install extensions<br>
+安装扩展</li>
 </ul>
-<h3 id="Change-your-theme">Change your theme</h3>
-<p>Keyboard Shortcut: <code>kb(workbench.action.selectTheme)</code></p>
-<p>You can install more themes from the VS Code extension <a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Themes&amp;sortBy=Downloads">Marketplace</a>.</p>
-<p><img src="images/tips-and-tricks/PreviewThemes.gif" alt="Preview themes"></p>
-<p>Additionally, you can install and change your File Icon themes.</p>
-<p><img src="images/tips-and-tricks/PreviewFileIconThemes.gif" alt="File icon themes"></p>
-<h3 id="Keymaps">Keymaps</h3>
+<h3 id="Change-your-theme——切换你的主题">Change your theme——切换你的主题</h3>
+<p>Keyboard Shortcut: <code>⌘K ⌘T</code><br>
+键盘快捷键：<code>⌘K ⌘T</code></p>
+<p>You can install more themes from the VS Code extension <a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Themes&amp;sortBy=Downloads">Marketplace</a>.<br>
+你可以从VSCode扩展<a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Themes&amp;sortBy=Download">市场</a>中安装更多主题。</p>
+<p><img src="PreviewThemes.gif" alt="预览主题"></p>
+<p>Additionally, you can install and change your File Icon themes.<br>
+另外，你可以安装并切换你的文件图标主题。</p>
+<p><img src="PreviewFileIconThemes.gif" alt="文件图标主题"></p>
+<h3 id="Keymaps——按键映射">Keymaps——按键映射</h3>
 <p>Are you used to keyboard shortcuts from another editor? You can install a Keymap extension that brings the keyboard shortcuts from your favorite editor to VS Code. Go to <strong>Preferences</strong> &gt; <strong>Keymaps</strong> to see the current list on the <a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Keymaps&amp;sortBy=Downloads">Marketplace</a>. Some of the more popular ones:</p>
+<p>你是否习惯于使用其他编辑器的快捷键？你可以安装一个键盘映射扩展，这可以将你最喜爱的编辑器的快捷键带到VSCode。去<strong>偏好</strong> &gt; <strong>键映射</strong> 查看当前<a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Keymaps&amp;sortBy=Downloads">市场</a>上的列表。一些比较受欢迎的有：</p>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim">Vim</a></li>
 <li><a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings">Sublime Text Keymap</a></li>
@@ -259,342 +304,514 @@ function sidebar_toggle() {
 <li><a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=alphabotsec.vscode-eclipse-keybindings">Eclipse Keymap</a></li>
 <li><a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vs-keybindings">Visual Studio Keymap</a></li>
 </ul>
-<h3 id="Customize-your-keyboard-shortcuts">Customize your keyboard shortcuts</h3>
-<p>Keyboard Shortcut: <code>kb(workbench.action.openGlobalKeybindings)</code></p>
-<p><img src="images/tips-and-tricks/keyboard-shortcuts.png" alt="keyboard shortcuts"></p>
-<p>You can search for shortcuts and add your own keybindings to the <code>keybindings.json</code> file.</p>
-<p><img src="images/tips-and-tricks/KeyboardShortcuts.gif" alt="customize keyboard shortcuts"></p>
-<p>See more in <a href="/docs/getstarted/keybindings.md">Key Bindings for Visual Studio Code</a>.</p>
-<h3 id="Tune-your-settings">Tune your settings</h3>
+<h3 id="Customize-your-keyboard-shortcuts——自定义你的键盘快捷键">Customize your keyboard shortcuts——自定义你的键盘快捷键</h3>
+<p>Keyboard Shortcut: <code>⌃` </code><br>
+键盘快捷键：<code>⌃` </code></p>
+<p><img src="keyboard-shortcuts.png" alt="键盘快捷键"></p>
+<p>You can search for shortcuts and add your own keybindings to the <code>keybindings.json</code> file.<br>
+你可以搜索快捷键并添加你自己的键绑定到<code>keybindings.json</code>文件中。</p>
+<p><img src="KeyboardShortcuts.gif" alt="自定义键盘快捷键"></p>
+<p>See more in <a href="/vscode_docs/getstarted/keybindings">Key Bindings for Visual Studio Code</a>.<br>
+<a href="/vscode_docs/getstarted/keybindings">VSCode键绑定</a>查看更多。</p>
+<h3 id="Tune-your-settings——调整你的设置">Tune your settings——调整你的设置</h3>
 <p>By default VS Code shows the Settings editor, you can find settings listed below in a search bar, but you can still edit the underlying <code>settings.json</code> file by using the <strong>Open Settings (JSON)</strong> command or by changing your default settings editor with the <code>workbench.settings.editor</code> setting.</p>
-<p>Open User Settings <code>settings.json</code></p>
-<p>Keyboard Shortcut: <code>kb(workbench.action.openSettings)</code></p>
-<p>Change the font size of various UI elements</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Main editor</span></span><br><span class="line"><span class="string">&quot;editor.fontSize&quot;</span>: <span class="number">18</span>,</span><br><span class="line"><span class="comment">// Terminal panel</span></span><br><span class="line"><span class="string">&quot;terminal.integrated.fontSize&quot;</span>: <span class="number">14</span>,</span><br><span class="line"><span class="comment">// Output panel</span></span><br><span class="line"><span class="string">&quot;[Log]&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;editor.fontSize&quot;</span>: <span class="number">15</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Change the zoom level</p>
+<p>VSCode默认展示设置编辑器，你可以在搜索栏中找到下面列出的设置，但是你仍然可以编辑底层的<code>settings.json</code>文件，方法是使用<strong>打开设置(JSON)</strong> 命令或者通过使用<code>workbench.settings.editor</code>设置来切换你的默认设置编辑器。</p>
+<p>Open User Settings <code>settings.json</code><br>
+打开用户设置<code>settings.json</code></p>
+<p>Keyboard Shortcut: <code>⌘,</code><br>
+键盘快捷键：<code>⌘,</code></p>
+<p>Change the font size of various UI elements<br>
+改变各种UI元素的字体大小</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Main editor</span></span><br><span class="line"><span class="comment">// 主要编辑器</span></span><br><span class="line"><span class="string">&quot;editor.fontSize&quot;</span>: <span class="number">18</span>,</span><br><span class="line"><span class="comment">// Terminal panel</span></span><br><span class="line"><span class="comment">// 终端面板</span></span><br><span class="line"><span class="string">&quot;terminal.integrated.fontSize&quot;</span>: <span class="number">14</span>,</span><br><span class="line"><span class="comment">// Output panel</span></span><br><span class="line"><span class="comment">// 输出面板</span></span><br><span class="line"><span class="string">&quot;[Log]&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;editor.fontSize&quot;</span>: <span class="number">15</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Change the zoom level<br>
+改变缩放等级</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;window.zoomLevel&quot;</span>: <span class="number">5</span></span><br></pre></td></tr></table></figure>
-<p>Font ligatures</p>
+<p>Font ligatures<br>
+字体连字</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;editor.fontFamily&quot;</span>: <span class="string">&quot;Fira Code&quot;</span>,</span><br><span class="line"><span class="string">&quot;editor.fontLigatures&quot;</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p><strong>Tip:</strong> You will need to have a font installed that supports font ligatures. <a href="https://github.com/tonsky/FiraCode">FiraCode</a> is a popular font on the VS Code team.</p>
 </blockquote>
-<p><img src="images/tips-and-tricks/font-ligatures-annotated.png" alt="font ligatures"></p>
-<p>Auto Save</p>
+<blockquote>
+<p><strong>建议：</strong> 你需要一个支持字体连字的安装字体。<a href="https://github.com/tonsky/FiraCode">FiraCode</a>是一个在VSCode组受欢迎的字体。</p>
+</blockquote>
+<p><img src="font-ligatures-annotated.png" alt="字体连字"></p>
+<p>Auto Save<br>
+自动保存</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;files.autoSave&quot;</span>: <span class="string">&quot;afterDelay&quot;</span></span><br></pre></td></tr></table></figure>
-<p>You can also toggle Auto Save from the top-level menu with the <strong>File</strong> &gt; <strong>Auto Save</strong>.</p>
-<p>Format on save</p>
+<p>You can also toggle Auto Save from the top-level menu with the <strong>File</strong> &gt; <strong>Auto Save</strong>.<br>
+你也可以从顶级菜单中使用<strong>文件</strong> &gt; <strong>自动保存</strong>来切换自动保存。</p>
+<p>Format on save<br>
+保存格式化</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;editor.formatOnSave&quot;</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<p>Format on paste</p>
+<p>Format on paste<br>
+粘贴格式化</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;editor.formatOnPaste&quot;</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<p>Change the size of Tab characters</p>
+<p>Change the size of Tab characters<br>
+改变Tab字符的大小</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;editor.tabSize&quot;</span>: <span class="number">4</span></span><br></pre></td></tr></table></figure>
-<p>Spaces or Tabs</p>
+<p>Spaces or Tabs<br>
+空格还是Tab</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;editor.insertSpaces&quot;</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<p>Render whitespace</p>
+<p>Render whitespace<br>
+显示空白</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;editor.renderWhitespace&quot;</span>: <span class="string">&quot;all&quot;</span></span><br></pre></td></tr></table></figure>
-<p>Whitespace characters are rendered by default in text selection.</p>
-<p>Ignore files / folders</p>
-<p>Removes these files / folders from your editor window.</p>
+<p>Whitespace characters are rendered by default in text selection.<br>
+在文本选中时默认显示空白字符。</p>
+<p>Ignore files / folders<br>
+忽略文件/文件夹</p>
+<p>Removes these files / folders from your editor window.<br>
+从你的编辑窗口中移除文件/文件夹。</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;files.exclude&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;somefolder/&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;somefile&quot;</span>: <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Remove these files / folders from search results.</p>
+<p>Remove these files / folders from search results.<br>
+总搜索结果中移除这些文件/文件夹。</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;search.exclude&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;someFolder/&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;somefile&quot;</span>: <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>And many, many <a href="/docs/getstarted/settings.md">other customizations</a>.</p>
-<h3 id="Language-specific-settings">Language specific settings</h3>
-<p>You can scope the settings that you only want for specific languages by the language identifier. You can find a list of commonly used language IDs in the <a href="/docs/languages/identifiers.md">Language Identifiers</a> reference.</p>
+<p>And many, many <a href="/vscode_docs/getstarted/settings">other customizations</a>.<br>
+许多<a href="/vscode_docs/getstarted/settings">其它个性化</a>。</p>
+<h3 id="Language-specific-settings——语言特定的设置">Language specific settings——语言特定的设置</h3>
+<p>You can scope the settings that you only want for specific languages by the language identifier. You can find a list of commonly used language IDs in the <a href="/vscode_docs/getstarted/identifiers">Language Identifiers</a> reference.</p>
+<p>你可以通过语言标识符设置你想要的特定语言的设置。你可以在<a href="/vscode_docs/getstarted/identifiers">语言标识符</a>找到一个通用的语言ID列表。</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;[languageid]&quot;</span>: &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p><strong>Tip:</strong> You can also create language specific settings with the <strong>Configure Language Specific Settings</strong> command.</p>
+<p><strong>Tip:</strong> You can also create language specific settings with the <strong>Configure Language Specific Settings</strong> command.<br>
+<strong>提示：</strong> 你也可以使用<strong>配置语言特定的设置</strong>命令创建语言特定设置。</p>
 </blockquote>
-<p><img src="images/tips-and-tricks/lang-based-settings.png" alt="language based settings"></p>
-<h3 id="Add-JSON-validation">Add JSON validation</h3>
-<p>Enabled by default for many file types. Create your own schema and validation in <code>settings.json</code></p>
+<p><img src="lang-based-settings.png" alt="基于语言的设置"></p>
+<h3 id="Add-JSON-validation——添加JSON验证">Add JSON validation——添加JSON验证</h3>
+<p>Enabled by default for many file types. Create your own schema and validation in <code>settings.json</code><br>
+对于许多文件类型是默认开启。在<code>settings.json</code>创建你自己的schema和验证。</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;json.schemas&quot;</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">&quot;fileMatch&quot;</span>: [</span><br><span class="line">            <span class="string">&quot;/bower.json&quot;</span></span><br><span class="line">        ],</span><br><span class="line">        <span class="attr">&quot;url&quot;</span>: <span class="string">&quot;https://json.schemastore.org/bower&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
-<p>or for a schema defined in your workspace</p>
+<p>or for a schema defined in your workspace<br>
+或者是在工作空间中定义的schema</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;json.schemas&quot;</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">&quot;fileMatch&quot;</span>: [</span><br><span class="line">            <span class="string">&quot;/foo.json&quot;</span></span><br><span class="line">        ],</span><br><span class="line">        <span class="attr">&quot;url&quot;</span>: <span class="string">&quot;./myschema.json&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
-<p>or a custom schema</p>
+<p>or a custom schema<br>
+或者是自定义schema</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;json.schemas&quot;</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">&quot;fileMatch&quot;</span>: [</span><br><span class="line">            <span class="string">&quot;/.myconfig&quot;</span></span><br><span class="line">        ],</span><br><span class="line">        <span class="attr">&quot;schema&quot;</span>: &#123;</span><br><span class="line">            <span class="attr">&quot;type&quot;</span>: <span class="string">&quot;object&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;properties&quot;</span>: &#123;</span><br><span class="line">                <span class="attr">&quot;name&quot;</span> : &#123;</span><br><span class="line">                    <span class="attr">&quot;type&quot;</span>: <span class="string">&quot;string&quot;</span>,</span><br><span class="line">                    <span class="attr">&quot;description&quot;</span>: <span class="string">&quot;The name of the entry&quot;</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br></pre></td></tr></table></figure>
-<p>See more in the <a href="/docs/languages/json.md">JSON</a> documentation.</p>
-<h2 id="Extensions">Extensions</h2>
-<p>Keyboard Shortcut: <code>kb(workbench.view.extensions)</code></p>
-<h3 id="Find-extensions">Find extensions</h3>
+<p>See more in the <a href="/vscode_docs/languages/json">JSON</a> documentation.<br>
+在<a href="/vscode_docs/languages/json">JSON</a>文档中查看更多。</p>
+<h2 id="Extensions——扩展">Extensions——扩展</h2>
+<p>Keyboard Shortcut: <code>⇧⌘X</code><br>
+键盘快捷键：<code>⇧⌘X</code></p>
+<h3 id="Find-extensions——发现扩展">Find extensions——发现扩展</h3>
 <ol>
-<li>In the VS Code <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/vscode">Marketplace</a>.</li>
-<li>Search inside VS Code in the <strong>Extensions</strong> view.</li>
-<li>View extension recommendations</li>
-<li>Community curated extension lists, such as <a href="https://github.com/viatsko/awesome-vscode">awesome-vscode</a>.</li>
+<li>In the VS Code <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/vscode">Marketplace</a>.<br>
+在VSCode<a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/vscode">市场</a>。</li>
+<li>Search inside VS Code in the <strong>Extensions</strong> view.<br>
+在VSCode内的<strong>扩展</strong>视图搜索。</li>
+<li>View extension recommendations<br>
+查看扩展建议。</li>
+<li>Community curated extension lists, such as <a href="https://github.com/viatsko/awesome-vscode">awesome-vscode</a>.<br>
+社区策划的扩展列表，比如<a href="https://github.com/viatsko/awesome-vscode">令人惊叹的VSCode</a>。</li>
 </ol>
-<h3 id="Install-extensions">Install extensions</h3>
-<p>In the <strong>Extensions</strong> view, you can search via the search bar or click the <strong>More Actions</strong> (…) button to filter and sort by install count.</p>
-<p><img src="images/tips-and-tricks/show-popular-extensions.png" alt="install extensions"></p>
-<h3 id="Extension-recommendations">Extension recommendations</h3>
-<p>In the <strong>Extensions</strong> view, click <strong>Show Recommended Extensions</strong> in the <strong>More Actions</strong> (…) button menu.</p>
-<p><img src="images/tips-and-tricks/show-recommended-extensions.png" alt="show recommended extensions"></p>
-<h3 id="Creating-my-own-extension">Creating my own extension</h3>
-<p>Are you interested in creating your own extension? You can learn how to do this in the <a href="/api">Extension API documentation</a>, specifically check out the <a href="/api/references/contribution-points.md">documentation on contribution points</a>.</p>
+<h3 id="Install-extensions——安装扩展">Install extensions——安装扩展</h3>
+<p>In the <strong>Extensions</strong> view, you can search via the search bar or click the <strong>More Actions</strong> (…) button to filter and sort by install count.<br>
+在<strong>扩展</strong>视图，你可以通过搜索栏或点击<strong>更多行为</strong>（…）按钮过滤和安装数量排序来搜索。</p>
+<p><img src="show-popular-extensions.png" alt="安装扩展"></p>
+<h3 id="Extension-recommendations——扩展建议">Extension recommendations——扩展建议</h3>
+<p>In the <strong>Extensions</strong> view, click <strong>Show Recommended Extensions</strong> in the <strong>More Actions</strong> (…) button menu.<br>
+在<strong>扩展</strong>视图，在<strong>更多行为</strong>（…）菜单按钮上点击<strong>展示推荐扩展</strong>。</p>
+<p><img src="show-recommended-extensions.png" alt="展示推荐扩展"></p>
+<h3 id="Creating-my-own-extension——创建自己的扩展">Creating my own extension——创建自己的扩展</h3>
+<p>Are you interested in creating your own extension? You can learn how to do this in the <a href="/vscode_api">Extension API documentation</a>, specifically check out the <a href="/vscode_api/references/contribution-points">documentation on contribution points</a>.</p>
+<p>你对创建自己的扩展感兴趣吗？你可以在<a href="/vscode_api">扩展API文档</a>中了解如何创建扩展，具体地可以查看<a href="/vscode_api/references/contribution-points">有关贡献点的文档</a>。</p>
 <ul>
-<li>configuration</li>
-<li>commands</li>
-<li>keybindings</li>
-<li>languages</li>
-<li>debuggers</li>
-<li>grammars</li>
-<li>themes</li>
-<li>snippets</li>
-<li>jsonValidation</li>
+<li>configuration<br>
+配置</li>
+<li>commands<br>
+命令</li>
+<li>keybindings<br>
+键绑定</li>
+<li>languages<br>
+语言</li>
+<li>debuggers<br>
+调试器</li>
+<li>grammars<br>
+语法</li>
+<li>themes<br>
+主题</li>
+<li>snippets<br>
+代码片段</li>
+<li>jsonValidation<br>
+json验证</li>
 </ul>
-<h2 id="Files-and-folders">Files and folders</h2>
-<h3 id="Integrated-Terminal">Integrated Terminal</h3>
-<p>Keyboard Shortcut: <code>kb(workbench.action.terminal.toggleTerminal)</code></p>
-<p><img src="images/tips-and-tricks/integrated_terminal.png" alt="Integrated terminal"></p>
-<p>Further reading:</p>
+<h2 id="Files-and-folders——文件和文件夹">Files and folders——文件和文件夹</h2>
+<h3 id="Integrated-Terminal——集成终端">Integrated Terminal——集成终端</h3>
+<p>Keyboard Shortcut: <code>⌃` </code><br>
+键盘快捷键： <code>⌃` </code></p>
+<p><img src="integrated_terminal.png" alt="集成终端"></p>
+<p>Further reading:<br>
+深入阅读：</p>
 <ul>
-<li><a href="/docs/editor/integrated-terminal.md">Integrated Terminal</a> documentation</li>
-<li><a target="_blank" rel="noopener" href="https://www.growingwiththeweb.com/2017/03/mastering-vscodes-terminal.html">Mastering VS Code’s Terminal article</a></li>
+<li><a href="/vscode_docs/getstarted/integrated-terminal">Integrated Terminal</a> documentation<br>
+<a href="/vscode_docs/getstarted/integrated-terminal">集成终端</a>文档。</li>
+<li><a target="_blank" rel="noopener" href="https://www.growingwiththeweb.com/2017/03/mastering-vscodes-terminal.html">Mastering VS Code’s Terminal article</a><br>
+<a target="_blank" rel="noopener" href="https://www.growingwiththeweb.com/2017/03/mastering-vscodes-terminal.html">熟练掌握VSCode终端的文章</a></li>
 </ul>
-<h3 id="Toggle-Sidebar">Toggle Sidebar</h3>
-<p>Keyboard Shortcut: <code>kb(workbench.action.toggleSidebarVisibility)</code></p>
-<p><img src="images/tips-and-tricks/toggle_side_bar.gif" alt="toggle side bar"></p>
-<h3 id="Toggle-Panel">Toggle Panel</h3>
-<p>Keyboard Shortcut: <code>kb(workbench.action.togglePanel)</code></p>
-<h3 id="Zen-mode">Zen mode</h3>
-<p>Keyboard Shortcut: <code>kb(workbench.action.toggleZenMode)</code></p>
-<p><img src="images/tips-and-tricks/zen_mode.gif" alt="zen mode"></p>
-<p>Enter distraction free Zen mode.</p>
-<p>Press <code>kbstyle(Esc)</code> twice to exit Zen Mode.</p>
-<h3 id="Side-by-side-editing">Side by side editing</h3>
-<p>Keyboard Shortcut: <code>kb(workbench.action.splitEditor)</code></p>
-<p>You can also drag and drop editors to create new editor groups and move editors between groups.</p>
-<p><img src="images/tips-and-tricks/split_editor.gif" alt="split editors"></p>
-<h3 id="Switch-between-editors">Switch between editors</h3>
-<p>Keyboard Shortcut: <code>kb(workbench.action.focusFirstEditorGroup)</code>, <code>kb(workbench.action.focusSecondEditorGroup)</code>, <code>kb(workbench.action.focusThirdEditorGroup)</code></p>
-<p><img src="images/tips-and-tricks/navigate_editors.gif" alt="navigate editors"></p>
-<h3 id="Move-to-Explorer-window">Move to Explorer window</h3>
-<p>Keyboard Shortcut: <code>kb(workbench.view.explorer)</code></p>
-<h3 id="Create-or-open-a-file">Create or open a file</h3>
-<p>Keyboard Shortcut: <code>kbstyle(Ctrl+click)</code> (<code>kbstyle(Cmd+click)</code> on macOS)</p>
-<p>You can quickly open a file or image or create a new file by moving the cursor to the file link and using <code>kbstyle(Ctrl+click)</code>.</p>
-<p><img src="images/tips-and-tricks/create_open_file.gif" alt="create and open file"></p>
-<h3 id="Close-the-currently-opened-folder">Close the currently opened folder</h3>
-<p>Keyboard Shortcut: <code>kb(workbench.action.closeActiveEditor)</code></p>
-<h3 id="Navigation-history">Navigation history</h3>
-<p>Navigate entire history: <code>kb(workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup)</code></p>
-<p>Navigate back: <code>kb(workbench.action.navigateBack)</code></p>
-<p>Navigate forward: <code>kb(workbench.action.navigateForward)</code></p>
-<p><img src="images/tips-and-tricks/navigate_history.gif" alt="navigate history"></p>
-<h3 id="File-associations">File associations</h3>
-<p>Create language associations for files that aren’t detected correctly. For example, many configuration files with custom file extensions are actually JSON.</p>
+<h3 id="Toggle-Sidebar——开关侧边栏">Toggle Sidebar——开关侧边栏</h3>
+<p>Keyboard Shortcut: <code>⌘B</code><br>
+键盘快捷键：<code>⌘B</code></p>
+<p><img src="toggle_side_bar.gif" alt="开关侧边栏"></p>
+<h3 id="Toggle-Panel——开关面板">Toggle Panel——开关面板</h3>
+<p>Keyboard Shortcut: <code>⌘J</code><br>
+键盘快捷键：<code>⌘J</code></p>
+<h3 id="Zen-mode——禅模式">Zen mode——禅模式</h3>
+<p>Keyboard Shortcut: <code>⌘K Z</code><br>
+键盘快捷键：<code>⌘K Z</code></p>
+<p><img src="zen_mode.gif" alt="禅模式"></p>
+<p>Enter distraction free Zen mode.<br>
+进入部分新的禅模式。</p>
+<p>Press <code>Esc</code> twice to exit Zen Mode.<br>
+按<code>Esc</code>两次退出禅模式。</p>
+<h3 id="Side-by-side-editing——并行编辑">Side by side editing——并行编辑</h3>
+<p>Keyboard Shortcut: <code>⌘\</code><br>
+键盘快捷键：<code>⌘\</code></p>
+<p>You can also drag and drop editors to create new editor groups and move editors between groups.<br>
+你也可以拖动和删除编辑器，创建一个新的编辑器组并移动编辑器到组中。</p>
+<p><img src="split_editor.gif" alt="划分编辑器"></p>
+<h3 id="Switch-between-editors——在编辑器之间切换">Switch between editors——在编辑器之间切换</h3>
+<p>Keyboard Shortcut: <code>⌘1</code>, <code>⌘2</code>, <code>⌘3</code><br>
+键盘快捷键：<code>⌘1</code>, <code>⌘2</code>, <code>⌘3</code></p>
+<p><img src="navigate_editors.gif" alt="导航编辑器"></p>
+<h3 id="Move-to-Explorer-window——移动到浏览器窗口">Move to Explorer window——移动到浏览器窗口</h3>
+<p>Keyboard Shortcut: <code>⇧⌘E</code><br>
+键盘快捷键：<code>⇧⌘E</code></p>
+<h3 id="Create-or-open-a-file——创建或打开一个文件">Create or open a file——创建或打开一个文件</h3>
+<p>Keyboard Shortcut: <code>Ctrl+click</code> (<code>Cmd+click</code> on macOS)<br>
+键盘快捷键：<code>Ctrl+click</code> (<code>Cmd+click</code> on macOS)</p>
+<p>You can quickly open a file or image or create a new file by moving the cursor to the file link and using <code>Ctrl+click</code>.<br>
+你可以通过移动光标到文件链接上，使用<code>Ctrl+click</code>快速的打开一个文件或图片，或者创建一个新的文件。</p>
+<p><img src="create_open_file.gif" alt="创建并打开文件"></p>
+<h3 id="Close-the-currently-opened-folder——关闭当前打开的文件夹">Close the currently opened folder——关闭当前打开的文件夹</h3>
+<p>Keyboard Shortcut: <code>⌘W</code><br>
+键盘快捷键：<code>⌘W</code></p>
+<h3 id="Navigation-history——浏览历史">Navigation history——浏览历史</h3>
+<p>Navigate entire history: <code>⌃Tab</code><br>
+浏览整个历史: <code>⌃Tab</code></p>
+<p>Navigate back: <code>⌃-</code><br>
+返回: <code>⌃-</code></p>
+<p>Navigate forward: <code>⌃⇧-</code><br>
+前进: <code>⌃⇧-</code></p>
+<p><img src="navigate_history.gif" alt="浏览历史"></p>
+<h3 id="File-associations——文件关联">File associations——文件关联</h3>
+<p>Create language associations for files that aren’t detected correctly. For example, many configuration files with custom file extensions are actually JSON.<br>
+为没有被正确侦测到的文件创建语言关联。比如，许多带有自定义文件扩展名的配置文件实际上是JSON。</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;files.associations&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;.database&quot;</span>: <span class="string">&quot;json&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="Preventing-dirty-writes">Preventing dirty writes</h3>
-<p>VS Code will show you an error message when you try to save a file that cannot be saved because it has changed on disk. VS Code blocks saving the file to prevent overwriting changes that have been made outside of the editor.</p>
-<p>In order to resolve the save conflict, click the <strong>Compare</strong> action in the error message to open a diff editor that will show you the contents of the file on disk (to the left) compared to the contents in VS Code (on the right):</p>
-<p><img src="images/tips-and-tricks/dirty-write.png" alt="dirty write"></p>
+<h3 id="Preventing-dirty-writes——防止脏写">Preventing dirty writes——防止脏写</h3>
+<p>VS Code will show you an error message when you try to save a file that cannot be saved because it has changed on disk. VS Code blocks saving the file to prevent overwriting changes that have been made outside of the editor.<br>
+当你试图保存一个不能保存的文件(因为它在磁盘上已经改变了)时VSCode将为你展示一个错误信息，VSCode阻止保存文件来防止覆盖写入在编辑器外的改动。</p>
+<p>In order to resolve the save conflict, click the <strong>Compare</strong> action in the error message to open a diff editor that will show you the contents of the file on disk (to the left) compared to the contents in VS Code (on the right):<br>
+为了解决保存冲突，在错误信息中点击<strong>比较</strong>动作打开一个比较编辑器，它展示了磁盘上的内容（左边）和VSCode上的内容（右边）相比：</p>
+<p><img src="dirty-write.png" alt="脏写"></p>
 <p>Use the actions in the editor toolbar to resolve the save conflict. You can either <strong>Accept</strong> your changes and thereby overwriting any changes on disk, or <strong>Revert</strong> to the version on disk. Reverting means that your changes will be lost.</p>
+<p>使用编辑器工具栏上的动作来解决保存冲突。你可以<strong>接受</strong>你的改变，因此将覆盖磁盘上的修改，或者<strong>反转</strong>到磁盘上的版本。反转意味着你的修改将被丢失。</p>
 <p><strong>Note:</strong> The file will remain dirty and cannot be saved until you pick one of the two actions to resolve the conflict.</p>
-<h2 id="Editing-hacks">Editing hacks</h2>
+<p><strong>注意：</strong> 直到你选择两个行为中的一个来解决冲突前，文件都将保持脏的状态且不能保存。</p>
+<h2 id="Editing-hacks——编辑hack">Editing hacks——编辑hack</h2>
 <p>Here is a selection of common features for editing code. If the keyboard shortcuts aren’t comfortable for you, consider installing a <a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Keymaps&amp;sortBy=Downloads">keymap extension</a> for your old editor.</p>
-<p><strong>Tip</strong>: You can see recommended keymap extensions in the <strong>Extensions</strong> view with <code>kb(workbench.extensions.action.showRecommendedKeymapExtensions)</code> which filters the search to <code>@recommended:keymaps</code>.</p>
-<h3 id="Multi-cursor-selection">Multi cursor selection</h3>
-<p>To add cursors at arbitrary positions, select a position with your mouse and use <code>kbstyle(Alt+Click)</code> (<code>kbstyle(Option+click)</code> on macOS).</p>
-<p>To set cursors above or below the current position use:</p>
-<p>Keyboard Shortcut: <code>kb(editor.action.insertCursorAbove)</code> or <code>kb(editor.action.insertCursorBelow)</code></p>
-<p><img src="images/tips-and-tricks/multicursor.gif" alt="multi cursor"></p>
-<p>You can add additional cursors to all occurrences of the current selection with <code>kb(editor.action.selectHighlights)</code>.</p>
-<p><img src="images/tips-and-tricks/add_cursor_current_selection.gif" alt="add cursor to all occurrences of current selection"></p>
+<p>这儿有一个编辑代码的常见功能选择。如果看盘快捷键不适合你，考虑为你的老编辑器安装一个<a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Keymaps&amp;sortBy=Downloads">键映射扩展</a>。</p>
+<p><strong>Tip</strong>: You can see recommended keymap extensions in the <strong>Extensions</strong> view with <code>unassigned</code> which filters the search to <code>@recommended:keymaps</code>.</p>
+<p><strong>提示</strong>：你可以在<strong>扩展</strong>视图使用<code>unassigned</code>查看推荐的键映射扩展，它将搜索过滤为<code>@recommended:keymaps</code>。</p>
+<h3 id="Multi-cursor-selection——多光标选中">Multi cursor selection——多光标选中</h3>
+<p>To add cursors at arbitrary positions, select a position with your mouse and use <code>kbstyle(Alt+Click)</code> (<code>kbstyle(Option+click)</code> on macOS).<br>
+在任意位置添加光标，使用鼠标选择一个位置并使用<code>Alt+Click</code> (macOS上为<code>Option+Click</code>)。</p>
+<p>To set cursors above or below the current position use:<br>
+要设置光标为当前位置的上面或者下面，请使用：</p>
+<p>Keyboard Shortcut: <code>⌥⌘↑</code> or <code>⌥⌘↓</code><br>
+键盘快捷键：<code>⌥⌘↑</code> 或 <code>⌥⌘↓</code></p>
+<p><img src="multicursor.gif" alt="多光标"></p>
+<p>You can add additional cursors to all occurrences of the current selection with <code>⇧⌘L</code>.<br>
+你可以添加附加光标到当前选中的所有出现的地方，方法是使用<code>⇧⌘L</code>。</p>
+<p><img src="add_cursor_current_selection.gif" alt="添加光标到当前选中的所有出现的地方"></p>
 <blockquote>
-<p>Note: You can also change the modifier to <code>kbstyle(Ctrl/Cmd)</code> for applying multiple cursors with the <code>editor.multiCursorModifier</code> <a href="/docs/getstarted/settings.md">setting</a> . See <a href="/docs/editor/codebasics.md#multicursor-modifier">Multi-cursor Modifier</a> for details.</p>
+<p>Note: You can also change the modifier to <code>kbstyle(Ctrl/Cmd)</code> for applying multiple cursors with the <code>editor.multiCursorModifier</code> <a href="/vscode_docs/getstarted/settings">setting</a> . See <a href="/vscode_docs/user-guide/codebasics#multicursor-modifier">Multi-cursor Modifier</a> for details.</p>
 </blockquote>
-<p>If you do not want to add all occurrences of the current selection, you can use <code>kb(editor.action.addSelectionToNextFindMatch)</code> instead.<br>
+<blockquote>
+<p>注意：你也可以使用<code>editor.multiCursorModifier</code><a href="/vscode_docs/getstarted/settings">设置</a>改变修改器为<code>Ctrl/Cmd</code>来使用多光标。详细请查看<a href="/vscode_docs/user-guide/codebasics#multicursor-modifier">多光标修改</a>。</p>
+</blockquote>
+<p>If you do not want to add all occurrences of the current selection, you can use <code>⌘D</code> instead.<br>
 This only selects the next occurrence after the one you selected so you can add selections one by one.</p>
-<p><img src="images/tips-and-tricks/add_cursor_current_selection_one_by_one.gif" alt="add cursor to next occurrences of current selection one by one"></p>
-<h3 id="Column-box-selection">Column (box) selection</h3>
+<p>如果你不想增加当前选中的出现项，你可以使用<code>⌘D</code>来代替。<br>
+这仅选中了在你选择的一个下一个的出现项，所以你可以一个一个的增加选中。</p>
+<p><img src="add_cursor_current_selection_one_by_one.gif" alt="一个一个的增加光标到当前选择的下一个出现项"></p>
+<h3 id="Column-box-selection——列（盒）选择">Column (box) selection——列（盒）选择</h3>
 <p>You can select blocks of text by holding <code>kbstyle(Shift+Alt)</code> (<code>kbstyle(Shift+Option)</code> on macOS) while you drag your mouse. A separate cursor will be added to the end of each selected line.</p>
-<p><img src="images/tips-and-tricks/column-select.gif" alt="Column text selection"></p>
-<p>You can also use <a href="/docs/editor/codebasics.md#column-box-selection">keyboard shortcuts</a> to trigger column selection.</p>
-<h3 id="Vertical-rulers">Vertical rulers</h3>
+<p>你可以在拖动鼠标时通过按住<code>Shift+Alt</code>(macOS为<code>Shift+Option</code>)选择文本块。一个分离的光标将被添加到每个选中行的末尾。</p>
+<p><img src="column-select.gif" alt="列文本选择"></p>
+<p>You can also use <a href="/vscode_docs/user-guide/codebasics.md#column-box-selection">keyboard shortcuts</a> to trigger column selection.<br>
+你也可以使用<a href="/vscode_docs/user-guide/codebasics.md#column-box-selection">快捷键</a>来触发列选择。</p>
+<h3 id="Vertical-rulers——纵向尺">Vertical rulers——纵向尺</h3>
 <p>You can add vertical column rulers to the editor with the <code>editor.rulers</code> setting, which takes an array of column character positions where you’d like vertical rulers.</p>
+<p>你可以使用<code>editor.rulers</code>设置添加纵向尺到编辑器，这在你想要纵向尺的地方采用了一系列列字符定位。</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;editor.rulers&quot;</span>: [</span><br><span class="line">        <span class="number">20</span>, <span class="number">40</span>, <span class="number">60</span></span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="images/tips-and-tricks/editor-rulers.png" alt="Editor rulers in the editor"></p>
-<h3 id="Fast-scrolling">Fast scrolling</h3>
-<p>Pressing the <code>kbstyle(Alt)</code> key enables fast scrolling in the editor and Explorers. By default, fast scrolling uses a 5X speed multiplier but you can control the multiplier with the <strong>Editor: Fast Scroll Sensitivity</strong> (<code>editor.fastScrollSensitivity</code>) setting.</p>
-<h3 id="Copy-line-up-down">Copy line up / down</h3>
-<p>Keyboard Shortcut: <code>kb(editor.action.copyLinesUpAction)</code> or <code>kb(editor.action.copyLinesDownAction)</code></p>
+<p><img src="editor-rulers.png" alt="编辑器中的编辑尺"></p>
+<h3 id="Fast-scrolling——快速滚动">Fast scrolling——快速滚动</h3>
+<p>Pressing the <code>Alt</code> key enables fast scrolling in the editor and Explorers. By default, fast scrolling uses a 5X speed multiplier but you can control the multiplier with the <strong>Editor: Fast Scroll Sensitivity</strong> (<code>editor.fastScrollSensitivity</code>) setting.</p>
+<p>按<code>Alt</code>键开启在编辑器和浏览器中快速滚动。快速滚动默认使用5倍的速度乘数，但是你可以使用<strong>Editor: Fast Scroll Sensitivity</strong>（<code>editor.fastScrollSensitivity</code>）设置控制这个乘数。</p>
+<h3 id="Copy-line-up-down——向上-下复制行">Copy line up / down——向上/下复制行</h3>
+<p>Keyboard Shortcut: <code>⇧⌥↑</code> or <code>⇧⌥↓</code><br>
+键盘快捷键：<code>⇧⌥↑</code> 或者 <code>⇧⌥↓</code></p>
 <blockquote>
 <p>The commands <strong>Copy Line Up/Down</strong> are unbound on Linux because the VS Code default keybindings would conflict with Ubuntu keybindings, see <a href="https://github.com/microsoft/vscode/issues/509">Issue #509</a>. You can still set the commands <code>editor.action.copyLinesUpAction</code> and <code>editor.action.copyLinesDownAction</code> to your own preferred keyboard shortcuts.</p>
 </blockquote>
-<p><img src="images/tips-and-tricks/copy_line_down.gif" alt="copy line down"></p>
-<h3 id="Move-line-up-and-down">Move line up and down</h3>
-<p>Keyboard Shortcut: <code>kb(editor.action.moveLinesUpAction)</code> or <code>kb(editor.action.moveLinesDownAction)</code></p>
-<p><img src="images/tips-and-tricks/move_line.gif" alt="move line up and down"></p>
-<h3 id="Shrink-expand-selection">Shrink / expand selection</h3>
-<p>Keyboard Shortcut: <code>kb(editor.action.smartSelect.shrink)</code> or <code>kb(editor.action.smartSelect.expand)</code></p>
-<p><img src="images/tips-and-tricks/shrink_expand_selection.gif" alt="shrink expand selection"></p>
-<p>You can learn more in the <a href="/docs/editor/codebasics.md#shrinkexpand-selection">Basic Editing</a> documentation.</p>
-<h3 id="Go-to-Symbol-in-File">Go to Symbol in File</h3>
-<p>Keyboard Shortcut: <code>kb(workbench.action.gotoSymbol)</code></p>
-<p><img src="images/tips-and-tricks/find_by_symbol.gif" alt="Find by symbol"></p>
-<p>You can group the symbols by kind by adding a colon, <code>@:</code>.</p>
-<p><img src="images/tips-and-tricks/group_symbols_by_kind.png" alt="group symbols by kind"></p>
-<h3 id="Go-to-Symbol-in-Workspace">Go to Symbol in Workspace</h3>
-<p>Keyboard Shortcut: <code>kb(workbench.action.showAllSymbols)</code></p>
-<p><img src="images/tips-and-tricks/go_to_symbol_in_workspace.png" alt="go to symbol in workspace"></p>
-<h3 id="Outline-view">Outline view</h3>
-<p>The Outline view in the File Explorer (default collapsed at the bottom) shows you the symbols of the currently open file.</p>
-<p><img src="images/tips-and-tricks/outline-view.png" alt="Outline view"></p>
-<p>You can sort by symbol name, category, and position in the file and allows quick navigation to symbol locations.</p>
-<h3 id="Navigate-to-a-specific-line">Navigate to a specific line</h3>
-<p>Keyboard Shortcut: <code>kb(workbench.action.gotoLine)</code></p>
-<h3 id="Undo-cursor-position">Undo cursor position</h3>
-<p>Keyboard Shortcut: <code>kb(cursorUndo)</code></p>
-<h3 id="Trim-trailing-whitespace">Trim trailing whitespace</h3>
-<p>Keyboard Shortcut: <code>kb(editor.action.trimTrailingWhitespace)</code></p>
-<p><img src="images/tips-and-tricks/trim_whitespace.gif" alt="trailing whitespace"></p>
-<h3 id="Transform-text-commands">Transform text commands</h3>
-<p>You can change selected text to uppercase, lowercase, and title case with the <strong>Transform</strong> commands from the Command Palette.</p>
-<p><img src="images/tips-and-tricks/transform-text-commands.png" alt="Transform text commands"></p>
-<h3 id="Code-formatting">Code formatting</h3>
-<p>Currently selected source code: <code>kb(editor.action.formatSelection)</code></p>
-<p>Whole document format: <code>kb(editor.action.formatDocument)</code></p>
-<p><img src="images/tips-and-tricks/code_formatting.gif" alt="code formatting"></p>
-<h3 id="Code-folding">Code folding</h3>
-<p>Keyboard Shortcut: <code>kb(editor.fold)</code> and <code>kb(editor.unfold)</code></p>
-<p><img src="images/tips-and-tricks/code_folding.gif" alt="code folding"></p>
-<p>You can also fold/unfold all regions in the editor with <strong>Fold All</strong> (<code>kb(editor.foldAll)</code>) and <strong>Unfold All</strong> (<code>kb(editor.unfoldAll)</code>).</p>
-<p>You can fold all block comments with <strong>Fold All Block Comments</strong> (<code>kb(editor.foldAllBlockComments)</code>).</p>
-<h3 id="Select-current-line">Select current line</h3>
-<p>Keyboard Shortcut: <code>kb(expandLineSelection)</code></p>
-<h3 id="Navigate-to-beginning-and-end-of-file">Navigate to beginning and end of file</h3>
-<p>Keyboard Shortcut: <code>kb(cursorTop)</code> and <code>kb(cursorBottom)</code></p>
-<h3 id="Open-Markdown-preview">Open Markdown preview</h3>
-<p>In a Markdown file, use</p>
-<p>Keyboard Shortcut: <code>kb(markdown.showPreview)</code></p>
-<p><img src="images/tips-and-tricks/markdown-preview.png" alt="Markdown preview"></p>
-<h3 id="Side-by-side-Markdown-edit-and-preview">Side by side Markdown edit and preview</h3>
-<p>In a Markdown file, use</p>
-<p>Keyboard Shortcut: <code>kb(markdown.showPreviewToSide)</code></p>
-<p>The preview and editor will synchronize with your scrolling in either view.</p>
-<p><img src="images/tips-and-tricks/markdown-preview-side-by-side.png" alt="side by side Markdown preview"></p>
-<h2 id="IntelliSense">IntelliSense</h2>
-<p><code>kb(editor.action.triggerSuggest)</code> to trigger the Suggestions widget.</p>
-<p><img src="images/tips-and-tricks/intellisense.gif" alt="intellisense"></p>
-<p>You can view available methods, parameter hints, short documentation, etc.</p>
-<h3 id="Peek">Peek</h3>
-<p>Select a symbol then type <code>kb(editor.action.peekDefinition)</code>. Alternatively, you can use the context menu.</p>
-<p><img src="images/tips-and-tricks/peek.gif" alt="peek"></p>
-<h3 id="Go-to-Definition">Go to Definition</h3>
-<p>Select a symbol then type <code>kb(editor.action.revealDefinition)</code>. Alternatively, you can use the context menu or <code>kbstyle(Ctrl+click)</code> (<code>kbstyle(Cmd+click)</code> on macOS).</p>
-<p><img src="images/tips-and-tricks/goto_definition.gif" alt="go to definition"></p>
-<p>You can go back to your previous location with the <strong>Go</strong> &gt; <strong>Back</strong> command or <code>kb(workbench.action.navigateBack)</code>.</p>
-<p>You can also see the type definition if you press <code>kbstyle(Ctrl)</code> (<code>kbstyle(Cmd)</code> on macOS) when you are hovering over the type.</p>
-<h3 id="Go-to-References">Go to References</h3>
-<p>Select a symbol then type <code>kb(editor.action.goToReferences)</code>. Alternatively, you can use the context menu.</p>
-<p><img src="images/tips-and-tricks/find_all_references.gif" alt="peek references"></p>
-<h3 id="Find-All-References-view">Find All References view</h3>
-<p>Select a symbol then type <code>kb(references-view.findReferences)</code> to open the References view showing all your file’s symbols in a dedicated view.</p>
-<h3 id="Rename-Symbol">Rename Symbol</h3>
-<p>Select a symbol then type <code>kb(editor.action.rename)</code>. Alternatively, you can use the context menu.</p>
-<p><img src="images/tips-and-tricks/rename_symbol.gif" alt="rename symbol"></p>
-<h3 id="Search-and-modify">Search and modify</h3>
-<p>Besides searching and replacing expressions, you can also search and reuse parts of what was matched, using regular expressions with capturing groups. Enable regular expressions in the search box by clicking the <strong>Use Regular Expression</strong> <code>.*</code> button (<code>kb(toggleSearchRegex)</code>) and then write a regular expression and use parenthesis to define groups. You can then reuse the content matched in each group by using <code>$1</code>, <code>$2</code>, etc. in the Replace field.</p>
-<p><img src="images/tips-and-tricks/search_and_modify.png" alt="search and modify"></p>
+<blockquote>
+<p>命令<strong>Copy Line Up/Down</strong>在Linux上不受控制是因为VSCode默认的键绑定和Ubuntu的键绑定冲突，查看<a href="https://github.com/microsoft/vscode/issues/509">Issue #509</a>。你仍然可以设置命令<code>editor.action.copyLinesUpAction</code>和<code>editor.action.copyLinesDownAction</code>为你喜爱的键盘快捷键。</p>
+</blockquote>
+<p><img src="copy_line_down.gif" alt="复制到下一行"></p>
+<h3 id="Move-line-up-and-down——移动到上-下一行">Move line up and down——移动到上/下一行</h3>
+<p>Keyboard Shortcut: <code>⌥↓</code> or <code>⌥↓</code><br>
+键盘快捷键：<code>⌥↑</code>或者<code>⌥↓</code></p>
+<p><img src="move_line.gif" alt="移动到上/下一行"></p>
+<h3 id="Shrink-expand-selection——收缩-扩张选中区域">Shrink / expand selection——收缩/扩张选中区域</h3>
+<p>Keyboard Shortcut: <code>⌃⇧⌘←</code> or <code>⌃⇧⌘→</code><br>
+键盘快捷键：<code>⌃⇧⌘←</code> 或者 <code>⌃⇧⌘→</code></p>
+<p><img src="shrink_expand_selection.gif" alt="收缩扩张选中区域"></p>
+<p>You can learn more in the <a href="/vscode_docs/user-guide/codebasics#shrinkexpand-selection">Basic Editing</a> documentation.<br>
+你可以在<a href="/vscode_docs/user-guide/codebasics#shrinkexpand-selection">基础编辑</a>文档了解跟多。</p>
+<h3 id="Go-to-Symbol-in-File——文件中跳转字符">Go to Symbol in File——文件中跳转字符</h3>
+<p>Keyboard Shortcut: <code>⇧⌘O</code><br>
+键盘快捷键：<code>⇧⌘O</code></p>
+<p><img src="find_by_symbol.gif" alt="通过字符查找"></p>
+<p>You can group the symbols by kind by adding a colon, <code>@:</code>.<br>
+你可以通过添加冒号将符号按类别分组，<code>@:</code>。</p>
+<p><img src="group_symbols_by_kind.png" alt="通过类别将符号分组"></p>
+<h3 id="Go-to-Symbol-in-Workspace——在工作空间跳转符号">Go to Symbol in Workspace——在工作空间跳转符号</h3>
+<p>Keyboard Shortcut: <code>⌘T</code><br>
+键盘快捷键：<code>⌘T</code></p>
+<p><img src="go_to_symbol_in_workspace.png" alt="在工作空间跳转符号"></p>
+<h3 id="Outline-view——大纲视图">Outline view——大纲视图</h3>
+<p>The Outline view in the File Explorer (default collapsed at the bottom) shows you the symbols of the currently open file.<br>
+文件浏览器里的大纲视图（默认折叠在底部）展示了当前打开的文件的符号。</p>
+<p><img src="outline-view.png" alt="大纲视图"></p>
+<p>You can sort by symbol name, category, and position in the file and allows quick navigation to symbol locations.<br>
+你可以通过符号名字、类别、文件中的位置来排序，且允许快速导航到符号的位置。</p>
+<h3 id="Navigate-to-a-specific-line——导航到指定行">Navigate to a specific line——导航到指定行</h3>
+<p>Keyboard Shortcut: <code>⌃G</code><br>
+键盘快捷键：<code>⌃G</code></p>
+<h3 id="Undo-cursor-position——撤销光标位置">Undo cursor position——撤销光标位置</h3>
+<p>Keyboard Shortcut: <code>⌘U</code><br>
+键盘快捷键：<code>⌘U</code></p>
+<h3 id="Trim-trailing-whitespace——修剪尾部的空白">Trim trailing whitespace——修剪尾部的空白</h3>
+<p>Keyboard Shortcut: <code>⌘K ⌘X</code><br>
+键盘快捷键：<code>⌘K ⌘X</code></p>
+<p><img src="trim_whitespace.gif" alt="修剪空白"></p>
+<h3 id="Transform-text-commands——改变文本命令">Transform text commands——改变文本命令</h3>
+<p>You can change selected text to uppercase, lowercase, and title case with the <strong>Transform</strong> commands from the Command Palette.<br>
+你可以将选中的文本改变为大写、小写和首字母大写，方法是在命令面板中使用<strong>Transform</strong>命令。</p>
+<p><img src="transform-text-commands.png" alt="改变文本命令"></p>
+<h3 id="Code-formatting——代码格式化">Code formatting——代码格式化</h3>
+<p>Currently selected source code: <code>⌘K ⌘F</code><br>
+当前选中的源代码：<code>⌘K ⌘F</code></p>
+<p>Whole document format: <code>⇧⌥F</code><br>
+整个文档格式化：<code>⇧⌥F</code></p>
+<p><img src="code_formatting.gif" alt="代码格式化"></p>
+<h3 id="Code-folding——代码折叠">Code folding——代码折叠</h3>
+<p>Keyboard Shortcut: <code>⌥⌘[</code> and <code>⌥⌘]</code><br>
+键盘快捷键：<code>⌥⌘[</code>和<code>⌥⌘]</code></p>
+<p><img src="code_folding.gif" alt="代码折叠"></p>
+<p>You can also fold/unfold all regions in the editor with <strong>Fold All</strong> (<code>⌘K ⌘0</code>) and <strong>Unfold All</strong> (<code>⌘K ⌘J</code>).<br>
+你也可以使用<strong>全部折叠</strong>（<code>⌘K ⌘0</code>）和<strong>全部展开</strong>（<code>⌘K ⌘J</code>）折叠/展开所有编辑器里的区域。</p>
+<p>You can fold all block comments with <strong>Fold All Block Comments</strong> (<code>⌘K ⌘/</code>).<br>
+你也可以使用<strong>折叠所有块注释</strong>（<code>⌘K ⌘/</code>）折叠所有的块评论。</p>
+<h3 id="Select-current-line——选择当前行">Select current line——选择当前行</h3>
+<p>Keyboard Shortcut: <code>⌘L</code><br>
+键盘快捷键：<code>⌘L</code></p>
+<h3 id="Navigate-to-beginning-and-end-of-file——导航到文件开头和结尾">Navigate to beginning and end of file——导航到文件开头和结尾</h3>
+<p>Keyboard Shortcut: <code>⌘↑</code> and <code>⌘↓</code><br>
+键盘快捷键：<code>⌘↑</code> 和 <code>⌘↓</code></p>
+<h3 id="Open-Markdown-preview——打开Markdown预览">Open Markdown preview——打开Markdown预览</h3>
+<p>In a Markdown file, use<br>
+在Markdown文件中，使用</p>
+<p>Keyboard Shortcut: <code>⇧⌘V</code><br>
+键盘快捷键：<code>⇧⌘V</code></p>
+<p><img src="markdown-preview.png" alt="Markdown预览"></p>
+<h3 id="Side-by-side-Markdown-edit-and-preview——同时进行Markdown编辑和预览">Side by side Markdown edit and preview——同时进行Markdown编辑和预览</h3>
+<p>In a Markdown file, use<br>
+在Markdown文件中，使用</p>
+<p>Keyboard Shortcut: <code>⌘K V</code><br>
+键盘快捷键：<code>⌘K V</code></p>
+<p>The preview and editor will synchronize with your scrolling in either view.<br>
+预览和编辑器将和你的任一视图中的滚动同步。</p>
+<p><img src="markdown-preview-side-by-side.png" alt="并行的Markdown预览"></p>
+<h2 id="IntelliSense——智能感知">IntelliSense——智能感知</h2>
+<p><code>⌃Space</code> to trigger the Suggestions widget.<br>
+<code>⌃Space</code>可触发建议小部件。</p>
+<p><img src="intellisense.gif" alt="智能感知"></p>
+<p>You can view available methods, parameter hints, short documentation, etc.<br>
+你可以查看可用的方法、参数提示、简短文档等等。</p>
+<h3 id="Peek——一瞥">Peek——一瞥</h3>
+<p>Select a symbol then type <code>⌥F12</code>. Alternatively, you can use the context menu.<br>
+选择一个符号然后输入<code>⌥F12</code>。或者，你可以使用上下文菜单。</p>
+<p><img src="peek.gif" alt="一瞥"></p>
+<h3 id="Go-to-Definition——跳到定义">Go to Definition——跳到定义</h3>
+<p>Select a symbol then type <code>F12</code>. Alternatively, you can use the context menu or <code>kbstyle(Ctrl+click)</code> (<code>kbstyle(Cmd+click)</code> on macOS).<br>
+选择一个符号然后输入<code>F12</code>。或者，你可以使用上下文菜单或<code>Ctrl+click</code> (macOS上为<code>Cmd+click</code>)。</p>
+<p><img src="goto_definition.gif" alt="跳到定义"></p>
+<p>You can go back to your previous location with the <strong>Go</strong> &gt; <strong>Back</strong> command or <code>⌃-</code>.<br>
+你可以使用 <strong>Go</strong> &gt; <strong>back</strong> 命令或者<code>⌃-</code>返回到你之前的位置。</p>
+<p>You can also see the type definition if you press <code>kbstyle(Ctrl)</code> (<code>kbstyle(Cmd)</code> on macOS) when you are hovering over the type.<br>
+当你悬停在类型上时，如果你按<code>Ctrl</code> (macOS上为<code>Cmd</code>)也可以查看类型定义。</p>
+<h3 id="Go-to-References——跳到引用">Go to References——跳到引用</h3>
+<p>Select a symbol then type <code>kb(editor.action.goToReferences)</code>. Alternatively, you can use the context menu.<br>
+选择一个符号然后输入<code>kb(editor.action.goToReferences)</code>。或者你可以使用上下文菜单。</p>
+<p><img src="find_all_references.gif" alt="查看引用"></p>
+<h3 id="Find-All-References-view——查找所有的引用视图">Find All References view——查找所有的引用视图</h3>
+<p>Select a symbol then type <code>kb(references-view.findReferences)</code> to open the References view showing all your file’s symbols in a dedicated view.<br>
+选择一个符号然后输入<code>kb(references-view.findReferences)</code>来打开引用视图，这在一个专用的视图中展示了所有的文件符号。</p>
+<h3 id="Rename-Symbol——重命名符号">Rename Symbol——重命名符号</h3>
+<p>Select a symbol then type <code>kb(editor.action.rename)</code>. Alternatively, you can use the context menu.<br>
+选择一个符号然后输入<code>kb(editor.action.rename)</code>。或者，你可以使用上下文菜单。</p>
+<p><img src="rename_symbol.gif" alt="重命名符号"></p>
+<h3 id="Search-and-modify——搜索和修改">Search and modify——搜索和修改</h3>
+<p>Besides searching and replacing expressions, you can also search and reuse parts of what was matched, using regular expressions with capturing groups. Enable regular expressions in the search box by clicking the <strong>Use Regular Expression</strong> <code>.*</code> button (<code>⌥⌘R</code>) and then write a regular expression and use parenthesis to define groups. You can then reuse the content matched in each group by using <code>$1</code>, <code>$2</code>, etc. in the Replace field.</p>
+<p>除了搜索和替换表达式，你也可以使用带有捕获组的正则表达式搜索和重用被匹配的部分。用过点击<strong>使用正则表达式</strong><code>.*</code>按钮（<code>⌥⌘R</code>）开启搜索框的正则表达式，然后写如一个正则表达式并使用圆括号来定义组。之后你可以通过在替换字段上使用<code>$1</code>、<code>$2</code>在重用每个组的匹配的内容。</p>
+<p><img src="search_and_modify.png" alt="搜索和修改"></p>
 <h3 id="eslintrc-json">.eslintrc.json</h3>
 <p>Install the <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint extension</a>. Configure<br>
 your linter however you’d like. Consult the <a target="_blank" rel="noopener" href="https://eslint.org/docs/user-guide/configuring">ESLint specification</a> for details on its linting rules and options.</p>
-<p>Here is configuration to use ES6.</p>
+<p>安装<a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint扩展</a>。随心所欲的配置你的linter。关于静态分析的规则和选项，详细请查看<a target="_blank" rel="noopener" href="https://eslint.org/docs/user-guide/configurin">ESLint说明</a>。</p>
+<p>Here is configuration to use ES6.<br>
+这有一个使用ES6的配置。</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;env&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;browser&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">&quot;commonjs&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">&quot;es6&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">&quot;node&quot;</span>: <span class="literal">true</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">&quot;parserOptions&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;ecmaVersion&quot;</span>: <span class="number">6</span>,</span><br><span class="line">        <span class="attr">&quot;sourceType&quot;</span>: <span class="string">&quot;module&quot;</span>,</span><br><span class="line">        <span class="attr">&quot;ecmaFeatures&quot;</span>: &#123;</span><br><span class="line">            <span class="attr">&quot;jsx&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">            <span class="attr">&quot;classes&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">            <span class="attr">&quot;defaultParams&quot;</span>: <span class="literal">true</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">&quot;rules&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;no-const-assign&quot;</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">&quot;no-extra-semi&quot;</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">&quot;semi&quot;</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">&quot;no-fallthrough&quot;</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">&quot;no-empty&quot;</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">&quot;no-mixed-spaces-and-tabs&quot;</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">&quot;no-redeclare&quot;</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">&quot;no-this-before-super&quot;</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">&quot;no-undef&quot;</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">&quot;no-unreachable&quot;</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">&quot;no-use-before-define&quot;</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">&quot;constructor-super&quot;</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">&quot;curly&quot;</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">&quot;eqeqeq&quot;</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">&quot;func-names&quot;</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">&quot;valid-typeof&quot;</span>: <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="package-json">package.json</h3>
-<p>See IntelliSense for your <code>package.json</code> file.</p>
-<p><img src="images/tips-and-tricks/package_json_intellisense.gif" alt="package json intellisense"></p>
-<h3 id="Emmet-syntax">Emmet syntax</h3>
-<p><a href="/docs/editor/emmet.md">Support for Emmet syntax</a>.</p>
-<p><img src="images/tips-and-tricks/emmet_syntax.gif" alt="emmet syntax"></p>
-<h2 id="Snippets">Snippets</h2>
-<h3 id="Create-custom-snippets">Create custom snippets</h3>
-<p><strong>File</strong> &gt; <strong>Preferences</strong> &gt; <strong>User Snippets</strong> (<strong>Code</strong> &gt; <strong>Preferences</strong> &gt; <strong>User Snippets</strong> on macOS), select the language, and create a snippet.</p>
+<p>See IntelliSense for your <code>package.json</code> file.<br>
+查看智能感知来了解你的<code>package.json</code>文件。</p>
+<p><img src="package_json_intellisense.gif" alt="package.json智能感知"></p>
+<h3 id="Emmet-syntax——Emmet语法">Emmet syntax——Emmet语法</h3>
+<p><a href="/vscode_docs/getstarted/emmet">Support for Emmet syntax</a>.<br>
+<a href="/vscode_docs/getstarted/emmet">支持Emmet语法</a>.</p>
+<p><img src="emmet_syntax.gif" alt="emmet语法"></p>
+<h2 id="Snippets——代码块">Snippets——代码块</h2>
+<h3 id="Create-custom-snippets——创建自定义代码块">Create custom snippets——创建自定义代码块</h3>
+<p><strong>File</strong> &gt; <strong>Preferences</strong> &gt; <strong>User Snippets</strong> (<strong>Code</strong> &gt; <strong>Preferences</strong> &gt; <strong>User Snippets</strong> on macOS), select the language, and create a snippet.<br>
+<strong>文件</strong> &gt; <strong>设置</strong> &gt; <strong>用户代码块</strong>（macOS上为<strong>Code</strong> &gt; <strong>设置</strong> &gt; <strong>用户代码块</strong>），选择语言并创建一个代码块。</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;create component&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;prefix&quot;</span>: <span class="string">&quot;component&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;body&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;class $1 extends React.Component &#123;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;\trender() &#123;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;\t\treturn ($2);&quot;</span>,</span><br><span class="line">        <span class="string">&quot;\t&#125;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;&#125;&quot;</span></span><br><span class="line">    ]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-<p>See more details in <a href="/docs/editor/userdefinedsnippets.md">Creating your own Snippets</a>.</p>
-<h2 id="Git-integration">Git integration</h2>
-<p>Keyboard Shortcut: <code>kb(workbench.view.scm)</code></p>
+<p>See more details in <a href="/vscode_docs/getstarted/userdefinedsnippets">Creating your own Snippets</a>.<br>
+在<a href="/vscode_docs/getstarted/userdefinedsnippets">创建你自己的代码块</a>查看更多细节。</p>
+<h2 id="Git-integration——Git集成">Git integration——Git集成</h2>
+<p>Keyboard Shortcut: <code>⌃⇧G</code><br>
+键盘快捷键：<code>⌃⇧G</code></p>
 <p>Git integration comes with VS Code “out-of-the-box”. You can install other SCM providers from the Extension Marketplace. This section describes the Git integration but much of the UI and gestures are shared by other SCM providers.</p>
-<h3 id="Diffs">Diffs</h3>
-<p>From the <strong>Source Control</strong> view, select a file to open the diff.</p>
-<p><img src="images/tips-and-tricks/msee-changes.gif" alt="git diff from source control"></p>
-<p>Alternatively, click the <strong>Open Changes</strong> button in the top right corner to diff the current open file.</p>
-<p><strong>Views</strong></p>
-<p>The default view for diffs is the <strong>side by side view</strong>.</p>
-<p>Toggle <strong>inline view</strong> by clicking the <strong>More Actions</strong> (…) button in the top right and selecting <strong>Toggle Inline View</strong>.</p>
-<p><img src="images/tips-and-tricks/mdiff-switch-to-inline.png" alt="git switch to inline diff"></p>
-<p>If you prefer the inline view, you can set <code>&quot;diffEditor.renderSideBySide&quot;: false</code>.</p>
-<p><strong>Review pane</strong></p>
-<p>Navigate through diffs with <code>kb(editor.action.diffReview.next)</code> and <code>kb(editor.action.diffReview.prev)</code>. This will present them in a unified patch format.<br>
-Lines can be navigated with arrow keys and pressing <code>kbstyle(Enter)</code> will jump back in the diff editor and the selected line.</p>
-<p><img src="images/tips-and-tricks/diff_review_pane.png" alt="diff_review_pane"></p>
-<p><strong>Edit pending changes</strong></p>
-<p>You can make edits directly in the pending changes of the diff view.</p>
-<h3 id="Branches">Branches</h3>
-<p>Easily switch between Git branches via the Status Bar.</p>
-<p><img src="images/tips-and-tricks/mswitch-branch.gif" alt="switch branches"></p>
-<h3 id="Staging">Staging</h3>
-<p><strong>Stage file changes</strong></p>
-<p>Hover over the number of files and click the plus button.</p>
-<p>Click the minus button to unstage changes.</p>
-<p><img src="images/tips-and-tricks/mstage-unstage.gif" alt="git stage all"></p>
-<p><strong>Stage selected</strong></p>
-<p>Stage a portion of a file by selecting that file (using the arrows) and then choosing <strong>Stage Selected Ranges</strong> from the <strong>Command Palette</strong>.</p>
-<h3 id="Undo-last-commit">Undo last commit</h3>
+<p>Git集成伴随VSCode开箱即用。你可以从扩展市场安装其他的SCM支持。这部分描述了Git集成，但是大部分UI和手势被其它的SCM支持共享。</p>
+<h3 id="Diffs——比较">Diffs——比较</h3>
+<p>From the <strong>Source Control</strong> view, select a file to open the diff.<br>
+从<strong>源代码控制</strong>视图中选择一个文件来打开比较。</p>
+<p><img src="msee-changes.gif" alt="来自源代码控制的git比较"></p>
+<p>Alternatively, click the <strong>Open Changes</strong> button in the top right corner to diff the current open file.<br>
+或者，点击右上角的<strong>打开变化</strong>按钮来比较当前打开的文件。</p>
+<p><strong>Views</strong><br>
+<strong>视图</strong></p>
+<p>The default view for diffs is the <strong>side by side view</strong>.<br>
+默认比较视图是<strong>并列视图</strong>。</p>
+<p>Toggle <strong>inline view</strong> by clicking the <strong>More Actions</strong> (…) button in the top right and selecting <strong>Toggle Inline View</strong>.<br>
+通过点击右上角的<strong>更多行为</strong>（…）按钮并选择<strong>切换内联视图</strong>，可以切换<strong>内联视图</strong>。</p>
+<p><img src="mdiff-switch-to-inline.png" alt="git切换到内置比较"></p>
+<p>If you prefer the inline view, you can set <code>&quot;diffEditor.renderSideBySide&quot;: false</code>.<br>
+如果你更喜欢内联视图，你可以设置<code>&quot;diffEditor.renderSideBySide&quot;: false</code>。</p>
+<p><strong>Review pane</strong><br>
+<strong>审查窗格</strong></p>
+<p>Navigate through diffs with <code>F7</code> and <code>⇧F7</code>. This will present them in a unified patch format.<br>
+Lines can be navigated with arrow keys and pressing <code>Enter</code> will jump back in the diff editor and the selected line.</p>
+<p>使用<code>F7</code> 和 <code>⇧F7</code>浏览差异。这将以一个统一的块的形式呈现它们。<br>
+可使用箭头键浏览行，按<code>Enter</code>将调回到差异编辑器和选中行。</p>
+<p><img src="diff_review_pane.png" alt="diff_review_pane"></p>
+<p><strong>Edit pending changes</strong><br>
+<strong>编辑待定的改变</strong></p>
+<p>You can make edits directly in the pending changes of the diff view.<br>
+你可以直接在差异视图的待定修改中直接编辑。</p>
+<h3 id="Branches——分支">Branches——分支</h3>
+<p>Easily switch between Git branches via the Status Bar.<br>
+通过状态栏简单的在Git分支之间切换。</p>
+<p><img src="mswitch-branch.gif" alt="切换分支"></p>
+<h3 id="Staging——暂存">Staging——暂存</h3>
+<p><strong>Stage file changes</strong><br>
+<strong>暂存文件修改</strong></p>
+<p>Hover over the number of files and click the plus button.<br>
+悬在文件的数字上并单击加号按钮。</p>
+<p>Click the minus button to unstage changes.<br>
+单击减法按钮来撤销修改。</p>
+<p><img src="mstage-unstage.gif" alt="git暂存所有"></p>
+<p><strong>Stage selected</strong><br>
+<strong>暂存选中的</strong></p>
+<p>Stage a portion of a file by selecting that file (using the arrows) and then choosing <strong>Stage Selected Ranges</strong> from the <strong>Command Palette</strong>.<br>
+通过选择文件（使用箭头），然后从<strong>命令面板</strong>中选择<strong>暂存选中范围</strong>。</p>
+<h3 id="Undo-last-commit——撤销上次提交">Undo last commit——撤销上次提交</h3>
 <p>Click the (…) button and then select <strong>Undo Last Commit</strong> to undo the previous commit. The changes are added to the Staged Changes section.</p>
-<p><img src="images/tips-and-tricks/mundo-last-commit.gif" alt="undo last commit"></p>
-<h3 id="See-Git-output">See Git output</h3>
-<p>VS Code makes it easy to see what Git commands are actually running. This is helpful when learning Git or debugging a difficult source control issue.</p>
-<p>Use the <strong>Toggle Output</strong> command (<code>kb(workbench.action.output.toggleOutput)</code>) and select <strong>Git</strong> in the dropdown.</p>
-<h3 id="Gutter-indicators">Gutter indicators</h3>
-<p>View diff decorations in editor. See <a href="/docs/editor/versioncontrol.md#gutter-indicators">documentation</a> for more details.</p>
-<p><img src="images/tips-and-tricks/mgutter_icons.gif" alt="git gutter indicators"></p>
-<h3 id="Resolve-merge-conflicts">Resolve merge conflicts</h3>
-<p>During a merge, go to the <strong>Source Control</strong> view (<code>kb(workbench.view.scm)</code>) and make changes in the diff view.</p>
-<p>You can resolve merge conflicts with the inline CodeLens which lets you <strong>Accept Current Change</strong>, <strong>Accept Incoming Change</strong>, <strong>Accept Both Changes</strong>, and <strong>Compare Changes</strong>.</p>
-<h3 id="Set-VS-Code-as-default-merge-tool">Set VS Code as default merge tool</h3>
+<p>点击(…)按钮然后选择<strong>撤销上次提交</strong>撤销之前的提交。这些修改被添加到暂存的修改区域。</p>
+<p><img src="mundo-last-commit.gif" alt="撤销上次提交"></p>
+<h3 id="See-Git-output——查看Git输出">See Git output——查看Git输出</h3>
+<p>VS Code makes it easy to see what Git commands are actually running. This is helpful when learning Git or debugging a difficult source control issue.<br>
+VSCode可以轻松的查看是什么Git命令实际在运行。当了解Git或调试一个困难的源代码控制问题时，这是有益的。</p>
+<p>Use the <strong>Toggle Output</strong> command (<code>kb(workbench.action.output.toggleOutput)</code>) and select <strong>Git</strong> in the dropdown.<br>
+使用<strong>Toggle Output</strong>命令（<code>⇧⌘U</code>），在下拉列表中选择<strong>Git</strong>。</p>
+<h3 id="Gutter-indicators——装订线指示器-每一行前面表示修改的指示器">Gutter indicators——装订线指示器(每一行前面表示修改的指示器)</h3>
+<p>View diff decorations in editor. See <a href="/vscode_docs/getstarted/versioncontrol#gutter-indicators">documentation</a> for more details.<br>
+查看编辑器中的差异装饰。查看<a href="/vscode_docs/getstarted/versioncontrol#gutter-indicators">文档</a>了解更多。</p>
+<p><img src="mgutter_icons.gif" alt="git 装订线指示器"></p>
+<h3 id="Resolve-merge-conflicts——解决合并冲突">Resolve merge conflicts——解决合并冲突</h3>
+<p>During a merge, go to the <strong>Source Control</strong> view (<code>⌃⇧G</code>) and make changes in the diff view.<br>
+在合并期间，去<strong>源代码控制</strong>视图（<code>⌃⇧G</code>），并在差异视图中作出修改。</p>
+<p>You can resolve merge conflicts with the inline CodeLens which lets you <strong>Accept Current Change</strong>, <strong>Accept Incoming Change</strong>, <strong>Accept Both Changes</strong>, and <strong>Compare Changes</strong>.<br>
+你可以使用内联的CodeLens来解决合并冲突，它可以使用<strong>接受当前修改</strong>、<strong>接受到来的修改</strong>、<strong>接受所有修改</strong>和<strong>比较修改</strong>。</p>
+<h3 id="Set-VS-Code-as-default-merge-tool——设置VSCode作为默认合并工具">Set VS Code as default merge tool——设置VSCode作为默认合并工具</h3>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global merge.tool vscode</span><br><span class="line">git config --global mergetool.vscode.cmd <span class="string">&#x27;code --wait $MERGED&#x27;</span></span><br></pre></td></tr></table></figure>
-<h3 id="Set-VS-Code-as-default-diff-tool">Set VS Code as default diff tool</h3>
+<h3 id="Set-VS-Code-as-default-diff-tool——设置VSCode为默认的比较工具">Set VS Code as default diff tool——设置VSCode为默认的比较工具</h3>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global diff.tool vscode</span><br><span class="line">git config --global difftool.vscode.cmd <span class="string">&#x27;code --wait --diff $LOCAL $REMOTE&#x27;</span></span><br></pre></td></tr></table></figure>
-<h2 id="Debugging">Debugging</h2>
-<h3 id="Configure-debugger">Configure debugger</h3>
-<p>Open the <strong>Command Palette</strong> (<code>kb(workbench.action.showCommands)</code>) and select <strong>Debug: Open launch.json</strong>, which will prompt you to select the environment that matches your project (Node.js, Python, C++, etc). This will generate a <code>launch.json</code> file. Node.js support is built-in and other environments require installing the appropriate language extensions. See the debugging <a href="/docs/editor/debugging.md">documentation</a> for more details.</p>
-<p><img src="images/tips-and-tricks/configure_debug.gif" alt="configure debugging"></p>
-<h3 id="Breakpoints-and-stepping-through">Breakpoints and stepping through</h3>
-<p>Place breakpoints next to the line number. Navigate forward with the Debug widget.</p>
-<p><img src="images/tips-and-tricks/node_debug.gif" alt="debug"></p>
-<h3 id="Data-inspection">Data inspection</h3>
-<p>Inspect variables in the <strong>Run</strong> panels and in the console.</p>
-<p><img src="images/tips-and-tricks/debug_data_inspection.gif" alt="data inspection"></p>
-<h3 id="Logpoints">Logpoints</h3>
+<h2 id="Debugging——调试">Debugging——调试</h2>
+<h3 id="Configure-debugger——配置调试器">Configure debugger——配置调试器</h3>
+<p>Open the <strong>Command Palette</strong> (<code>⇧⌘P</code>) and select <strong>Debug: Open launch.json</strong>, which will prompt you to select the environment that matches your project (Node.js, Python, C++, etc). This will generate a <code>launch.json</code> file. Node.js support is built-in and other environments require installing the appropriate language extensions. See the debugging <a href="/vscode_docs/setup/debugging">documentation</a> for more details.</p>
+<p>打开<strong>命令面板</strong>（<code>⇧⌘P</code>）并选择<strong>调试：打开launch.json</strong>，这将提示你选择匹配你工程的环境（Node.js、Python、C++等）。这将生成<code>launch.json</code>文件。Node.js的支持是内置的，而其他环境要求安装合适的语言扩展。查看调试<a href="/vscode_docs/setup/debugging">文档</a>了解更多。</p>
+<p><img src="configure_debug.gif" alt="配置调试"></p>
+<h3 id="Breakpoints-and-stepping-through——断点和单步调试">Breakpoints and stepping through——断点和单步调试</h3>
+<p>Place breakpoints next to the line number. Navigate forward with the Debug widget.<br>
+放置断点到行号的旁边。使用调试小部件往前导航。</p>
+<p><img src="node_debug.gif" alt="调试"></p>
+<h3 id="Data-inspection——数据查看">Data inspection——数据查看</h3>
+<p>Inspect variables in the <strong>Run</strong> panels and in the console.<br>
+在<strong>运行</strong>面板和控制台中查看变量。</p>
+<p><img src="debug_data_inspection.gif" alt="数据查看"></p>
+<h3 id="Logpoints——日志点">Logpoints——日志点</h3>
 <p>Logpoints act much like breakpoints but instead of halting the debugger when they are hit, they log a message to the console. Logpoints are especially useful for injecting logging while debugging production servers that cannot be modified or paused.</p>
+<p>日志点运作很像断点，但是当它被点击时不会停止调试器，而是将信息记录到控制台中。当调试不能被修改或者暂停的生产服务时，对于注入日志来说日志点尤其有用。</p>
 <p>Add a logpoint with the <strong>Add Logpoint</strong> command in the left editor gutter and it will be displayed as a “diamond” shaped icon. Log messages are plain text but can include expressions to be evaluated within curly braces (‘{}’).</p>
-<p><img src="images/tips-and-tricks/logpoint.png" alt="Logpoint set in the editor"></p>
-<h2 id="Task-runner">Task runner</h2>
-<h3 id="Auto-detect-tasks">Auto detect tasks</h3>
+<p>使用<strong>Add Logpoint</strong>命令在左边的编辑器槽中增加日志点，它将显示为钻石形状的图标。日志信息是纯文本但是可以在卷括号(‘{}’)里包含计算表达式。</p>
+<p><img src="logpoint.png" alt="编辑器中的日志点设置"></p>
+<h2 id="Task-runner——任务运行">Task runner——任务运行</h2>
+<h3 id="Auto-detect-tasks——自动侦查任务">Auto detect tasks——自动侦查任务</h3>
 <p>Select <strong>Terminal</strong> from the top-level menu, run the command <strong>Configure Tasks</strong>, then select the type of task you’d like to run.<br>
-This will generate a <code>tasks.json</code> file with content like the following. See the <a href="/docs/editor/tasks.md">Tasks</a> documentation for more details.</p>
+This will generate a <code>tasks.json</code> file with content like the following. See the <a href="/vscode_docs/getstarted/tasks">Tasks</a> documentation for more details.</p>
+<p>选择顶级菜单中的<strong>终端</strong>，运行命令<strong>配置任务</strong>，然后选择你想要运行的任务类型。这将生成一个内容如下面的<code>tasks.json</code>文件，查看<a href="/vscode_docs/getstarted/tasks">任务</a>文档了解更多。</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="comment">// See https://go.microsoft.com/fwlink/?LinkId=733558</span></span><br><span class="line">    <span class="comment">// for the documentation about the tasks.json format</span></span><br><span class="line">    <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;2.0.0&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;tasks&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">&quot;type&quot;</span>: <span class="string">&quot;npm&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;script&quot;</span>: <span class="string">&quot;install&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;group&quot;</span>: &#123;</span><br><span class="line">                <span class="attr">&quot;kind&quot;</span>: <span class="string">&quot;build&quot;</span>,</span><br><span class="line">                <span class="attr">&quot;isDefault&quot;</span>: <span class="literal">true</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>There are occasionally issues with auto generation. Check out the documentation for getting things to work properly.</p>
-<h3 id="Run-tasks-from-the-Terminal-menu">Run tasks from the Terminal menu</h3>
+<p>There are occasionally issues with auto generation. Check out the documentation for getting things to work properly.<br>
+自动生成偶尔有问题。查看文档使事情正常工作。</p>
+<h3 id="Run-tasks-from-the-Terminal-menu——从终端菜单中运行任务">Run tasks from the Terminal menu——从终端菜单中运行任务</h3>
 <p>Select <strong>Terminal</strong> from the top-level menu, run the command <strong>Run Task</strong>, and select the task you want to run. Terminate the running task by running the command <strong>Terminate Task</strong></p>
-<p><img src="images/tips-and-tricks/task_runner.gif" alt="task runner"></p>
-<h3 id="Define-keyboard-shortcuts-for-tasks">Define keyboard shortcuts for tasks</h3>
-<p>You can define a keyboard shortcut for any task. From the <strong>Command Palette</strong> (<code>kb(workbench.action.showCommands)</code>), select <strong>Preferences: Open Keyboard Shortcuts File</strong>, bind the desired shortcut to the <code>workbench.action.tasks.runTask</code> command, and define the <strong>Task</strong> as <code>args</code>.</p>
-<p>For example, to bind <code>kbstyle(Ctrl+H)</code> to the <code>Run tests</code> task, add the following:</p>
+<p>选择顶级菜单中的<strong>终端</strong>，运行命令<strong>运行任务</strong>，选择你想运行的任务。通过运行命令<strong>终止任务</strong>来终止运行的任务。</p>
+<p><img src="task_runner.gif" alt="任务运行"></p>
+<h3 id="Define-keyboard-shortcuts-for-tasks——定义任务快捷键">Define keyboard shortcuts for tasks——定义任务快捷键</h3>
+<p>You can define a keyboard shortcut for any task. From the <strong>Command Palette</strong> (<code>⇧⌘P</code>), select <strong>Preferences: Open Keyboard Shortcuts File</strong>, bind the desired shortcut to the <code>workbench.action.tasks.runTask</code> command, and define the <strong>Task</strong> as <code>args</code>.</p>
+<p>你可以给任意任务定义快捷键。从<strong>命令面板</strong>（<code>⇧⌘P</code>）中选择<strong>设置：打开快捷键文件</strong>，绑定想要的快捷键到<code>workbench.action.tasks.runTask</code>命令，并定义<strong>Task</strong>为<code>args</code>。</p>
+<p>For example, to bind <code>kbstyle(Ctrl+H)</code> to the <code>Run tests</code> task, add the following:<br>
+比如，绑定<code>Ctrl+H</code>到<code>运行测试</code>任务，添加如下：</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;key&quot;</span>: <span class="string">&quot;ctrl+h&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;command&quot;</span>: <span class="string">&quot;workbench.action.tasks.runTask&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;args&quot;</span>: <span class="string">&quot;Run tests&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="Run-npm-scripts-as-tasks-from-the-Explorer">Run npm scripts as tasks from the Explorer</h3>
-<p><img src="images/tips-and-tricks/script_explorer.png" alt="Filter problems"></p>
+<h3 id="Run-npm-scripts-as-tasks-from-the-Explorer——从浏览器中作为任务来运行npm脚本">Run npm scripts as tasks from the Explorer——从浏览器中作为任务来运行npm脚本</h3>
+<p><img src="script_explorer.png" alt="过滤问题"></p>
 <p>From the explorer you can open a script in the editor, run it as a task, and launch it with the node debugger (when the script defines a debug option like <code>--inspect-brk</code>). The default action on click is to open the script. To run a script on a single click, set <code>npm.scriptExplorerAction</code> to “run”. Use the setting <code>npm.exclude</code> to exclude scripts in <code>package.json</code> files contained in particular folders.</p>
+<p>你可以从浏览器打开一个编辑中的脚本，作为一个任务来运行，使用node debugger来运行（当脚本定义了一个想<code>-inspect-brk</code>的调试选项时）。点击的默认行为是打开脚本。设置<code>npm.scriptExplorerAction</code>到&quot;run&quot;来通过单击运行脚本。使用设置<code>npm.exclude</code>来排除包含在特殊文件夹里的<code>package.json</code>文件。</p>
 <p>With the setting <code>npm.enableRunFromFolder</code>, you can enable to run npm scripts from the File Explorer’s context menu for a folder. The setting enables the command <strong>Run NPM Script in Folder…</strong> when a folder is selected. The command shows a Quick Pick list of the npm scripts contained in this folder and you can select the script to be executed as a task.</p>
-<h2 id="Portable-mode">Portable mode</h2>
-<p>VS Code has a <a href="/docs/editor/portable.md">Portable mode</a> which lets you keep settings and data in the same location as your installation, for example, on a USB drive.</p>
-<h2 id="Insiders-builds">Insiders builds</h2>
-<p>The Visual Studio Code team uses the Insiders version to test the latest features and bug fixes of VS Code. You can also use the Insiders version by <a href="/insiders">downloading it here</a>.</p>
+<p>设置<code>npm.enableRunFromFolder</code>，你能够从文件夹的文件浏览器的上下文菜单来运行npm脚本。当文件夹被选中时，这个设置会开启命令<strong>Run NPM Script in Folder…</strong>。这个命令展示了一个包含在文件夹中的npm脚本快速选择列表,你可以选择一个脚本作为一个任务来运行。</p>
+<h2 id="Portable-mode——便携模式">Portable mode——便携模式</h2>
+<p>VS Code has a <a href="/vscode_docs/setup/portable">Portable mode</a> which lets you keep settings and data in the same location as your installation, for example, on a USB drive.</p>
+<p>VSCode有一个<a href="/vscode_docs/setup/portable">便携模式</a>，这使你可以保存设置和数据在和安装同样的位置，比如，在U盘中。</p>
+<h2 id="Insiders-builds——内部构建">Insiders builds——内部构建</h2>
+<p>The Visual Studio Code team uses the Insiders version to test the latest features and bug fixes of VS Code. You can also use the Insiders version by <a target="_blank" rel="noopener" href="https://code.visualstudio.com/insiders">downloading it here</a>.<br>
+VSCode团队使用内部版本来测试最新的VScode功能和bug修复。你也可以通过<a target="_blank" rel="noopener" href="https://code.visualstudio.com/insiders">这里下载</a>使用内部版本。</p>
 <ul>
-<li>For Early Adopters - Insiders has the most recent code changes for users and extension authors to try out.</li>
-<li>Frequent Builds - New builds every day with the latest bug fixes and features.</li>
-<li>Side-by-side install - Insiders installs next to the Stable build allowing you to use either independently.</li>
+<li>For Early Adopters - Insiders has the most recent code changes for users and extension authors to try out.<br>
+对于早期的采纳者 —— 对于用户和扩展作者来说，内部人士有最新的代码修改可以尝试。</li>
+<li>Frequent Builds - New builds every day with the latest bug fixes and features.<br>
+频繁的构建 —— 每天的带有最新bug修复和功能的新版本。</li>
+<li>Side-by-side install - Insiders installs next to the Stable build allowing you to use either independently.<br>
+并行安装 —— 接近于稳定版本的内部人士版本，允许你独立的使用任意一个版本。</li>
 </ul>
 
 </div>

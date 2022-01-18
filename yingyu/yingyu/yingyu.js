@@ -23,7 +23,6 @@ function main() {
         let pArr = detailsArr[i].getElementsByTagName("p");
         for (let j = 0; j < pArr.length; j++) {
             pArr[j].innerHTML = "&emsp;&emsp;" + pArr[j].innerHTML;
-            pArr[j].style.backgroundColor = "rgba(222, 215, 189, 0.5)";
         }
     }
 }

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/vscode_docs/favicon.png" />
+    
+
+    <title>
+        
+          vscode-docs
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/vscode_docs/css/book.css">
+
+    
+<script src="/vscode_docs/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/vscode_docs/">
+    <img src="/vscode_docs/favicon.png">
+    <span>VSCODE-DOCS</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <ul>
+<li><a href="/vscode_docs/overview">OVERVIEW 总览</a></li>
+</ul>
+<h2 id="SETUP-安装">SETUP 安装</h2>
+<ul>
+<li><a href="/vscode_docs/setup/setup-overview">Overview 总览</a></li>
+<li><a href="/vscode_docs/setup/linux">Linux</a></li>
+<li><a href="/vscode_docs/setup/mac">macOS</a></li>
+<li><a href="/vscode_docs/setup/windows">Windows</a></li>
+<li><a href="/vscode_docs/setup/raspberry-pi">Raspberry Pi 树莓派</a></li>
+<li><a href="/vscode_docs/setup/network">Network 网络</a></li>
+<li><a href="/vscode_docs/setup/additional-components">Additional Components 附加组件</a></li>
+</ul>
+<h2 id="GET-STARTED-开始">GET STARTED 开始</h2>
+<ul>
+<li><a href="/vscode_docs/getstarted/introvideos">Intro Videos 介绍视频</a></li>
+<li><a href="/vscode_docs/getstarted/tips-and-tricks">Tips and Tricks 技巧</a></li>
+<li><a href="/vscode_docs/getstarted/userinterface">User Interface 用户界面</a></li>
+<li><a href="/vscode_docs/getstarted/themes">Themes 主题</a></li>
+<li><a href="/vscode_docs/getstarted/settings">Settings 设置</a></li>
+<li><a href="/vscode_docs/getstarted/keybindings">Key Bindings 键绑定</a></li>
+</ul>
+<h2 id="USER-GUIDE-用户指南">USER GUIDE 用户指南</h2>
+<ul>
+<li><a href="/vscode_docs/user-guide/codebasics">Basic Editing 基础编辑</a></li>
+<li><a href="/vscode_docs/user-guide/extension-marketplace">Extension Marketplace 扩展市场</a></li>
+</ul>
+<h2 id="LANGUAGES-语言">LANGUAGES 语言</h2>
+<ul>
+<li><a href="/vscode_docs/languages/">Overview 总览</a></li>
+<li><a href="/vscode_docs/languages/">JavaScript</a></li>
+<li><a href="/vscode_docs/languages/json">JSON</a></li>
+<li><a href="/vscode_docs/languages/">HTML</a></li>
+<li><a href="/vscode_docs/languages/">CSS, SCSS and Less</a></li>
+<li><a href="/vscode_docs/languages/">Typescript</a></li>
+<li><a href="/vscode_docs/languages/">Markdown</a></li>
+<li><a href="/vscode_docs/languages/">PowerShell</a></li>
+<li><a href="/vscode_docs/languages/cpp">C++</a></li>
+<li><a href="/vscode_docs/languages/java">Java</a></li>
+<li><a href="/vscode_docs/languages/">PHP</a></li>
+<li><a href="/vscode_docs/languages/python">Python</a></li>
+<li><a href="/vscode_docs/languages/">Julia</a></li>
+<li><a href="/vscode_docs/languages/go">Go</a></li>
+<li><a href="/vscode_docs/languages/">T-SQL</a></li>
+<li><a href="/vscode_docs/languages/csharp">C#</a></li>
+<li><a href="/vscode_docs/languages/">.NET Core</a></li>
+</ul>
+<h2 id="NODEJS-JAVASCRIPT">NODEJS / JAVASCRIPT</h2>
+<ul>
+<li><a href="/vscode_docs/nodejs/nodejs-tutorial">Node.js Tutorial</a></li>
+</ul>
+<h2 id="TYPESCRIPT">TYPESCRIPT</h2>
+<h2 id="PYTHON">PYTHON</h2>
+<h2 id="JAVA">JAVA</h2>
+<h2 id="C">C++</h2>
+<h2 id="CONTAINERS-容器">CONTAINERS 容器</h2>
+<h2 id="DATA-SCIENCE-数据科学">DATA SCIENCE 数据科学</h2>
+<h2 id="AZURE">AZURE</h2>
+<h2 id="REMOTE-远程">REMOTE 远程</h2>
+<ul>
+<li><a href="/vscode_docs/remote/wsl">Windows Subsystem for Linux</a></li>
+<li><a href="/vscode_docs/remote/wsl-tutorial">WSL Tutoral</a></li>
+</ul>
+
+</div>
+
+
+<script src="/vscode_docs/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="Snippets-in-Visual-Studio-Code">Snippets in Visual Studio Code</h1>
+<p>Code snippets are templates that make it easier to enter repeating code patterns, such as loops or conditional-statements.</p>
+<p>In Visual Studio Code, snippets appear in IntelliSense (<code>kb(editor.action.triggerSuggest)</code>) mixed with other suggestions, as well as in a dedicated snippet picker (<strong>Insert Snippet</strong> in the Command Palette). There is also support for tab-completion: Enable it with <code>&quot;editor.tabCompletion&quot;: &quot;on&quot;</code>, type a <strong>snippet prefix</strong> (trigger text), and press <code>kb(insertSnippet)</code> to insert a snippet.</p>
+<p>The snippet syntax follows the <a target="_blank" rel="noopener" href="https://manual.macromates.com/en/snippets">TextMate snippet syntax</a> with the exceptions of ‘interpolated shell code’ and the use of <code>\u</code>; both are not supported.</p>
+<p><img src="images/userdefinedsnippets/ajax-snippet.gif" alt="ajax snippet"></p>
+<h2 id="Built-in-snippets">Built-in snippets</h2>
+<p>VS Code has built-in snippets for a number of languages such as: JavaScript, TypeScript, Markdown, and PHP.</p>
+<p><img src="images/userdefinedsnippets/builtin-javascript-snippets.png" alt="builtin javascript snippet"></p>
+<p>You can see the available snippets for a language by running the <strong>Insert Snippet</strong> command in the Command Palette to get a list of the snippets for the language of the current file. However, keep in mind that this list also includes user snippets that you have defined, and any snippets provided by extensions you have installed.</p>
+<h2 id="Install-snippets-from-the-Marketplace">Install snippets from the Marketplace</h2>
+<p>Many <a href="/docs/editor/extension-marketplace.md">extensions</a> on the <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/vscode">VS Code Marketplace</a> include snippets. You can search for extensions that contains snippets in the Extensions view (<code>kb(workbench.view.extensions)</code>) using the <code>@category:&quot;snippets&quot;</code> filter.</p>
+<p><img src="images/userdefinedsnippets/category-snippets.png" alt="Searching for extensions with snippets"></p>
+<p>If you find an extension you want to use, install it, then restart VS Code and the new snippets will be available.</p>
+<h2 id="Create-your-own-snippets">Create your own snippets</h2>
+<p>You can easily define your own snippets without any extension. To create or edit your own snippets, select <strong>User Snippets</strong> under <strong>File</strong> &gt; <strong>Preferences</strong> (<strong>Code</strong> &gt; <strong>Preferences</strong> on macOS), and then select the language (by <a href="/docs/languages/identifiers.md">language identifier</a>) for which the snippets should appear, or the <strong>New Global Snippets file</strong> option if they should appear for all languages. VS Code manages the creation and refreshing of the underlying snippets file(s) for you.</p>
+<p><img src="images/userdefinedsnippets/snippet-dropdown.png" alt="snippet dropdown"></p>
+<p>Snippets files are written in JSON, support C-style comments, and can define an unlimited number of snippets. Snippets support most TextMate syntax for dynamic behavior, intelligently format whitespace based on the insertion context, and allow easy multiline editing.</p>
+<p>Below is an example of a <code>for</code> loop snippet for JavaScript:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// in file &#x27;Code/User/snippets/javascript.json&#x27;</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;For Loop&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;prefix&quot;</span>: [</span><br><span class="line">          <span class="string">&quot;for&quot;</span>,</span><br><span class="line">          <span class="string">&quot;for-const&quot;</span></span><br><span class="line">        ],</span><br><span class="line">        <span class="attr">&quot;body&quot;</span>: [</span><br><span class="line">          <span class="string">&quot;for (const $&#123;2:element&#125; of $&#123;1:array&#125;) &#123;&quot;</span>,</span><br><span class="line">          <span class="string">&quot;\t$0&quot;</span>,</span><br><span class="line">          <span class="string">&quot;&#125;&quot;</span></span><br><span class="line">        ],</span><br><span class="line">        <span class="attr">&quot;description&quot;</span>: <span class="string">&quot;A for loop.&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>In the example above:</p>
+<ul>
+<li>“For Loop” is the snippet name. It is displayed via IntelliSense if no <code>description</code> is provided.</li>
+<li><code>prefix</code> defines one or more trigger words that display the snippet in IntelliSense. Substring matching is performed on prefixes, so in this case, “fc” could match “for-const”.</li>
+<li><code>body</code> is one or more lines of content, which will be joined as multiple lines upon insertion. Newlines and embedded tabs will be formatted according to the context in which the snippet is inserted.</li>
+<li><code>description</code> is an optional description of the snippet displayed by IntelliSense.</li>
+</ul>
+<p>Additionally, the <code>body</code> of the example above has three placeholders (listed in order of traversal): <code>$&#123;1:array&#125;</code>, <code>$&#123;2:element&#125;</code>, and <code>$0</code>. You can quickly jump to the next placeholder with <code>kb(jumpToNextSnippetPlaceholder)</code>, at which point you may edit the placeholder or jump again the next one. The string after the colon (if any) is the default text, for example <code>element</code> in <code>$&#123;2:element&#125;</code>. Placeholder traversal order is ascending by number, starting from one; zero is an optional special case that always comes last, and exits snippet mode with the cursor at the specified position.</p>
+<h2 id="Snippet-scope">Snippet scope</h2>
+<p>Snippets are scoped so that only relevant snippets are suggested. Snippets can be scoped by either:</p>
+<ol>
+<li>the <strong>language(s)</strong> to which snippets are scoped (possibly all)</li>
+<li>the <strong>project(s)</strong> to which snippets are scoped (probably all)</li>
+</ol>
+<h3 id="Language-snippet-scope">Language snippet scope</h3>
+<p>Every snippet is scoped to one, several, or all (“global”) languages based on whether it is defined in:</p>
+<ol>
+<li>a <strong>language</strong> snippet file</li>
+<li>a <strong>global</strong> snippet file</li>
+</ol>
+<p>Single-language user-defined snippets are defined in a specific language’s snippet file (for example <code>javascript.json</code>), which you can access by language identifier through <strong>Preferences: Configure User Snippets</strong>. A snippet is only accessible when editing the language for which it is defined.</p>
+<p>Multi-language and global user-defined snippets are all defined in “global” snippet files (JSON with the file suffix <code>.code-snippets</code>), which is also accessible through <strong>Preferences: Configure User Snippets</strong>. In a global snippets file, a snippet definition may have an additional <code>scope</code> property that takes one or more language identifiers, which makes the snippet available only for those specified languages. If no <code>scope</code> property is given, then the global snippet is available in <strong>all</strong> languages.</p>
+<p>Most user-defined snippets are scoped to a single language, and so are defined in a language-specific snippet file.</p>
+<h3 id="Project-snippet-scope">Project snippet scope</h3>
+<p>You can also have a global snippets file (JSON with file suffix <code>.code-snippets</code>) scoped to your project. Project-folder snippets are created with the <strong>New Snippets file for ‘<folder-name>’…</strong> option in the <strong>Preferences: Configure User Snippets</strong> dropdown menu and are located at the root of the project in a <code>.vscode</code> folder. Project snippet files are useful for sharing snippets with all users working in that project. Project-folder snippets are similar to global snippets and can be scoped to specific languages through the <code>scope</code> property.</p>
+<h2 id="Snippet-syntax">Snippet syntax</h2>
+<p>The <code>body</code> of a snippet can use special constructs to control cursors and the text being inserted. The following are supported features and their syntaxes:</p>
+<h3 id="Tabstops">Tabstops</h3>
+<p>With tabstops, you can make the editor cursor move inside a snippet. Use <code>$1</code>, <code>$2</code> to specify cursor locations. The number is the order in which tabstops will be visited, whereas <code>$0</code> denotes the final cursor position. Multiple occurrences of the same tabstop are linked and updated in sync.</p>
+<h3 id="Placeholders">Placeholders</h3>
+<p>Placeholders are tabstops with values, like <code>$&#123;1:foo&#125;</code>. The placeholder text will be inserted and selected such that it can be easily changed. Placeholders can be nested, like <code>$&#123;1:another $&#123;2:placeholder&#125;&#125;</code>.</p>
+<h3 id="Choice">Choice</h3>
+<p>Placeholders can have choices as values. The syntax is a comma-separated enumeration of values, enclosed with the pipe-character, for example <code>$&#123;1|one,two,three|&#125;</code>. When the snippet is inserted and the placeholder selected, choices will prompt the user to pick one of the values.</p>
+<h3 id="Variables">Variables</h3>
+<p>With <code>$name</code> or <code>$&#123;name:default&#125;</code>, you can insert the value of a variable. When a variable isn’t set, its <strong>default</strong> or the empty string is inserted. When a variable is unknown (that is, its name isn’t defined) the name of the variable is inserted and it is transformed into a placeholder.</p>
+<p>The following variables can be used:</p>
+<ul>
+<li><code>TM_SELECTED_TEXT</code> The currently selected text or the empty string</li>
+<li><code>TM_CURRENT_LINE</code> The contents of the current line</li>
+<li><code>TM_CURRENT_WORD</code> The contents of the word under cursor or the empty string</li>
+<li><code>TM_LINE_INDEX</code> The zero-index based line number</li>
+<li><code>TM_LINE_NUMBER</code> The one-index based line number</li>
+<li><code>TM_FILENAME</code> The filename of the current document</li>
+<li><code>TM_FILENAME_BASE</code> The filename of the current document without its extensions</li>
+<li><code>TM_DIRECTORY</code> The directory of the current document</li>
+<li><code>TM_FILEPATH</code> The full file path of the current document</li>
+<li><code>RELATIVE_FILEPATH</code> The relative (to the opened workspace or folder) file path of the current document</li>
+<li><code>CLIPBOARD</code> The contents of your clipboard</li>
+<li><code>WORKSPACE_NAME</code> The name of the opened workspace or folder</li>
+<li><code>WORKSPACE_FOLDER</code> The path of the opened workspace or folder</li>
+</ul>
+<p>For inserting the current date and time:</p>
+<ul>
+<li><code>CURRENT_YEAR</code> The current year</li>
+<li><code>CURRENT_YEAR_SHORT</code> The current year’s last two digits</li>
+<li><code>CURRENT_MONTH</code> The month as two digits (example ‘02’)</li>
+<li><code>CURRENT_MONTH_NAME</code> The full name of the month (example ‘July’)</li>
+<li><code>CURRENT_MONTH_NAME_SHORT</code> The short name of the month (example ‘Jul’)</li>
+<li><code>CURRENT_DATE</code> The day of the month</li>
+<li><code>CURRENT_DAY_NAME</code> The name of day (example ‘Monday’)</li>
+<li><code>CURRENT_DAY_NAME_SHORT</code> The short name of the day (example ‘Mon’)</li>
+<li><code>CURRENT_HOUR</code> The current hour in 24-hour clock format</li>
+<li><code>CURRENT_MINUTE</code> The current minute</li>
+<li><code>CURRENT_SECOND</code> The current second</li>
+<li><code>CURRENT_SECONDS_UNIX</code> The number of seconds since the Unix epoch</li>
+</ul>
+<p>For inserting random values:</p>
+<ul>
+<li><code>RANDOM</code> 6 random Base-10 digits</li>
+<li><code>RANDOM_HEX</code> 6 random Base-16 digits</li>
+<li><code>UUID</code> A Version 4 UUID</li>
+</ul>
+<p>For inserting line or block comments, honoring the current language:</p>
+<ul>
+<li><code>BLOCK_COMMENT_START</code> Example output: in PHP <code>/*</code> or in HTML <code>&lt;!--</code></li>
+<li><code>BLOCK_COMMENT_END </code> Example output: in PHP <code>*/</code> or in HTML <code>--&gt;</code></li>
+<li><code>LINE_COMMENT</code> Example output: in PHP <code>//</code></li>
+</ul>
+<p>The snippet below inserts <code>/* Hello World */</code> in JavaScript files and <code>&lt;!-- Hello World --&gt;</code> in HTML files:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;hello&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;scope&quot;</span>: <span class="string">&quot;javascript,html&quot;</span>,</span><br><span class="line">        <span class="attr">&quot;prefix&quot;</span>: <span class="string">&quot;hello&quot;</span>,</span><br><span class="line">        <span class="attr">&quot;body&quot;</span>: <span class="string">&quot;$BLOCK_COMMENT_START Hello World $BLOCK_COMMENT_END&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Variable-transforms">Variable transforms</h3>
+<p>Transformations allow you to modify the value of a variable before it is inserted. The definition of a transformation consists of three parts:</p>
+<ol>
+<li>A regular expression that is matched against the value of a variable, or the empty string when the variable cannot be resolved.</li>
+<li>A “format string” that allows to reference matching groups from the regular expression. The format string allows for conditional inserts and simple modifications.</li>
+<li>Options that are passed to the regular expression.</li>
+</ol>
+<p>The following example inserts the name of the current file without its ending, so from <code>foo.txt</code> it makes <code>foo</code>.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$&#123;TM_FILENAME/(.*)\\..+$/$1/&#125;</span><br><span class="line">  |           |         |  |</span><br><span class="line">  |           |         |  |-&gt; no options</span><br><span class="line">  |           |         |</span><br><span class="line">  |           |         |-&gt; references the contents of the first</span><br><span class="line">  |           |             capture group</span><br><span class="line">  |           |</span><br><span class="line">  |           |-&gt; regex to capture everything before</span><br><span class="line">  |               the final `.suffix`</span><br><span class="line">  |</span><br><span class="line">  |-&gt; resolves to the filename</span><br></pre></td></tr></table></figure>
+<h3 id="Placeholder-Transform">Placeholder-Transform</h3>
+<p>Like a Variable-Transform, a transformation of a placeholder allows changing the inserted text for the placeholder when moving to the next tab stop.<br>
+The inserted text is matched with the regular expression and the match or matches - depending on the options - are replaced with the specified replacement format text.<br>
+Every occurrence of a placeholder can define its own transformation independently using the value of the first placeholder.<br>
+The format for Placeholder-Transforms is the same as for Variable-Transforms.</p>
+<h3 id="Transform-examples">Transform examples</h3>
+<p>The examples are shown within double quotes, as they would appear inside a snippet body, to illustrate the need to double escape certain characters. Sample transformations and the resulting output for the filename <code>example-123.456-TEST.js</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Output</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&quot;$&#123;TM_FILENAME/[\\.]/_/&#125;&quot;</code></td>
+<td><code>example-123_456-TEST.js</code></td>
+<td>Replace the first <code>.</code> with <code>_</code></td>
+</tr>
+<tr>
+<td><code>&quot;$&#123;TM_FILENAME/[\\.-]/_/g&#125;&quot;</code></td>
+<td><code>example_123_456_TEST_js</code></td>
+<td>Replace each <code>.</code> or <code>-</code> with <code>_</code></td>
+</tr>
+<tr>
+<td><code>&quot;$&#123;TM_FILENAME/(.*)/$&#123;1:/upcase&#125;/&#125;&quot;</code></td>
+<td><code>EXAMPLE-123.456-TEST.JS</code></td>
+<td>Change to all uppercase</td>
+</tr>
+<tr>
+<td><code>&quot;$&#123;TM_FILENAME/[^0-9^a-z]//gi&#125;&quot;</code></td>
+<td><code>example123456TESTjs</code></td>
+<td>Remove non-alphanumeric characters</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Grammar">Grammar</h3>
+<p>Below is the EBNF (<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Extended_Backus-Naur_form">extended Backus-Naur form</a>) for snippets. With <code>\</code> (backslash), you can escape <code>$</code>, <code>&#125;</code>, and <code>\</code>. Within choice elements, the backslash also escapes comma and pipe characters.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">any         ::= tabstop | placeholder | choice | variable | text</span><br><span class="line">tabstop     ::= &#x27;$&#x27; int</span><br><span class="line">                | &#x27;$&#123;&#x27; int &#x27;&#125;&#x27;</span><br><span class="line">                | &#x27;$&#123;&#x27; int  transform &#x27;&#125;&#x27;</span><br><span class="line">placeholder ::= &#x27;$&#123;&#x27; int &#x27;:&#x27; any &#x27;&#125;&#x27;</span><br><span class="line">choice      ::= &#x27;$&#123;&#x27; int &#x27;|&#x27; text (&#x27;,&#x27; text)* &#x27;|&#125;&#x27;</span><br><span class="line">variable    ::= &#x27;$&#x27; var | &#x27;$&#123;&#x27; var &#x27;&#125;&#x27;</span><br><span class="line">                | &#x27;$&#123;&#x27; var &#x27;:&#x27; any &#x27;&#125;&#x27;</span><br><span class="line">                | &#x27;$&#123;&#x27; var transform &#x27;&#125;&#x27;</span><br><span class="line">transform   ::= &#x27;/&#x27; regex &#x27;/&#x27; (format | text)+ &#x27;/&#x27; options</span><br><span class="line">format      ::= &#x27;$&#x27; int | &#x27;$&#123;&#x27; int &#x27;&#125;&#x27;</span><br><span class="line">                | &#x27;$&#123;&#x27; int &#x27;:&#x27; &#x27;/upcase&#x27; | &#x27;/downcase&#x27; | &#x27;/capitalize&#x27; | &#x27;/camelcase&#x27; | &#x27;/pascalcase&#x27; &#x27;&#125;&#x27;</span><br><span class="line">                | &#x27;$&#123;&#x27; int &#x27;:+&#x27; if &#x27;&#125;&#x27;</span><br><span class="line">                | &#x27;$&#123;&#x27; int &#x27;:?&#x27; if &#x27;:&#x27; else &#x27;&#125;&#x27;</span><br><span class="line">                | &#x27;$&#123;&#x27; int &#x27;:-&#x27; else &#x27;&#125;&#x27; | &#x27;$&#123;&#x27; int &#x27;:&#x27; else &#x27;&#125;&#x27;</span><br><span class="line">regex       ::= JavaScript Regular Expression value (ctor-string)</span><br><span class="line">options     ::= JavaScript Regular Expression option (ctor-options)</span><br><span class="line">var         ::= [_a-zA-Z] [_a-zA-Z0-9]*</span><br><span class="line">int         ::= [0-9]+</span><br><span class="line">text        ::= .*</span><br></pre></td></tr></table></figure>
+<h2 id="Using-TextMate-snippets">Using TextMate snippets</h2>
+<p>You can also use existing TextMate snippets (.tmSnippets) with VS Code. See the <a href="/api/language-extensions/snippet-guide.md#using-textmate-snippets">Using TextMate Snippets</a> topic in our Extension API section to learn more.</p>
+<h2 id="Assign-keybindings-to-snippets">Assign keybindings to snippets</h2>
+<p>You can create custom <a href="/docs/getstarted/keybindings.md">keybindings</a> to insert specific snippets. Open <code>keybindings.json</code> (<strong>Preferences: Open Keyboard Shortcuts File</strong>), which defines all your keybindings, and add a keybinding passing <code>&quot;snippet&quot;</code> as an extra argument:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;key&quot;</span>: <span class="string">&quot;cmd+k 1&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;command&quot;</span>: <span class="string">&quot;editor.action.insertSnippet&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;when&quot;</span>: <span class="string">&quot;editorTextFocus&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;args&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;snippet&quot;</span>: <span class="string">&quot;console.log($1)$0&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>The keybinding will invoke the <strong>Insert Snippet</strong> command but instead of prompting you to select a snippet, it will insert the provided snippet. You define the custom <a href="/docs/getstarted/keybindings.md">keybinding</a> as usual with a keyboard shortcut, command ID, and optional <a href="/docs/getstarted/keybindings.md#when-clause-contexts">when clause context</a> for when the keyboard shortcut is enabled.</p>
+<p>Also, instead of using the <code>snippet</code> argument value to define your snippet inline, you can reference an existing snippet by using the <code>langId</code> and <code>name</code> arguments. The <code>langId</code> argument is the name of the JSON user snippet file and <code>name</code> is the snippet’s unique name from this file:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;key&quot;</span>: <span class="string">&quot;cmd+k 1&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;command&quot;</span>: <span class="string">&quot;editor.action.insertSnippet&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;when&quot;</span>: <span class="string">&quot;editorTextFocus&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;args&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;langId&quot;</span>: <span class="string">&quot;csharp&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;myFavSnippet&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Next-steps">Next steps</h2>
+<ul>
+<li><a href="/docs/editor/command-line.md">Command Line</a> - VS Code has a rich command-line interface to open or diff files and install extensions.</li>
+<li><a href="/api">Extension API</a> - Learn about other ways to extend VS Code.</li>
+<li><a href="/api/language-extensions/snippet-guide.md">Snippet Guide</a> - You can package snippets for use in VS Code.</li>
+</ul>
+<h2 id="Common-questions">Common questions</h2>
+<h3 id="What-if-I-want-to-use-existing-TextMate-snippets-from-a-tmSnippet-file">What if I want to use existing TextMate snippets from a .tmSnippet file?</h3>
+<p>You can easily package TextMate snippets files for use in VS Code. See <a href="/api/language-extensions/snippet-guide.md#using-textmate-snippets">Using TextMate Snippets</a> in our Extension API documentation.</p>
+<h3 id="How-do-I-have-a-snippet-place-a-variable-in-the-pasted-script">How do I have a snippet place a variable in the pasted script?</h3>
+<p>To have a variable in the pasted script, you need to escape the ‘$’ of the <code>$variable</code> name so that it isn’t parsed by the snippet expansion phase.</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;VariableSnippet&quot;</span>:&#123;</span><br><span class="line">    <span class="attr">&quot;prefix&quot;</span>: <span class="string">&quot;_Var&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;body&quot;</span>: <span class="string">&quot;\\$MyVar = 2&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;description&quot;</span>: <span class="string">&quot;A basic snippet that places a variable into script with the $ prefix&quot;</span></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>This results in the pasted snippet as:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$MyVar = 2</span><br></pre></td></tr></table></figure>
+<h3 id="Can-I-remove-snippets-from-IntelliSense">Can I remove snippets from IntelliSense?</h3>
+<p>Yes, you can hide specific snippets from showing in IntelliSense (completion list) by selecting the <strong>Hide from IntelliSense</strong> button to the right of snippet items in the <strong>Insert Snippet</strong> command dropdown.</p>
+<p><img src="images/userdefinedsnippets/hide-from-intellisense.png" alt="Hide from IntelliSense button in Insert Snippet dropdown"></p>
+<p>You can still select the snippet with the <strong>Insert Snippet</strong> command but the hidden snippet won’t be displayed in IntelliSense.</p>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/vscode_docs/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/vscode_docs/author.jpeg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>daxia</div>
+      <div>2022-01-18</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/vscode_docs/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/vscode_docs/js/book.js"></script>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/vscode_docs/favicon.png" />
+    
+
+    <title>
+        
+          vscode-docs
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/vscode_docs/css/book.css">
+
+    
+<script src="/vscode_docs/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/vscode_docs/">
+    <img src="/vscode_docs/favicon.png">
+    <span>VSCODE-DOCS</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <ul>
+<li><a href="/vscode_docs/overview">OVERVIEW 总览</a></li>
+</ul>
+<h2 id="SETUP-安装">SETUP 安装</h2>
+<ul>
+<li><a href="/vscode_docs/setup/setup-overview">Overview 总览</a></li>
+<li><a href="/vscode_docs/setup/linux">Linux</a></li>
+<li><a href="/vscode_docs/setup/mac">macOS</a></li>
+<li><a href="/vscode_docs/setup/windows">Windows</a></li>
+<li><a href="/vscode_docs/setup/raspberry-pi">Raspberry Pi 树莓派</a></li>
+<li><a href="/vscode_docs/setup/network">Network 网络</a></li>
+<li><a href="/vscode_docs/setup/additional-components">Additional Components 附加组件</a></li>
+</ul>
+<h2 id="GET-STARTED-开始">GET STARTED 开始</h2>
+<ul>
+<li><a href="/vscode_docs/getstarted/introvideos">Intro Videos 介绍视频</a></li>
+<li><a href="/vscode_docs/getstarted/tips-and-tricks">Tips and Tricks 技巧</a></li>
+<li><a href="/vscode_docs/getstarted/userinterface">User Interface 用户界面</a></li>
+<li><a href="/vscode_docs/getstarted/themes">Themes 主题</a></li>
+<li><a href="/vscode_docs/getstarted/settings">Settings 设置</a></li>
+<li><a href="/vscode_docs/getstarted/keybindings">Key Bindings 键绑定</a></li>
+</ul>
+<h2 id="USER-GUIDE-用户指南">USER GUIDE 用户指南</h2>
+<ul>
+<li><a href="/vscode_docs/user-guide/codebasics">Basic Editing 基础编辑</a></li>
+<li><a href="/vscode_docs/user-guide/extension-marketplace">Extension Marketplace 扩展市场</a></li>
+</ul>
+<h2 id="LANGUAGES-语言">LANGUAGES 语言</h2>
+<ul>
+<li><a href="/vscode_docs/languages/">Overview 总览</a></li>
+<li><a href="/vscode_docs/languages/">JavaScript</a></li>
+<li><a href="/vscode_docs/languages/json">JSON</a></li>
+<li><a href="/vscode_docs/languages/">HTML</a></li>
+<li><a href="/vscode_docs/languages/">CSS, SCSS and Less</a></li>
+<li><a href="/vscode_docs/languages/">Typescript</a></li>
+<li><a href="/vscode_docs/languages/">Markdown</a></li>
+<li><a href="/vscode_docs/languages/">PowerShell</a></li>
+<li><a href="/vscode_docs/languages/cpp">C++</a></li>
+<li><a href="/vscode_docs/languages/java">Java</a></li>
+<li><a href="/vscode_docs/languages/">PHP</a></li>
+<li><a href="/vscode_docs/languages/python">Python</a></li>
+<li><a href="/vscode_docs/languages/">Julia</a></li>
+<li><a href="/vscode_docs/languages/go">Go</a></li>
+<li><a href="/vscode_docs/languages/">T-SQL</a></li>
+<li><a href="/vscode_docs/languages/csharp">C#</a></li>
+<li><a href="/vscode_docs/languages/">.NET Core</a></li>
+</ul>
+<h2 id="NODEJS-JAVASCRIPT">NODEJS / JAVASCRIPT</h2>
+<ul>
+<li><a href="/vscode_docs/nodejs/nodejs-tutorial">Node.js Tutorial</a></li>
+</ul>
+<h2 id="TYPESCRIPT">TYPESCRIPT</h2>
+<h2 id="PYTHON">PYTHON</h2>
+<h2 id="JAVA">JAVA</h2>
+<h2 id="C">C++</h2>
+<h2 id="CONTAINERS-容器">CONTAINERS 容器</h2>
+<h2 id="DATA-SCIENCE-数据科学">DATA SCIENCE 数据科学</h2>
+<h2 id="AZURE">AZURE</h2>
+<h2 id="REMOTE-远程">REMOTE 远程</h2>
+<ul>
+<li><a href="/vscode_docs/remote/wsl">Windows Subsystem for Linux</a></li>
+<li><a href="/vscode_docs/remote/wsl-tutorial">WSL Tutoral</a></li>
+</ul>
+
+</div>
+
+
+<script src="/vscode_docs/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="Emmet-in-Visual-Studio-Code">Emmet in Visual Studio Code</h1>
+<p>Support for <a target="_blank" rel="noopener" href="https://emmet.io/">Emmet</a> snippets and expansion is built right into Visual Studio Code, <strong>no extension required</strong>. <a target="_blank" rel="noopener" href="https://code.visualstudio.com/blogs/2017/08/07/emmet-2.0">Emmet 2.0</a> has support for the majority of the <a target="_blank" rel="noopener" href="https://docs.emmet.io/actions/">Emmet Actions</a> including expanding <a target="_blank" rel="noopener" href="https://docs.emmet.io/cheat-sheet/">Emmet abbreviations and snippets</a>.</p>
+<h2 id="How-to-expand-Emmet-abbreviations-and-snippets">How to expand Emmet abbreviations and snippets</h2>
+<p>Emmet abbreviation and snippet expansions are enabled by default in <code>html</code>, <code>haml</code>, <code>pug</code>, <code>slim</code>, <code>jsx</code>, <code>xml</code>, <code>xsl</code>, <code>css</code>, <code>scss</code>, <code>sass</code>, <code>less</code> and <code>stylus</code> files, as well as any language that inherits from any of the above like <code>handlebars</code> and <code>php</code>.</p>
+<p><img src="images/emmet/emmet.gif" alt="Emmet in suggestion/auto-completion list"></p>
+<p>When you start typing an Emmet abbreviation, you will see the abbreviation displayed in the suggestion list. If you have the suggestion documentation fly-out open, you will see a preview of the expansion as you type. If you are in a stylesheet file, the expanded abbreviation shows up in the suggestion list sorted among the other CSS suggestions.</p>
+<h3 id="Using-Tab-for-Emmet-expansions">Using Tab for Emmet expansions</h3>
+<p>If you want to use the <code>kbstyle(Tab)</code> key for expanding the Emmet abbreviations, add the following setting:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;emmet.triggerExpansionOnTab&quot;</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>This setting allows using the <code>kbstyle(Tab)</code> key for indentation when text is not an Emmet abbreviation.</p>
+<h3 id="Emmet-when-quickSuggestions-are-disabled">Emmet when quickSuggestions are disabled</h3>
+<p>If you have disabled the <code>editor.quickSuggestions</code> <a href="/docs/getstarted/settings.md">setting</a>, you won’t see suggestions as you type. You can still trigger suggestions manually by pressing <code>kb(editor.action.triggerSuggest)</code> and see the preview.</p>
+<h3 id="Disable-Emmet-in-suggestions">Disable Emmet in suggestions</h3>
+<p>If you don’t want to see Emmet abbreviations in suggestions at all, then use the following setting:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;emmet.showExpandedAbbreviation&quot;</span>: <span class="string">&quot;never&quot;</span></span><br></pre></td></tr></table></figure>
+<p>You can still use the command <strong>Emmet: Expand Abbreviation</strong> to expand your abbreviations. You can also bind any keyboard shortcut to the command id <code>editor.emmet.action.expandAbbreviation</code> as well.</p>
+<h3 id="Emmet-suggestion-ordering">Emmet suggestion ordering</h3>
+<p>To ensure Emmet suggestions are always on top in the suggestion list, add the following settings:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;emmet.showSuggestionsAsSnippets&quot;</span>: <span class="literal">true</span>,</span><br><span class="line"><span class="string">&quot;editor.snippetSuggestions&quot;</span>: <span class="string">&quot;top&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Emmet-abbreviations-in-other-file-types">Emmet abbreviations in other file types</h2>
+<p>To enable the Emmet abbreviation expansion in file types where it is not available by default, use the <code>emmet.includeLanguages</code> setting. Make sure to use <a href="/docs/languages/identifiers.md">language identifiers</a> for both sides of the mapping, with the right side being the language identifier of an Emmet supported language (see the list above).</p>
+<p>For example:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;emmet.includeLanguages&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;javascript&quot;</span>: <span class="string">&quot;javascriptreact&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;razor&quot;</span>: <span class="string">&quot;html&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;plaintext&quot;</span>: <span class="string">&quot;pug&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Emmet has no knowledge of these new languages, and so there might be Emmet suggestions showing up in non HTML/CSS contexts. To avoid this, you can use the following setting.</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;emmet.showExpandedAbbreviation&quot;</span>: <span class="string">&quot;inMarkupAndStylesheetFilesOnly&quot;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>Note:</strong> If you used <code>emmet.syntaxProfiles</code> previously to map new file types, from VS Code 1.15 onwards you should use the setting <code>emmet.includeLanguages</code> instead. <code>emmet.syntaxProfiles</code> is meant for <a target="_blank" rel="noopener" href="https://docs.emmet.io/customization/syntax-profiles">customizing the final output</a> only.</p>
+</blockquote>
+<h2 id="Emmet-with-multi-cursors">Emmet with multi-cursors</h2>
+<p>You can use most of the Emmet actions with multi-cursors as well:</p>
+<p><img src="images/emmet/emmet-multi-cursor.gif" alt="Emmet with multi cursors"></p>
+<h2 id="Using-filters">Using filters</h2>
+<p>Filters are special post-processors that modify the expanded abbreviation before it is output to the editor. There are 2 ways to use filters; either globally through the <code>emmet.syntaxProfiles</code> setting or directly in the current abbreviation.</p>
+<p>Below is an example of the first approach using the <code>emmet.syntaxProfiles</code> setting to apply the <code>bem</code> filter for all the abbreviations in HTML files:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;emmet.syntaxProfiles&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;html&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;filters&quot;</span>: <span class="string">&quot;bem&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>To provide a filter for just the current abbreviation, append the filter to your abbreviation. For example, <code>div#page|c</code> will apply the <code>comment</code> filter to the <code>div#page</code> abbreviation.</p>
+<h3 id="BEM-filter-bem">BEM filter (bem)</h3>
+<p>If you use the <a target="_blank" rel="noopener" href="http://getbem.com/">Block Element Modifier</a> (BEM) way of writing HTML, then <code>bem</code> filters are very handy for you to use. To learn more about how to use <code>bem</code> filters, read <a target="_blank" rel="noopener" href="https://docs.emmet.io/filters/bem/">BEM filter in Emmet</a>.</p>
+<p>You can customize this filter by using the <code>bem.elementSeparator</code> and <code>bem.modifierSeparator</code> preferences as documented in <a target="_blank" rel="noopener" href="https://docs.emmet.io/customization/preferences/">Emmet Preferences</a>.</p>
+<h3 id="Comment-filter-©">Comment filter ©</h3>
+<p>This filter adds comments around important tags. By default, “important tags” are those tags with id and/or class attribute.</p>
+<p>For example <code>div&gt;div#page&gt;p.title+p|c</code> will be expanded to:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;page&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;title&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- /.title --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- /#page --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>You can customize this filter by using the <code>filter.commentTrigger</code>, <code>filter.commentAfter</code> and <code>filter.commentBefore</code> preferences as documented in <a target="_blank" rel="noopener" href="https://docs.emmet.io/customization/preferences/">Emmet Preferences</a>.</p>
+<p>The format for the <code>filter.commentAfter</code> preference is different in VS Code Emmet 2.0.</p>
+<p>For example, instead of:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;emmet.preferences&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;filter.commentAfter&quot;</span>: <span class="string">&quot;\n&lt;!-- /&lt;%= attr(&#x27;id&#x27;, &#x27;#&#x27;) %&gt;&lt;%= attr(&#x27;class&#x27;, &#x27;.&#x27;) %&gt; --&gt;&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>in VS Code, you would use a simpler:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;emmet.preferences&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;filter.commentAfter&quot;</span>: <span class="string">&quot;\n&lt;!-- /[#ID][.CLASS] --&gt;&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Trim-filter-t">Trim filter (t)</h3>
+<p>This filter is applicable only when providing abbreviations for the <strong>Emmet: Wrap with Abbreviation</strong> command. It <a target="_blank" rel="noopener" href="https://docs.emmet.io/actions/wrap-with-abbreviation/#removing-list-markers">removes line markers</a> from wrapped lines.</p>
+<h2 id="Using-custom-Emmet-snippets">Using custom Emmet snippets</h2>
+<p>Custom Emmet snippets need to be defined in a json file named <code>snippets.json</code>. The <code>emmet.extensionsPath</code> setting should have the path to the directory containing this file.</p>
+<p>Below is an example for the contents of this <code>snippets.json</code> file.</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;html&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;snippets&quot;</span>: &#123;</span><br><span class="line">            <span class="attr">&quot;ull&quot;</span>: <span class="string">&quot;ul&gt;li[id=$&#123;1&#125; class=$&#123;2&#125;]*2&#123; Will work with html, pug, haml and slim &#125;&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;oll&quot;</span>: <span class="string">&quot;&lt;ol&gt;&lt;li id=$&#123;1&#125; class=$&#123;2&#125;&gt; Will only work in html &lt;/ol&gt;&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;ran&quot;</span>: <span class="string">&quot;&#123; Wrap plain text in curly braces &#125;&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">&quot;css&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;snippets&quot;</span>: &#123;</span><br><span class="line">            <span class="attr">&quot;cb&quot;</span>: <span class="string">&quot;color: black&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;bsd&quot;</span>: <span class="string">&quot;border: 1px solid $&#123;1:red&#125;&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;ls&quot;</span>: <span class="string">&quot;list-style: $&#123;1&#125;&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Authoring of Custom Snippets in Emmet 2.0 via the <code>snippets.json</code> file differs from the old way of doing the same in a few ways:</p>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Old Emmet</th>
+<th>Emmet 2.0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Snippets vs Abbreviations</td>
+<td>Supports both in 2 separate properties called <code>snippets</code> and <code>abbreviations</code></td>
+<td>The 2 have been combined into a single property called snippets. See default <a href="https://github.com/emmetio/snippets/blob/master/html.json">HTML snippets</a> and <a href="https://github.com/emmetio/snippets/blob/master/css.json">CSS snippets</a></td>
+</tr>
+<tr>
+<td>CSS snippet names</td>
+<td>Can contain <code>:</code></td>
+<td>Do not use <code>:</code> when defining snippet names. It is used to separate property name and value when Emmet tries to fuzzy match the given abbreviation to one of the snippets.</td>
+</tr>
+<tr>
+<td>CSS snippet values</td>
+<td>Can end with <code>;</code></td>
+<td>Do not add <code>;</code> at end of snippet value. Emmet will add the trailing <code>;</code> based on the file type (css/less/scss vs sass/stylus) or the emmet preference set for <code>css.propertyEnd</code>, <code>sass.propertyEnd</code>, <code>stylus.propertyEnd</code></td>
+</tr>
+<tr>
+<td>Cursor location</td>
+<td><code>$&#123;cursor&#125;</code> or <code>|</code> can be used</td>
+<td>Use only textmate syntax like <code>$&#123;1&#125;</code> for tab stops and cursor locations</td>
+</tr>
+</tbody>
+</table>
+<h3 id="HTML-Emmet-snippets">HTML Emmet snippets</h3>
+<p>HTML custom snippets are applicable to all other markup flavors like <code>haml</code> or <code>pug</code>. When snippet value is an abbreviation and not actual HTML, the appropriate transformations can be applied to get the right output as per the language type.</p>
+<p>For example, for an unordered list with a list item, if your snippet value is <code>ul&gt;li</code>, you can use the same snippet in <code>html</code>, <code>haml</code>, <code>pug</code> or <code>slim</code>, but if your snippet value is <code>&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;</code>, then it will work only in <code>html</code> files.</p>
+<p>If you want a snippet for plain text, then surround the text with <code>&#123;&#125;</code>.</p>
+<h3 id="CSS-Emmet-snippets">CSS Emmet snippets</h3>
+<p>Values for CSS Emmet snippets should be a complete property name and value pair.</p>
+<p>CSS custom snippets are applicable to all other stylesheet flavors like <code>scss</code>, <code>less</code> or <code>sass</code>. Therefore, don’t include a trailing <code>;</code> at the end of the snippet value. Emmet will add it as needed based on whether the language requires it.</p>
+<p>Do not use <code>:</code> in the snippet name. <code>:</code> is used to separate property name and value when Emmet tries to fuzzy match the abbreviation to one of the snippets.</p>
+<h3 id="Tab-stops-and-cursors-in-custom-snippets">Tab stops and cursors in custom snippets</h3>
+<p>The syntax for tab stops in custom Emmet snippets follows the <a target="_blank" rel="noopener" href="https://manual.macromates.com/en/snippets">Textmate snippets syntax</a>.</p>
+<ul>
+<li>Use <code>$&#123;1&#125;</code>, <code>$&#123;2&#125;</code> for tab stops and <code>$&#123;1:placeholder&#125;</code> for tab stops with placeholders.</li>
+<li>Previously, <code>|</code> or <code>$&#123;cursor&#125;</code> was used to denote the cursor location in the custom Emmet snippet. This is no longer supported. Use <code>$&#123;1&#125;</code> instead.</li>
+</ul>
+<h2 id="Emmet-configuration">Emmet configuration</h2>
+<p>Below are Emmet <a href="/docs/getstarted/settings.md">settings</a> that you can use to customize your Emmet experience in VS Code.</p>
+<ul>
+<li>
+<p><code>emmet.includeLanguages</code></p>
+<p>Use this setting to add mapping between the language of your choice and one of the Emmet supported languages to enable Emmet in the former using the syntax of the latter. Make sure to use language IDs for both sides of the mapping.</p>
+<p>For example:</p>
+  <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;emmet.includeLanguages&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;javascript&quot;</span>: <span class="string">&quot;javascriptreact&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;plaintext&quot;</span>: <span class="string">&quot;pug&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><code>emmet.excludeLanguages</code></p>
+<p>If there is a language where you do not want to see Emmet expansions, add it in this setting which takes an array of language ID strings.</p>
+</li>
+<li>
+<p><code>emmet.syntaxProfiles</code></p>
+<p>See <a target="_blank" rel="noopener" href="https://docs.emmet.io/customization/syntax-profiles/#create-your-own-profile">Emmet Customization of output profile</a> to learn how you can customize the output of your HTML abbreviations.</p>
+<p>For example:</p>
+  <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;emmet.syntaxProfiles&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;html&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;attr_quotes&quot;</span>: <span class="string">&quot;single&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">&quot;jsx&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;self_closing_tag&quot;</span>: <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><code>emmet.variables</code></p>
+<p>Customize variables used by Emmet snippets.</p>
+<p>For example:</p>
+  <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;emmet.variables&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;lang&quot;</span>: <span class="string">&quot;de&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;charset&quot;</span>: <span class="string">&quot;UTF-16&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><code>emmet.showExpandedAbbreviation</code></p>
+<p>Controls the Emmet suggestions that show up in the suggestion/completion list.</p>
+<table>
+<thead>
+<tr>
+<th>Setting Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>never</code></td>
+<td>Never show Emmet abbreviations in the suggestion list for any language.</td>
+</tr>
+<tr>
+<td><code>inMarkupAndStylesheetFilesOnly</code></td>
+<td>Show Emmet suggestions only for languages that are purely markup and stylesheet based (‘html’, ‘pug’, ‘slim’, ‘haml’, ‘xml’, ‘xsl’, ‘css’, ‘scss’, ‘sass’, ‘less’, ‘stylus’).</td>
+</tr>
+<tr>
+<td><code>always</code></td>
+<td>Show Emmet suggestions in all Emmet supported modes as well as the languages that have a mapping in the <code>emmet.includeLanguages</code> setting.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> In the <code>always</code> mode, the new Emmet implementation is not context aware. For example, if you are editing a JavaScript React file, you will get Emmet suggestions not only when writing markup but also while writing JavaScript.</p>
+</li>
+<li>
+<p><code>emmet.showAbbreviationSuggestions</code></p>
+<p>Shows possible emmet abbreviations as suggestions. It is <code>true</code> by default.</p>
+<p>For example, when you type <code>li</code>, you get suggestions for all emmet snippets starting with <code>li</code> like <code>link</code>, <code>link:css</code> , <code>link:favicon</code> etc.<br>
+This is helpful in learning Emmet snippets that you never knew existed unless you knew the <a target="_blank" rel="noopener" href="https://docs.emmet.io/cheat-sheet/">Emmet cheatsheet</a> by heart.</p>
+<p>Not applicable in stylesheets or when <code>emmet.showExpandedAbbreviation</code> is set to <code>never</code>.</p>
+</li>
+<li>
+<p><code>emmet.extensionsPath</code></p>
+<p>Provide the location of the directory that houses the <code>snippets.json</code> file which in turn has your custom snippets.</p>
+</li>
+<li>
+<p><code>emmet.triggerExpansionOnTab</code></p>
+<p>Set this to true to enable expanding Emmet abbreviations with <code>kbstyle(Tab)</code> key. We use this setting to provide the appropriate fallback to provide indentation when there is no abbreviation to expand.</p>
+</li>
+<li>
+<p><code>emmet.showSuggestionsAsSnippets</code></p>
+<p>If set to <code>true</code>, then Emmet suggestions will be grouped along with other snippets allowing you to order them as per <code>editor.snippetSuggestions</code> setting. Set this to <code>true</code> and <code>editor.snippetSuggestions</code> to <code>top</code>, to ensure that Emmet suggestions always show up on top among other suggestions.</p>
+</li>
+<li>
+<p><code>emmet.preferences</code></p>
+<p>You can use this setting to customize Emmet as documented in <a target="_blank" rel="noopener" href="https://docs.emmet.io/customization/preferences/">Emmet Preferences</a>. The below customizations are currently supported:</p>
+<ul>
+<li><code>css.propertyEnd</code></li>
+<li><code>css.valueSeparator</code></li>
+<li><code>sass.propertyEnd</code></li>
+<li><code>sass.valueSeparator</code></li>
+<li><code>stylus.propertyEnd</code></li>
+<li><code>stylus.valueSeparator</code></li>
+<li><code>css.unitAliases</code></li>
+<li><code>css.intUnit</code></li>
+<li><code>css.floatUnit</code></li>
+<li><code>bem.elementSeparator</code></li>
+<li><code>bem.modifierSeparator</code></li>
+<li><code>filter.commentBefore</code></li>
+<li><code>filter.commentTrigger</code></li>
+<li><code>filter.commentAfter</code></li>
+<li><code>format.noIndentTags</code></li>
+<li><code>format.forceIndentationForTags</code></li>
+<li><code>profile.allowCompactBoolean</code></li>
+<li><code>css.fuzzySearchMinScore</code></li>
+</ul>
+<p>The format for the <code>filter.commentAfter</code> preference is different and simpler in Emmet 2.0.</p>
+<p>For example, instead of the older format</p>
+  <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;emmet.preferences&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;filter.commentAfter&quot;</span>: <span class="string">&quot;\n&lt;!-- /&lt;%= attr(&#x27;id&#x27;, &#x27;#&#x27;) %&gt;&lt;%= attr(&#x27;class&#x27;, &#x27;.&#x27;) %&gt; --&gt;&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>you would use</p>
+  <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;emmet.preferences&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;filter.commentAfter&quot;</span>: <span class="string">&quot;\n&lt;!-- /[#ID][.CLASS] --&gt;&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>If you want support for any of the other preferences as documented in <a target="_blank" rel="noopener" href="https://docs.emmet.io/customization/preferences/">Emmet Preferences</a>, please log a <a href="https://github.com/microsoft/vscode/issues/new">feature request</a>.</p>
+</li>
+</ul>
+<h2 id="Next-steps">Next steps</h2>
+<p>Emmet is just one of the great web developer features in VS Code.  Read on to find out about:</p>
+<ul>
+<li><a href="/docs/languages/html.md">HTML</a> - VS Code supports HTML with IntelliSense, closing tags, and formatting.</li>
+<li><a href="/docs/languages/css.md">CSS</a> - We offer rich support for CSS, SCSS and Less.</li>
+</ul>
+<h2 id="Common-questions">Common questions</h2>
+<h3 id="Custom-tags-do-not-get-expanded-in-the-suggestion-list">Custom tags do not get expanded in the suggestion list</h3>
+<p>Custom tags when used in an expression like <code>MyTag&gt;YourTag</code> or <code>MyTag.someclass</code> do show up in the suggestion list. But when these are used on their own like <code>MyTag</code>, they do not appear in the suggestion list. This is designed so to avoid noise in the suggestion list as every word is a potential custom tag.</p>
+<p>Add the following setting to enable expanding of Emmet abbreviations using tab which will expand custom tags in all cases.</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;emmet.triggerExpansionOnTab&quot;</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h3 id="My-HTML-snippets-ending-with-do-not-work">My HTML snippets ending with <code>+</code> do not work?</h3>
+<p>HTML snippets ending with <code>+</code> like <code>select+</code> and <code>ul+</code> from the <a target="_blank" rel="noopener" href="https://docs.emmet.io/cheat-sheet/">Emmet cheatsheet</a> are not supported. This is a known issue in Emmet 2.0 <a href="https://github.com/emmetio/html-matcher/issues/1">Issue: emmetio/html-matcher#1</a>. Workaround is to create your own <a href="/docs/editor/emmet.md#using-custom-emmet-snippets">custom Emmet snippets</a> for such scenarios.</p>
+<h3 id="Where-can-I-set-all-the-preferences-as-documented-in-Emmet-preferences">Where can I set all the preferences as documented in <a target="_blank" rel="noopener" href="https://docs.emmet.io/customization/preferences/">Emmet preferences</a></h3>
+<p>You can set the preferences using the setting <code>emmet.preferences</code>. Only a subset of the preferences that are documented in <a target="_blank" rel="noopener" href="https://docs.emmet.io/customization/preferences/">Emmet preferences</a> can be customized. Please read the preferences section under <a href="/docs/editor/emmet.md#emmet-configuration">Emmet configuration</a>.</p>
+<h3 id="Any-tips-and-tricks">Any tips and tricks?</h3>
+<p>Of course!</p>
+<ul>
+<li>In CSS abbreviations, when you use <code>:</code>, the left part is used to fuzzy match with the CSS property name and the right part is used to match with CSS property value. Take full advantage of this by using abbreviations like <code>pos:f</code>, <code>trf:rx</code>, <code>fw:b</code>, etc.</li>
+<li>Explore all other Emmet features as documented in <a target="_blank" rel="noopener" href="https://docs.emmet.io/actions/">Emmet Actions</a>.</li>
+<li>Don’t hesitate to create your own <a href="/docs/editor/emmet.md#using-custom-emmet-snippets">custom Emmet snippets</a>.</li>
+</ul>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/vscode_docs/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/vscode_docs/author.jpeg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>daxia</div>
+      <div>2022-01-18</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/vscode_docs/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/vscode_docs/js/book.js"></script>
